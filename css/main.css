@@ -43,7 +43,9 @@ header .row2:first-child{
 	display: block;
 	background: #fff;
 	width: 40px;
+	min-width: 40px;
 	height: 40px;
+	min-height: 40px;
 	border-radius: 50%;
 	position: relative;
 }
@@ -74,4 +76,118 @@ header .row2:first-child{
 }
 .burger_menu span::before{
 	top: -6px;
+}
+
+.hero{
+	position: relative;
+	left: -70px;
+	padding: 50px 0 0 70px;
+	background: 
+		url(../img/nots_left.png) 0 0 no-repeat,
+		url(../img/nots_right.png) 540px 285px no-repeat
+	;
+}
+.hero__head{
+	font-size: 96px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 45px;
+	padding-left: 7px;
+}
+.hero__text{
+	font-size: 20px;
+	font-weight: 500;
+	max-width: 680px;
+}
+.hero__text p{
+	margin-bottom: 10px;
+}
+.kino-hero{
+	text-transform: uppercase;
+	max-width: 550px;
+}
+.kino-hero__head,
+.kino-hero__text{
+	font-weight: 600;
+	max-width: 310px;
+}
+.kino-hero__head{
+	margin-bottom: 10px;
+}
+.kino-hero__text{
+	font-size: 24px;
+	line-height: 32px;
+}
+.kino-hero__btn{
+	position: relative;
+	color: #fff;
+	text-align: center;
+	text-decoration: none!important;
+	margin: 34px 54px;
+	cursor: default;
+}
+.kino-hero__btn .item{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	line-height: 20px;
+	border-radius: 50%;
+	width: 144px;
+	min-width: 144px;
+	height: 144px;
+	min-height: 144px;
+	background: linear-gradient(225deg, #00C6FB 0%, #005BEA 100%);
+	box-shadow: 0px 0px 30px 2px #00a9f6;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	transform: scale(1);
+	transition: transform linear 0.8;
+}
+.kino-hero__btn .item:hover{
+/*	background: linear-gradient(205deg, #00C6FB 0%, #005BEA 100%);
+	box-shadow: 0px 0px 30px 5px #00a9f6;*/
+	transform: scale(1.1);
+	/*background: linear-gradient(215deg, #005BEA 0%, #00C6FB 100%);*/
+}
+.kino-hero__btn span{
+	display: block;
+	margin: 7px 0 0; 
+}
+.kino-hero__btn .btn_circle{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 270px;
+	height: 270px;
+}
+.kino-hero__btn .btn_circle svg{
+	width: 100%;
+	height: 100%;
+}
+
+.hero__quote{
+	padding: 30px;
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(180deg, #3D97FF 0%, #2A6DFD 108.33%);
+	box-shadow: 0px 12px 40px rgba(0, 91, 234, 0.15);
+}
+.hero__quote::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 0;
+	width: 6px;
+	background: linear-gradient(180deg, #00C6FB 0%, #005BEA 100%);
 }
