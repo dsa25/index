@@ -147,12 +147,12 @@ header .row2:first-child{
 	z-index: 2;
 	cursor: pointer;
 	transform: scale(1);
-	transition: transform linear 0.8;
+	transition: all linear 0.2s;
 }
 .kino-hero__btn .item:hover{
-/*	background: linear-gradient(205deg, #00C6FB 0%, #005BEA 100%);
-	box-shadow: 0px 0px 30px 5px #00a9f6;*/
-	transform: scale(1.1);
+	/*background: linear-gradient(205deg, #00C6FB 0%, #005BEA 100%);*/
+	box-shadow: 0px 0px 30px 5px #00a9f6;
+	/*transform: scale(1.05);*/
 	/*background: linear-gradient(215deg, #005BEA 0%, #00C6FB 100%);*/
 }
 .kino-hero__btn span{
