@@ -19,9 +19,9 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../fonts/Montserrat-Regular.woff') format('woff'),
-        url('../fonts/Montserrat-Regular.ttf') format('truetype');
+        url('..fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('..fonts/Montserrat-Regular.woff') format('woff'),
+        url('..fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -76,15 +76,18 @@ header .row2:last-child{
 	color: #010111;
 	font-weight: 600;
 	text-decoration: none;
-	transition: color linear 0.2s;
+	transition: color 0.3s;
 }
-.menu a:hover{
-	color: #6c757d;
+.menu a:hover,
+.email_top:hover{
+	color: #00C6FB;
 }
 .email_top{
 	color: #010111;
 	display: inline-block;
 	margin: 0 30px 0 auto;
+	text-decoration: none!important;
+	transition: color 0.3s;
 }
 .burger_menu{
 	display: block;
@@ -95,12 +98,20 @@ header .row2:last-child{
 	min-height: 40px;
 	border-radius: 50%;
 	position: relative;
+	color: #00C6FB;
+	transition: all 0.3s;
+}
+.burger_menu:hover{
+/*	box-shadow: 0 0 7px 0px rgb(0 0 0 / 26%);
+	opacity: 0.95;*/
+	background: #00C6FB;
+	color: #fff;
+	box-shadow: 0px 0px 15px 1px #00a9f6;
 }
 .burger_menu span{
 	display: block;
 	width: 16px;
 	height: 2px;
-	color: #005BEA;
 	background: currentColor;
 	position: absolute;
 	top: 50%;
@@ -128,15 +139,19 @@ header .row2:last-child{
 .hero{
 	display: block;
 	flex-grow: 1;
+	height: 100%;
+	min-height: 100%;
+	padding: 0px 0 210px 0;
+	position: relative;
+}
+.hero_desc{
 	position: relative;
 	left: -70px;
 	width: calc(100% + 70px);
-	height: 100%;
-	min-height: 100%;
-	padding: 50px 0 220px 70px;
+	padding: 50px 0 0 70px;
 	background:
 		url(../img/nots_left.png) 0 0 no-repeat,
-		url(../img/nots_right.png) 540px 285px no-repeat;
+		url(../img/nots_right.png) 580px 100% no-repeat;
 }
 .hero__head{
 	font-size: 96px;
@@ -282,8 +297,8 @@ header .row2:last-child{
 	height: 150px;
 	position: absolute;
 	top: auto;
-	bottom: 0;
-	left: 50px;
+	bottom: -15px;
+	left: -15px;
 	z-index: 2;
 }
 .btn_details .item{
@@ -400,18 +415,23 @@ header .row2:last-child{
 		background: #fff url(../img/header_bg_m.jpg) 0 0 no-repeat;
 		background-size: 100% auto;
 	}
-	.hero__head{font-size: 40px;}
+	header .row2:first-child {
+	    padding: 15px 15px 0;
+	  }
+	.hero__head{font-size: 40px;padding-left: 1px;margin-bottom: 25px;}
 	.hero__text{font-size: 14px;}
-	.kino-hero {max-width: 767px;}
-	.kino-hero__head{font-size: 12px}
-	.kino-hero__text{font-size: 16px;}
-	.hero{
-		left: 0;
-		width: 100%;
-		padding: 50px 0 0 0;
-		background:
-			url(../img/nots_left.png) 0 0 no-repeat,
-			url(../img/nots_right.png) 100% 285px no-repeat;
+	.hero__text p br{display: none;}
+	.kino-hero {max-width: 767px;width: 100%;}
+	.kino-hero__head{font-size: 12px;}
+	.kino-hero__text{font-size: 16px;line-height: 1.5;}
+	.hero{padding: 0;}
+	.hero_desc{
+		left: -15px;
+		width: calc(100% + 30px);
+		padding: 50px 15px 0 15px;
+		background: url(../img/nots_left.png) 0 12px no-repeat,
+   url(../img/nots_right.png) calc(100% - 12px) 100% no-repeat;
+		background-size: 110px;
 	}
 	.hero__img_m{
 		position: relative;
@@ -422,15 +442,19 @@ header .row2:last-child{
 	}
 	.hero__quote{
 		max-width: 100%;
+		padding: 20px 20px 20px 30px;
+		top: 30px;
 	}
-	.kino-hero__btn{}
+	.kino-hero__btn{
+    margin: 20px 12px 20px 20px;
+}
 	.kino-hero__btn .item{
 		width: 110px;
 		min-width: 110px;
 		height: 110px;
 		min-height: 110px;
 		font-size: 12px;
-		line-height: 1.2;
+		line-height: 1.3;
 	}
 	.kino-hero__btn .item svg{
 		width: 18px;
