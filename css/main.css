@@ -126,24 +126,7 @@ header .row2:first-child{
 	margin: 34px 54px;
 	cursor: default;
 }
-/*.kino-hero__btn::before,
-.kino-hero__btn::after{
-	position: absolute;
-	content: '';
-	display: block;
-	top: -15px;
-	left: -15px;
-	right: -15px;
-	bottom: -15px;
-	z-index: 0;
-	opacity: 1;
-	border-radius: 50%;
-	border: 1px solid red;
-	transition: transform linear 0.3s;
-}
-.kino-hero__btn:hover::after{
-	transform: scale(1.2);
-}*/
+
 .kino-hero__btn .item{
 	color: #fff;
 	display: flex;
@@ -160,22 +143,25 @@ header .row2:first-child{
 	height: 144px;
 	min-height: 144px;
 	background: linear-gradient(225deg, #00C6FB 0%, #005BEA 100%);
-	box-shadow: 0px 0px 30px 2px #00a9f6;
+	/*box-shadow: inset 0px 0px 30px 2px #00a9f6;*/
 	position: relative;
 	z-index: 2;
 	cursor: pointer;
 	transform: scale(1);
-	transition: all linear 0.2s;
+	transition: box-shadow linear 0.3s;
 }
 .kino-hero__btn .item:hover{
 	/*background: linear-gradient(205deg, #00C6FB 0%, #005BEA 100%);*/
 	box-shadow: 0px 0px 30px 5px #00a9f6;
-	/*transform: scale(1.05);*/
+	/*transform: scale(1.01);*/
 	/*background: linear-gradient(215deg, #005BEA 0%, #00C6FB 100%);*/
 }
 .kino-hero__btn span{
 	display: block;
 	margin: 7px 0 0;
+}
+.kino-hero__btn .item:hover span{
+	animation: play_text 1.2s linear infinite;
 }
 .kino-hero__btn .item ~ .btn_circle{
 	display: block;
@@ -190,16 +176,18 @@ header .row2:first-child{
 	right: -20px;
 	bottom: -20px;
 	border-radius: 50%;
-	border: 1px solid red;
+	border: 1px solid #00C6FB;
 	opacity: 0;
-	transition: transform linear 0.3s;
+	/*transition: transform linear 0.3s;*/
 }
-.kino-hero__btn .item:hover ~ .btn_circle{animation: pulse 1.2s linear infinite;}
-.kino-hero__btn .item:hover ~ .btn_circle:nth-child(1){animation-delay: .1s;}
+.kino-hero__btn .item:hover ~ .btn_circle{animation: pulse_circle 1.8s linear infinite;}
+/*.kino-hero__btn .item:hover ~ .btn_circle:nth-child(1){animation-delay: .1s;}*/
 .kino-hero__btn .item:hover ~ .btn_circle:nth-child(2){animation-delay: .5s;}
-.kino-hero__btn .item:hover ~ .btn_circle:nth-child(3){animation-delay: 0.9s;}
-
-@keyframes pulse {
+/*.kino-hero__btn .item:hover ~ .btn_circle:nth-child(3){animation-delay: 0.8s;}*/
+.kino-hero__btn .item:hover svg{
+	animation: play_ico 1.2s linear infinite;
+}
+@keyframes pulse_circle {
  0% {
   transform: scale(0.8);
   opacity: 0;
@@ -212,7 +200,107 @@ header .row2:first-child{
   opacity: 0;
  }
 }
+@keyframes play_ico {
+ 0%, 100% {
+  transform: scale(0.85);
+ }
+ 50% {
+  transform: scale(1.15);
+ }
+}
+@keyframes play_text {
+ 0%, 100% {
+  transform: scaleX(0.98);
+ }
+ 50% {
+  transform: scaleX(1.02);
+ }
+}
+.btn_details{
+	width: 190px;
+	height: 150px;
+	position: relative;
+}
+.btn_details .item{
+	position: absolute;
+	top: 0;
+	left: calc(50% - 2px);
+	transform: translateX(-50%);
+	width: 125px;
+	height: 105px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
 
+
+.btn_details .item p{
+	display: block;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.05em;
+	color: #005BEA;
+	background: linear-gradient(#00C6FB, #005BEA);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 20px 0 13px;
+}
+.btn_details .item:hover span:nth-child(2){
+	animation: btn_details_arr 1.2s ease-in infinite;
+}
+.btn_details .item:hover span:nth-child(n + 3){
+	animation: pulse_details 1.2s ease-out infinite;
+}
+/*.btn_details .item span:nth-child(2){animation-delay: .5s;}*/
+.btn_details .item:hover span:nth-child(3){animation-delay: .25s;}
+.btn_details .item:hover span:nth-child(4){animation-delay: 0.5s;}
+.btn_details .item span{
+	display: block;
+	line-height: 1;
+	height: 12px;
+	opacity: 0;
+	position: relative;
+	color: #005BEA;
+}
+.btn_details .item span:nth-child(3){top: -14px;}
+.btn_details .item span:nth-child(4){top: -26px;}
+.btn_details .item span:nth-child(5){top: -38px;}
+.btn_details .item span:nth-child(2){
+	height: 17px;
+	opacity: 1;
+	color: #005BEA;
+}
+@keyframes pulse_details {
+ 0% {
+  transform: translateY(0);
+  opacity: 0;
+ }
+ 50% {
+  opacity: 1;
+  color: #00C6FB;
+ }
+ 100% {
+  transform: translateY(50px);
+  opacity: 0;
+ }
+}
+@keyframes btn_details_arr {
+	0%, 100% {
+		color: #00C6FB;
+	 transform: translateY(0) scaleY(1);
+	 /*transform: scale(0.85);*/
+	}
+	50% {
+		color: #005BEA;
+	 transform: translateY(5px) scaleY(1.2);
+	 /*transform: scale(1.15);*/
+	}
+}
 .hero__quote{
 	padding: 30px;
 	position: relative;
