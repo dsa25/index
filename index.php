@@ -154,18 +154,48 @@
 					<a href="javascript:void(0);" class="btn_close"></a>
 				</div>
 			</div>
-<!-- 			<div class="row justify-content-between align-items-start">
-				<div class="col-12 col-md-7">
-					<div class="speaker__text">
-						<p>Виталий Лазо — действующий спортсмен. 35 лет своей жизни он отдал покорению высочайших вершин планеты. Он знает о преодолении трудностей и достижении цели не понаслышке. Именно горы научили его быть лидером, не сдаваться, не сворачивать с пути. Во что бы то ни стало добиваться своего. Они же научили правильно оценивать обстановку и взвешивать все риски, отвечать за благополучие, жизнь, здоровье товарищей и успех экспедиций, которыми он руководит. Главное — найти правильную мотивацию. И Виталий знает, где ее искать!</p>
-						<p>После его выступлений хочется работать над собой и своими страхами, хочется «встать с дивана», взглянуть на себя по-новому, найти в жизни собственную большую цель, свой личный Эверест, свою вершину, которую необходимо покорить. Все эти качества позволяют Виталию эффективно развиваться не только как спортсмену, но и как бизнесмену и кинематографисту.</p>
-						<p>Виталий Лазо не только ставит рекорды, покоряет новые вершины, удивляет всех своей смелостью — он умеет вдохновлять.</p>
+
+
+<?php
+$my_accordion = [
+'Проект DZF',
+'Альпинист',
+'Лидер',
+'Горный гид',
+'Экстрим-оператор',
+'Образование'
+];
+
+ ?>
+			<div class="my_accordion">
+
+				<?php for ($i=0; $i <= 5; $i++) { ?>
+				<div class="my_accordion__item <?= $i == 1 ? ' active ' : ''; ?>">
+					<a href="javascript:void(0);" class="my_accordion__btn"><?= $my_accordion[$i]; ?></a>
+					<div class="my_accordion__info">
+						<h3 class="my_accordion__head"><?= $my_accordion[$i]; ?></h3>
+						<div class="my_accordion__text">
+							<?php if($i == 1){ ?>
+							<p>Первое восхождение Виталий Лазо совершил в 12 лет. В 16 лет занялся спортивным альпинизмом. В настоящий момент является действующим спортсменом.</p>
+							<p>«Снежный барс» — одно из самых престижных званий в международном альпинизме. Чтобы его получить, необходимо покорить пять высочайших гор бывшего СССР: </p>
+							<p>•	Пик Победы (7439 м)</p>
+							<p>•	Пик Хан-Тенгри (7010 м)</p>
+							<p>•	Пик Исмоила Сомони (бывший Пик коммунизма, 7495 м)</p>
+							<p>•	Пик Ленина (7134 м)</p>
+							<p>•	Пик Корженевской (7105 м).</p>
+							<p>Виталий Лазо получил титул «Снежный барс» в 2014 году.</p>
+							<?php } else { ?>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veritatis, possimus.</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusantium, nesciunt ut expedita magnam rerum!</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur provident deleniti neque praesentium, molestiae veritatis vero dolore sequi nesciunt nulla? Enim voluptas ratione ea quaerat odio sunt dicta non neque sequi necessitatibus qui, autem!</p>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-5">
-					<img src="/img/speaker.png" class="speaker__img">
-				</div>
-			</div> -->
+				<?php } ?>
+
+			</div>
+
 		</div>
 	</section>
 
