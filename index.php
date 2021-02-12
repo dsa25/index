@@ -217,14 +217,96 @@ $my_accordion = [
 		</div>
 	</section>
 
+	<section class="achieve">
+		<div class="my_container">
+			<div class="row justify-content-between align-items-start">
+				<div class="col-12">
+					<h2 class="head">Достижения</h2>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="achieve__head">
+						<div class="achieve__img"><img src="/img/achieve1.svg"></div>
+						<span>Более 20-ти <br> восхождений</span>
+					</div>
+					<div class="achieve__text">Организация более 20-ти экспедиций на вершины 7000 м и 8000 м</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="achieve__head">
+						<div class="achieve__img"><img src="/img/achieve2.svg"></div>
+						<span>Снято более <br> 3-х фильмов</span>
+					</div>
+					<div class="achieve__text">Съемки и производство трех полнометражных документальных фильмов проекта «Фрирайд в зоне смерти»: «Фрирайд в зоне смерти 8000+», «Аннапурна. Спасибо, что живой», «Зона смерти Нанга Парбат»</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="achieve__head">
+						<div class="achieve__img"><img src="/img/achieve3.svg"></div>
+						<span>Жажда <br> приключений</span>
+					</div>
+					<div class="achieve__text">Более 50-ти эксклюзивных приключенческих туров клуба «Горная территория», участие в которых приняли более 5000 человек</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="achieve__head">
+						<div class="achieve__img"><img src="/img/achieve4.svg"></div>
+						<span>Киностудия <br> “KISLOROD”</span>
+					</div>
+					<div class="achieve__text">Более 50-ти эксклюзивных приключенческих туров клуба «Горная территория», участие в которых приняли более 5000 человек</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="format_work">
+		<div class="my_container">
+			<div class="row justify-content-lg-between justify-content-center align-items-stretch">
+				<div class="col-12">
+					<h2 class="head">Форматы работы</h2>
+				</div>
+				<img src="/img/people_1.png" class="format_work__img img1 d-none d-xl-block">
+				<div class="col-12 col-md-9 col-lg-6">
+					<div class="format_work__block">
+						<div class="format_work__title">Мотивационные <br> выступления</div>
+						<div class="format_work__text">
+							<p>Выступления, раздвигающие границы ваших возможностей, заставляющие взглянуть на себя по-новому, вдохновляющие на действие.</p>
+							<p><b>Выступления затрагивают следующие темы:</b></p>
+							<p>• Работа в команде сквозь призму горовосхождений;</p>
+							<p>• Управление рисками, горы и бизнес;</p>
+							<p>• Лидирование в экстремальных ситуациях;</p>
+							<p>• Работа на пределе возможности;</p>
+							<p>• Психоэмоциональная подготовка для решения сложных задач.</p>
+							<p><i>«В горах люди не покоряют вершины. Борьба идет с самим собой и, чтобы подняться на свой Эверест бороться нужно не с поставленной целью, не с горой или природой, покорять нужно свои страхи, нежелание, свои слабости.»</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-9 col-lg-6">
+					<div class="format_work__block">
+						<div class="format_work__title">Корпоративные <br> актив туры</div>
+						<div class="format_work__text">
+							<p>Индивидуальная разработка корпоративных туров, исходя из целей и задач вашей компании.</p>
+							<p><b>Корпоративные программы</b> — идеальное решение для формирования командного духа, развития потенциала сотрудников компании и последующей реализации ее стратегических целей и задач.</p>
+							<p>Именно в горных походах, организованных человеком, за плечами которого уникальный опыт самореализации и достижения поставленных целей, такие задачи решаются эффективнее всего.</p>
+							<p><i>«Для меня не существует слов «пытаться», «пробовать». Если собираешься чего-то достичь — бери и делай!» — говорит Виталий Лазо.</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-3 ml-auto mr-auto">
+					<a href="javascript:void(0);" class="btn w-100 d-block"><span>Связаться</span></a>
+				</div>
+				<img src="/img/people_2.png" class="format_work__img img2 d-none d-xl-block">
+				<img src="/img/people_2_m.png" class="format_work__img img3 d-block d-xl-none">
+			</div>
+		</div>
+	</section>
+
 
 	<br>
 	<br>
-<!-- 	<br>
 	<br>
 	<br>
 	<br>
-	<br> -->
+	<br>
+	<br>
 	<br>
 	<br>
 <!-- 	<div class="container">
@@ -234,11 +316,16 @@ $my_accordion = [
 			<div class="col-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 		</div>
 	</div>
+	<br>
+	<br>
 	<div class="my_container d-flex">
 		<div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 		<div class="col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 		<div class="col-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-	</div> -->
+	</div>
+	<br>
+	<br>	<br> -->
+	
 
 
 
