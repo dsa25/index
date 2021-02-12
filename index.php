@@ -144,9 +144,9 @@
 	</div>
 
 
-	<section class="details_hero">
+	<section class="details_hero" style="display: none;">
 		<div class="my_container">
-			<div class="row justify-content-between align-items-center align-items-sm-start flex-nowrap">
+			<div class="row justify-content-between align-items-start align-items-md-center flex-nowrap">
 				<div class="col-10">
 					<h2 class="head">Подробнее о Виталие Лазо</h2>
 				</div>
@@ -172,7 +172,7 @@ $my_accordion = [
 				<?php for ($i=0; $i <= 5; $i++) { ?>
 				<div class="my_accordion__item <?= $i == 1 ? ' active ' : ''; ?>">
 					<a href="javascript:void(0);" class="my_accordion__btn"><?= $my_accordion[$i]; ?></a>
-					<div class="my_accordion__info">
+					<div class="my_accordion__info" style="display: <?= $i == 1 ? 'block' : 'none'; ?>;">
 						<h3 class="my_accordion__head"><?= $my_accordion[$i]; ?></h3>
 						<div class="my_accordion__text">
 							<?php if($i == 1){ ?>
@@ -227,7 +227,7 @@ $my_accordion = [
 	<br> -->
 	<br>
 	<br>
-	<div class="container">
+<!-- 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 			<div class="col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
@@ -238,7 +238,7 @@ $my_accordion = [
 		<div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 		<div class="col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
 		<div class="col-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-	</div>
+	</div> -->
 
 
 
