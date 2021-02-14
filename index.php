@@ -7,6 +7,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<title>Виталий Лазо</title>
@@ -325,15 +326,41 @@ $my_accordion = [
 	</div>
 	<br>
 	<br>	<br> -->
-	
+
+
+<section class="first_carousel owl-carousel">
+
+<!-- 		<div class="item">
+			<img src="img/first_carousel/item_1.jpg" alt="">
+		</div>
+		<div class="item">
+				<img src="img/first_carousel/item_2.jpg" alt="">
+				<img src="img/first_carousel/item_3.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="img/first_carousel/item_4.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="img/first_carousel/item_5.jpg" alt="">
+			<img src="img/first_carousel/item_6.jpg" alt="">
+		</div> -->
+
+			<img src="img/first_carousel/item_1.jpg" alt="">
+				<img src="img/first_carousel/item_2.jpg" alt="">
+				<img src="img/first_carousel/item_3.jpg" alt="">
+			<img src="img/first_carousel/item_4.jpg" alt="">
+			<img src="img/first_carousel/item_5.jpg" alt="">
+			<img src="img/first_carousel/item_6.jpg" alt="">
 
 
 
+</section>
 
 
-	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

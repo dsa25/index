@@ -23,3 +23,16 @@ $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', fun
 	$('.my_accordion__item').removeClass('active').find('.my_accordion__info').slideUp('slow');
 	$(this).closest('.my_accordion__item').addClass('active').find('.my_accordion__info').slideDown('slow');
 });
+
+$(document).ready(function(){
+
+  $('.owl-carousel').owlCarousel({
+      items:4,
+      loop:true,
+      margin:10,
+      merge:true,
+      mergeFit:true,
+
+  });
+
+});
