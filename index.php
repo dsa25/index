@@ -292,7 +292,7 @@
 					</div>
 				</div>
 				<div class="w-100">
-					<div class="col-12 col-sm-5 col-md-4 ml-auto mr-auto pb-5">
+					<div class="col-12 col-sm-5 col-md-4 ml-auto mr-auto pb-5 pt-3">
 						<a href="javascript:void(0);" class="btn w-100 d-block"><span>Связаться</span></a>
 					</div>
 				</div>
@@ -305,7 +305,7 @@
 	<section class="first_carousel owl-carousel">
 
 		<div class="item">
-			<img src="img/first_carousel/item_1.jpg" alt="">
+			<img src="img/first_carousel/item_1.jpg" alt="" >
 			<div class="first_carousel__info">
 				<h6>Заголовок</h6>
 				<span>описание</span>
@@ -357,19 +357,21 @@
 	</section>
 
 	<section class="reviews">
-		<div class="row justify-content-lg-between justify-content-center align-items-stretch">
-			<div class="col-12">
-				<h2 class="head">• Отзывы</h2>
+		<div class="my_container">
+			<div class="row">
+				<div class="col-12"><h2 class="head">Отзывы</h2></div>
 			</div>
 		</div>
 
 		<div class="reviews_carousel owl-carousel">
 			<?php for ($i=0; $i < 8; $i++) {  ?>
 				<div class="item">
-					<img src="img/first_carousel/item_1.jpg" alt="" class="reviews__avatar">
-					<div class="reviews__user">
-						<p>Марина Л.</p>
-						<span>Восхождения на Эверест в 2020 году</span>
+					<div class="d-flex justify-content-start align-items-center">
+						<img src="img/users/avatar_1.jpg" alt="" class="reviews__avatar">
+						<div class="reviews__user">
+							<p>Марина Л.</p>
+							<span>Восхождения на Эверест в 2020 году</span>
+						</div>
 					</div>
 					<div class="reviews__desc">
 						<img src="img/reviews_carousel/reviews_1.jpg" alt="">
