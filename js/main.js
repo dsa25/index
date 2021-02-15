@@ -24,12 +24,22 @@ $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', fun
 	$(this).closest('.my_accordion__item').addClass('active').find('.my_accordion__info').slideDown('slow');
 });
 
+if($('body').width() <= 768){
+  $('.first_carousel .item').each(function() {
+    if($(this).hasClass('item_wrap')){
+      $(this).after($(this).html());
+      $(this).remove();
+    }
+  });
+}
+
 $(document).ready(function(){
 
-  $('.owl-carousel').owlCarousel({
+  $('.first_carousel').owlCarousel({
       items:4,
       loop:true,
       margin:10,
+      autoWidth:true,
       merge:true,
       mergeFit:true,
 

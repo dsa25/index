@@ -777,18 +777,18 @@ header .my_container:last-child{
 	z-index: 2;
 }
 
-.first_carousel{
+/*.first_carousel{
 	display: flex;
 	align-items: stretch;
 }
 .first_carousel .item{
 	display: flex;
 	flex-direction: column;
-}
+}*/
 .first_carousel img{
 	border-radius: 6px;
 	margin-top: 10px;
-	flex-grow: 2;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 1815px){

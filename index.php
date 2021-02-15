@@ -157,42 +157,42 @@
 			</div>
 
 
-<?php
-$my_accordion = [
-'Проект DZF',
-'Альпинист',
-'Лидер',
-'Горный гид',
-'Экстрим-оператор',
-'Образование'
-];
+			<?php
+			$my_accordion = [
+				'Проект DZF',
+				'Альпинист',
+				'Лидер',
+				'Горный гид',
+				'Экстрим-оператор',
+				'Образование'
+			];
 
- ?>
+			?>
 			<div class="my_accordion">
 
 				<?php for ($i=0; $i <= 5; $i++) { ?>
-				<div class="my_accordion__item <?= $i == 1 ? ' active ' : ''; ?>">
-					<a href="javascript:void(0);" class="my_accordion__btn"><?= $my_accordion[$i]; ?></a>
-					<div class="my_accordion__info" style="display: <?= $i == 1 ? 'block' : 'none'; ?>;">
-						<h3 class="my_accordion__head"><?= $my_accordion[$i]; ?></h3>
-						<div class="my_accordion__text">
-							<?php if($i == 1){ ?>
-							<p>Первое восхождение Виталий Лазо совершил в 12 лет. В 16 лет занялся спортивным альпинизмом. В настоящий момент является действующим спортсменом.</p>
-							<p>«Снежный барс» — одно из самых престижных званий в международном альпинизме. Чтобы его получить, необходимо покорить пять высочайших гор бывшего СССР: </p>
-							<p>•	Пик Победы (7439 м)</p>
-							<p>•	Пик Хан-Тенгри (7010 м)</p>
-							<p>•	Пик Исмоила Сомони (бывший Пик коммунизма, 7495 м)</p>
-							<p>•	Пик Ленина (7134 м)</p>
-							<p>•	Пик Корженевской (7105 м).</p>
-							<p>Виталий Лазо получил титул «Снежный барс» в 2014 году.</p>
-							<?php } else { ?>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veritatis, possimus.</p>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusantium, nesciunt ut expedita magnam rerum!</p>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur provident deleniti neque praesentium, molestiae veritatis vero dolore sequi nesciunt nulla? Enim voluptas ratione ea quaerat odio sunt dicta non neque sequi necessitatibus qui, autem!</p>
-							<?php } ?>
+					<div class="my_accordion__item <?= $i == 1 ? ' active ' : ''; ?>">
+						<a href="javascript:void(0);" class="my_accordion__btn"><?= $my_accordion[$i]; ?></a>
+						<div class="my_accordion__info" style="display: <?= $i == 1 ? 'block' : 'none'; ?>;">
+							<h3 class="my_accordion__head"><?= $my_accordion[$i]; ?></h3>
+							<div class="my_accordion__text">
+								<?php if($i == 1){ ?>
+									<p>Первое восхождение Виталий Лазо совершил в 12 лет. В 16 лет занялся спортивным альпинизмом. В настоящий момент является действующим спортсменом.</p>
+									<p>«Снежный барс» — одно из самых престижных званий в международном альпинизме. Чтобы его получить, необходимо покорить пять высочайших гор бывшего СССР: </p>
+									<p>•	Пик Победы (7439 м)</p>
+									<p>•	Пик Хан-Тенгри (7010 м)</p>
+									<p>•	Пик Исмоила Сомони (бывший Пик коммунизма, 7495 м)</p>
+									<p>•	Пик Ленина (7134 м)</p>
+									<p>•	Пик Корженевской (7105 м).</p>
+									<p>Виталий Лазо получил титул «Снежный барс» в 2014 году.</p>
+								<?php } else { ?>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veritatis, possimus.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusantium, nesciunt ut expedita magnam rerum!</p>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur provident deleniti neque praesentium, molestiae veritatis vero dolore sequi nesciunt nulla? Enim voluptas ratione ea quaerat odio sunt dicta non neque sequi necessitatibus qui, autem!</p>
+								<?php } ?>
+							</div>
 						</div>
 					</div>
-				</div>
 				<?php } ?>
 
 			</div>
@@ -300,10 +300,36 @@ $my_accordion = [
 		</div>
 	</section>
 
+	<section class="first_carousel owl-carousel">
 
-	<br>
-	<br>
-	<br>
+		<div class="item">
+			<img src="img/first_carousel/item_1.jpg" alt="">
+		</div>
+		<div class="item item_wrap">
+			<div class="item">
+				<img src="img/first_carousel/item_2.jpg">
+			</div>
+			<div class="item">
+				<img src="img/first_carousel/item_3.jpg">
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/first_carousel/item_4.jpg" alt="">
+		</div>
+		<div class="item item_wrap">
+			<div class="item">
+				<img src="img/first_carousel/item_5.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/first_carousel/item_6.jpg" alt="">
+			</div>
+		</div>
+
+	</section>
+
+
+
+
 	<br>
 	<br>
 	<br>
@@ -328,33 +354,6 @@ $my_accordion = [
 	<br>	<br> -->
 
 
-<section class="first_carousel owl-carousel">
-
-<!-- 		<div class="item">
-			<img src="img/first_carousel/item_1.jpg" alt="">
-		</div>
-		<div class="item">
-				<img src="img/first_carousel/item_2.jpg" alt="">
-				<img src="img/first_carousel/item_3.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="img/first_carousel/item_4.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="img/first_carousel/item_5.jpg" alt="">
-			<img src="img/first_carousel/item_6.jpg" alt="">
-		</div> -->
-
-			<img src="img/first_carousel/item_1.jpg" alt="">
-				<img src="img/first_carousel/item_2.jpg" alt="">
-				<img src="img/first_carousel/item_3.jpg" alt="">
-			<img src="img/first_carousel/item_4.jpg" alt="">
-			<img src="img/first_carousel/item_5.jpg" alt="">
-			<img src="img/first_carousel/item_6.jpg" alt="">
-
-
-
-</section>
 
 
 
