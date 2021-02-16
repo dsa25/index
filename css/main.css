@@ -944,12 +944,15 @@ header .my_container:last-child{
 .reviews__desc > div svg{
 	color: #fff;
 }
+.prize_carousel.owl-carousel .owl-nav button.owl-next,
+.prize_carousel.owl-carousel .owl-nav button.owl-prev,
 .reviews_carousel.owl-carousel .owl-nav button.owl-next,
 .reviews_carousel.owl-carousel .owl-nav button.owl-prev{
 	top: -96px;
 	left: auto;
 	right: 110px;
 }
+.prize_carousel.owl-carousel .owl-nav button.owl-next,
 .reviews_carousel.owl-carousel .owl-nav button.owl-next{
 	right: 30px;
 }
@@ -1013,9 +1016,10 @@ header .my_container:last-child{
 	z-index: 1;
 }
 .cinema{
-	padding: 220px 0 40px 0;
+	padding: 220px 0 0 0;
 	position: relative;
 	background: #fff;
+	overflow: hidden;
 }
 .cinema .my_container{
 	position: relative;
@@ -1030,6 +1034,127 @@ header .my_container:last-child{
 	z-index: 1;
 	max-width: 75%;
 }
+.cinema__review{
+	margin: 40px 0 0;
+	user-select: none;
+	position: relative;
+}
+.cinema__review::before,
+.cinema__review::after{
+	content: '';
+	display: block;
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 10%;
+	z-index: 2;
+}
+.cinema__review::before{
+	left: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+}
+.cinema__review::after{
+	left: auto;
+	right: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+}
+.cinema__review.owl-carousel .owl-stage-outer{
+	padding-bottom: 45px;
+	padding-top: 30px;
+}
+.cinema__review .item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background: #fff;
+	padding: 15px;
+	border-radius: 6px;
+	box-shadow: 0px 12px 40px rgb(0 91 234 / 15%);
+}
+.cinema__review img{
+	border-radius: 50%;
+	width: 40px;
+	max-width: 40px;
+	height: 40px;
+	max-height: 40px;
+}
+.cinema__review__info{
+	padding-left: 15px;
+}
+.cinema__review p{margin: 0;}
+.cinema__review__name{
+	font-size: 13px;
+	font-weight: 600;
+}
+.cinema__review__time{
+	font-size: 12px;
+	opacity: 0.85;
+}
+.cinema__review__text{
+	padding-top: 5px;
+	font-size: 13px;
+}
+
+.prize_carousel .item{
+	background: #FFFFFF;
+	box-shadow: 0px 12px 40px rgba(0, 91, 234, 0.15);
+	border-radius: 6px;
+	padding: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 470px;
+}
+.prize_carousel.owl-carousel .owl-stage-outer{
+	padding: 50px 0 50px;
+}
+.partners__item{
+	display: inline-block;
+	margin: 45px 45px 45px 0;
+}
+.partners__item:nth-child(n+6){
+	margin: 45px auto;
+}
+.contacts{
+	padding: 200px 0 150px;
+	position: relative;
+	background: url(../img/contacts__bg.jpg) 100% 100% no-repeat;
+}
+.contacts .my_container{
+	position: relative;
+	z-index: 2;
+}
+.contacts .head{
+	margin-bottom: 50px;
+}
+.contacts__number{
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 32px;
+	margin: 0 0 25px 0;
+}
+.contacts__email{
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 32px;
+	margin: 0 0 35px 0;
+}
+.contacts__title{
+	font-weight: 600;
+	font-size: 54px;
+	line-height: 66px;
+	color: #718198;
+	margin-top: 50px;
+}
+.contacts .social_ico::before{
+	display: none;
+}
+.contacts .social_ico{
+	text-align: left;
+	padding: 0;
+}
 
 @media (max-width: 1815px){
 	.format_work__block{
@@ -1037,13 +1162,35 @@ header .my_container:last-child{
 	}
 }
 @media (max-width: 1199px){
+	.partners__item:nth-child(n+6){
+		margin: 45px 45px 45px 0;
+	}
 	.format_work__block{
 		background: #fff;
 	}
 }
 @media (max-width: 991px){
+	.prize_carousel.owl-carousel .owl-stage-outer{
+		padding: 30px 0 50px;
+	}
+	.prize_carousel .item{
+		min-height: 370px;
+	}
+	.cinema__review::before,
+	.cinema__review::after{
+		display: none;
+	}
+	.cinema__review .item{
+		padding: 10px;
+	}
+	.cinema{padding: 30px 0 40px 0;}
+	.cinema__bg {
+    top: 155px;
+    right: auto;
+    left:0;
+    max-width: 50%;
+}
 	.tours{padding: 40px 0 60px;}
-	.tours .head{margin-bottom: 25px;font-size: 18px;}
 	.tours__text{
 		line-height: 22px;
 		font-size: 14px;
@@ -1068,12 +1215,15 @@ header .my_container:last-child{
 		width: 150px;
 	}
 	.tours__bg{position: static;}
+	.prize_carousel.owl-carousel .owl-nav button.owl-next,
+	.prize_carousel.owl-carousel .owl-nav button.owl-prev,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-prev{
 		top: -85px;
 		left: auto;
 		right: 65px;
 	}
+	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next{
 		right: 15px;
 	}
@@ -1306,8 +1456,53 @@ header .my_container:last-child{
 	    width: 100%;
 	}
 	.tours .btn{width: 100%;}
+	.cinema .head,
+	.tours .head{margin-bottom: 25px;font-size: 18px;}
+	.cinema .head::before,
+	.tours .head::before {top: 7px;}
+	.cinema__bg {
+        position: relative;
+        top: 0;
+        margin-top: 15px;
+        right: auto;
+        left: 15px;
+        max-width: calc(100% + 80px);
+        width: calc(100% + 80px);
+	}
+	.cinema__review{
+		margin: -30px 0 0;
+	}
+	.cinema__review__name{
+		font-size: 12px;
+	}
+	.cinema__review__time{
+		font-size: 11px;
+	}
+	.cinema__review__text{
+		font-size: 12px;
+	}
+	.prize .head{
+		padding-right: 100px;
+	}
+	.partners__item{
+		margin: 25px;
+	}
+	.partners__item img{
+		max-width: 130px;
+	}
 }
 @media (max-width: 375px){
+	.partners__item{
+		margin: 20px;
+	}
+	.partners__item img{
+		max-width: 100px;
+		height: auto;
+	}
+	.prize_carousel.owl-carousel .owl-nav button.owl-next,
+	.prize_carousel.owl-carousel .owl-nav button.owl-prev{
+		top: -105px;
+	}
 	.hero__head{
 		font-size: 38px;
 		padding-left: 0;

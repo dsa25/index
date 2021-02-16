@@ -421,43 +421,120 @@
 
 	<section class="cinema">
 		<div class="my_container">
-			<div class="col-12 col-sm-12 col-lg-5 ml-auto">
+			<div class="col-12 col-sm-12 col-md-7 col-lg-5 ml-auto">
 				<h2 class="head">Кинематография</h2>
 				<div class="cinema__text tours__text">
 					<p>Студия «KISLOROD» — это организация видеосъемок от логистики до конечного продукта: идея, сценарий, режиссура, полный спектр услуг видеопроизводства, от видеороликов до полнометражных документальных фильмов, и от идеи до постпродакшна.</p> 
 					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p> 
 					<p>Наша съемочная группа специализируется на натурных съемках в самых тяжелых и экстремальных условиях, добывая редкие по красоте кадры, способные украсить любой фильм или видеоролик. Имеется опыт как постановочной, так и репортажной съемки любой сложности.</p>
 				</div>
-				<a href="javascript:void(0);" class="btn w-100"><span>Заказать съемку проекта</span></a>
+				<a href="javascript:void(0);" class="btn w-100"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
 			</div>
 		</div>
 		<img src="img/cinema_bg.jpg" class="cinema__bg">
+
+		<div class="cinema__review owl-carousel">
+
+			<?php for ($i=0; $i < 8; $i++) {  ?>
+			<div class="item">
+				<img src="img/users/avatar_1.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Users User</span>
+						<span class="cinema__review__time">Неделю надаз</span>
+					</p>
+					<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore distinctio quidem natus velit suscipit harum repellendus quos reiciendis! Numquam nulla vel commodi voluptas</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/users/avatar_1.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Users User</span>
+						<span class="cinema__review__time">Неделю надаз</span>
+					</p>
+					<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam, dignissimos, ducimus. Deserunt quasi nemo sed et quos ad eligendi, tempore corporis ratione sapiente vero voluptates vel voluptas commodi, modi sunt sequi, est porro fuga ipsa nisi expedita delectus itaque optio, voluptatibus. Excepturi, tempora optio placeat pariatur, illum voluptatem voluptate facere?</p>
+				</div>
+			</div>
+			<?php } ?>
+
+		</div>
 	</section>
 
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-<!-- 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-			<div class="col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-			<div class="col-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
+	<section class="prize reviews">
+		<div class="my_container">
+			<div class="row">
+				<div class="col-12"><h2 class="head">НАГРАДЫ И ФИЛЬМЫ</h2></div>
+			</div>
 		</div>
-	</div>
-	<br>
-	<br>
-	<div class="my_container d-flex">
-		<div class="col-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-		<div class="col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-		<div class="col-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat temporibus, cumque, nobis amet laborum? Cum, aut natus praesentium, nam nisi veniam optio modi illum? Laborum recusandae sit vel quibusdam.</div>
-	</div>
-	<br>
-	<br>	<br> -->
 
+		<div class="prize_carousel owl-carousel">
+			
+			<?php for ($i=0; $i < 4; $i++) {  ?>
+
+			<div class="item">
+				<img src="img/prize/prize_1.jpg">
+				<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+					<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/prize/prize_2.jpg">
+			</div>
+
+			<div class="item">
+				<img src="img/prize/prize_3.jpg">
+			</div>
+
+			<div class="item">
+				<img src="img/prize/prize_4.jpg">
+			</div>
+			
+			<?php } ?>
+
+		</div>
+
+	</section>
+
+	<section class="partners">
+		<div class="my_container">
+			<div class="row">
+				<div class="col-12"><h2 class="head">ПАРТНЕРЫ</h2></div>
+				<div class="d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap col-12 col-lg-12">
+					<a href="#" class="partners__item"><img src="img/partners/partners2.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners3.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners4.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners5.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners6.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners7.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners8.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners9.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners10.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners11.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners1.svg"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="my_container">
+			<div class="row flex-column">
+				<h2 class="head">Контакты</h2>
+				<a href="tel:+7 (928) 259-11-18" class="contacts__number email_top">+7 (928) 259-11-18</a>
+				<a href="mailto:vlazo@yandex.ru" class="contacts__email email_top">vlazo@yandex.ru</a>
+				<div class="social_ico">
+					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#facebook"></use></svg></a>
+					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#instagram"></use></svg></a>
+					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#telegram"></use></svg></a>
+					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
+					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
+				</div>
+				<h2 class="contacts__title">Горы зовут тех, чья <br> душа им по росту!</h2>	
+			</div>
+		</div>
+	</section>
 
 
 
