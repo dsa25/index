@@ -424,8 +424,8 @@
 			<div class="col-12 col-sm-12 col-md-7 col-lg-5 ml-auto">
 				<h2 class="head">Кинематография</h2>
 				<div class="cinema__text tours__text">
-					<p>Студия «KISLOROD» — это организация видеосъемок от логистики до конечного продукта: идея, сценарий, режиссура, полный спектр услуг видеопроизводства, от видеороликов до полнометражных документальных фильмов, и от идеи до постпродакшна.</p> 
-					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p> 
+					<p>Студия «KISLOROD» — это организация видеосъемок от логистики до конечного продукта: идея, сценарий, режиссура, полный спектр услуг видеопроизводства, от видеороликов до полнометражных документальных фильмов, и от идеи до постпродакшна.</p>
+					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p>
 					<p>Наша съемочная группа специализируется на натурных съемках в самых тяжелых и экстремальных условиях, добывая редкие по красоте кадры, способные украсить любой фильм или видеоролик. Имеется опыт как постановочной, так и репортажной съемки любой сложности.</p>
 				</div>
 				<a href="javascript:void(0);" class="btn w-100"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
@@ -469,7 +469,7 @@
 		</div>
 
 		<div class="prize_carousel owl-carousel">
-			
+
 			<?php for ($i=0; $i < 4; $i++) {  ?>
 
 			<div class="item">
@@ -490,7 +490,7 @@
 			<div class="item">
 				<img src="img/prize/prize_4.jpg">
 			</div>
-			
+
 			<?php } ?>
 
 		</div>
@@ -520,7 +520,7 @@
 
 	<section class="contacts">
 		<div class="my_container">
-			<div class="row flex-column">
+			<div class="d-flex flex-column">
 				<h2 class="head">Контакты</h2>
 				<a href="tel:+7 (928) 259-11-18" class="contacts__number email_top">+7 (928) 259-11-18</a>
 				<a href="mailto:vlazo@yandex.ru" class="contacts__email email_top">vlazo@yandex.ru</a>
@@ -531,12 +531,32 @@
 					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
 					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
 				</div>
-				<h2 class="contacts__title">Горы зовут тех, чья <br> душа им по росту!</h2>	
+				<h2 class="contacts__title">Горы зовут тех, чья <br> душа им по росту!</h2>
 			</div>
 		</div>
+		<img src="img/contacts__bg.jpg" class="contacts__bg d-none d-lg-block">
+		<img src="img/contacts__bg_m.jpg" class="contacts__bg d-block d-lg-none">
 	</section>
 
-
+	<footer>
+		<div class="my_container">
+			<div class="foot d-flex align-items-center justify-content-between">
+				<h4 class="foot__title">Мотивационный спикер <br> и организатор индивидуальных туров</h4>
+				<div class="foot__menu d-none d-md-block">
+					<a href="#">Спикерство</a>
+					<a href="#">Кинематография</a>
+					<a href="#">Индивидуальные туры</a>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center justify-content-between">
+				<div class="copyright">©Виталий Лазо, 2020</div>
+				<div class="text-nowrap wr_link">
+					<a href="#" class="rules__link">Политика <br class="d-md-none"> конфиденциальности</a>
+					<a href="#" class="rules__link">Обработка <br class="d-md-none"> персональных данных</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="js/jquery-3.5.1.min.js"></script>
