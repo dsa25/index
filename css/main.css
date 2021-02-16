@@ -881,6 +881,7 @@ header .my_container:last-child{
 .owl-carousel .owl-nav button:hover{opacity: 1;}
 
 .reviews{padding-top: 50px;}
+.reviews .head{margin-bottom: 50px;}
 .reviews__avatar{
 	max-width: 60px;
 	height: auto;
@@ -906,7 +907,7 @@ header .my_container:last-child{
 	border-radius: 6px;
 	box-shadow: 0px 6px 30px 5px rgba(0, 91, 234, 0.15);
 	overflow: hidden;
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 .reviews__desc > div{
@@ -943,7 +944,92 @@ header .my_container:last-child{
 .reviews__desc > div svg{
 	color: #fff;
 }
+.reviews_carousel.owl-carousel .owl-nav button.owl-next,
+.reviews_carousel.owl-carousel .owl-nav button.owl-prev{
+	top: -96px;
+	left: auto;
+	right: 110px;
+}
+.reviews_carousel.owl-carousel .owl-nav button.owl-next{
+	right: 30px;
+}
+.tours{
+	position: relative;
+	padding: 255px 0 145px;
+	overflow: hidden;
+	background: #fff;
+}
+.tours .my_container{
+	position: relative;
+	z-index: 2;
+}
+.tours .head{margin-bottom: 50px;}
+.tours__bg{
+	position: absolute;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	max-width: 100%;
+}
+.tours__text{
+	opacity: 0.85;
+	font-size: 18px;
+}
+.tours__price{
+	margin: 30px 0 35px;
+	text-transform: uppercase;
+}
+.tours__autor{
+	position: relative;
+	padding: 30px 110px 30px 30px;
+	background: #fff;
+	margin-left: 100px;
+	width: 326px;
+	box-shadow: 0px 12px 40px rgba(0, 91, 234, 0.15);
+	border-radius: 6px;
+}
 
+.tours__autor p{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.tours__autor span{
+	font-size: 16px;
+	position: relative;
+	z-index: 2;
+}
+
+.tours__autor img{
+	position: absolute;
+	bottom: 0;
+	right: -95px;
+	left: auto;
+	z-index: 1;
+}
+.cinema{
+	padding: 220px 0 40px 0;
+	position: relative;
+	background: #fff;
+}
+.cinema .my_container{
+	position: relative;
+    z-index: 2;
+}
+.cinema .head{margin-bottom: 50px;}
+.cinema__bg{
+	position: absolute;
+	top: 155px;
+	left: auto;
+	right: calc(50% - 250px);
+	z-index: 1;
+	max-width: 75%;
+}
 
 @media (max-width: 1815px){
 	.format_work__block{
@@ -956,6 +1042,50 @@ header .my_container:last-child{
 	}
 }
 @media (max-width: 991px){
+	.tours{padding: 40px 0 60px;}
+	.tours .head{margin-bottom: 25px;font-size: 18px;}
+	.tours__text{
+		line-height: 22px;
+		font-size: 14px;
+	}
+	.tours__autor{
+		padding: 20px 60px 20px 20px;
+		margin-left: 100px;
+		width: 235px;
+	}
+	.tours__autor p{
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	.tours__autor span{
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.tours__autor img{
+		right: -60px;
+		height: auto;
+		width: 150px;
+	}
+	.tours__bg{position: static;}
+	.reviews_carousel.owl-carousel .owl-nav button.owl-next,
+	.reviews_carousel.owl-carousel .owl-nav button.owl-prev{
+		top: -85px;
+		left: auto;
+		right: 65px;
+	}
+	.reviews_carousel.owl-carousel .owl-nav button.owl-next{
+		right: 15px;
+	}
+	.reviews__user p{font-size: 16px;}
+	.reviews__user span{font-size: 12px;}
+	.reviews__desc > div svg{max-width: 40px;}
+	.reviews__avatar{
+		max-width: 50px;
+	}
+	.reviews__desc{
+		margin-top: 10px;
+	}
 	.first_carousel__info svg{
 		max-width: 40px;
 		/*height: 96px;*/
@@ -1054,8 +1184,8 @@ header .my_container:last-child{
 		top: 30px;
 	}
 	.kino-hero__btn{
-    margin: 20px 12px 20px 20px;
-}
+	    margin: 20px 12px 20px 20px;
+	}
 	.kino-hero__btn .item{
 		width: 110px;
 		min-width: 110px;
@@ -1159,6 +1289,23 @@ header .my_container:last-child{
 		font-size: 14px;
 		line-height: 22px;
 	}
+	.tours .my_container > .d-flex,
+	.tours .my_container{position: static;}
+	.tours__autor{
+		position: absolute;
+		top: auto;
+		bottom: 15px;
+		left: calc(50% - 140px);
+		margin: 0;
+		padding-right: 70px;
+	}
+	.tours__autor img{right: -50px;}
+	.tours__bg {
+	    position: static;
+	    margin: 0 auto;
+	    width: 100%;
+	}
+	.tours .btn{width: 100%;}
 }
 @media (max-width: 375px){
 	.hero__head{
