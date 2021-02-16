@@ -18,6 +18,15 @@ $('body').on('click', '.btn_details .item', function() {
 });
 
 
+function modalMsg(list = {title:'Modal title', text: 'Сообщение', type: ''}){
+	var modal = $('#form_msg');
+	modal.removeClass('success danger warning').addClass(list.type);
+	modal.find('.modal-title').text(list.title);
+	modal.find('.form_msg__item').text(list.text);
+	modal.modal('show');
+}
+
+
 
 $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', function() {
 	$('.my_accordion__item').removeClass('active').find('.my_accordion__info').slideUp('slow');

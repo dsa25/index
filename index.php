@@ -559,8 +559,27 @@
 	</footer>
 
 
+
+	<div class="modal fade form_msg form_msg-danger danger show" id="form_msg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg_block">
+				<div class="modal-header">
+					<h5 class="modal-title">Ох...</h5>
+					<a href="javascript:void(0);" class="close link link-danger-h" data-dismiss="modal" aria-label="Close">
+						<i class="fas fa-times"></i>
+					</a>
+				</div>
+				<h1 class="form_msg__ico link-success"><i class="far fa-check-circle"></i></h1>
+				<h1 class="form_msg__ico link-danger"><i class="fas fa-exclamation-triangle"></i></h1>
+				<h1 class="form_msg__ico link-warning"><i class="fas fa-exclamation-circle"></i></h1>
+				<p class="form_msg__item">Кажется, вы забыли обозвать беседу...</p>
+			</div>
+		</div>
+	</div>
+
+
 	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
