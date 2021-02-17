@@ -302,50 +302,127 @@
 		</div>
 	</section>
 
-	<section class="first_carousel owl-carousel">
+	<section class="first_carousel owl-carousel first_carousel_desctop">
 
 		<div class="item">
-			<img src="img/first_carousel/item_1.jpg" alt="" >
-			<div class="first_carousel__info">
-				<h6>Заголовок</h6>
-				<span>описание</span>
+			<div class="wr_img">
+				<img src="img/first_carousel/item_1.jpg" alt="" >
+				<div class="first_carousel__info">
+					<h6>Заголовок</h6>
+					<span>описание</span>
+				</div>
 			</div>
 		</div>
 		<div class="item item_wrap">
-			<div class="item">
+			<div class="item item_item">
+				<div class="wr_img">
+					<img src="img/first_carousel/item_2.jpg">
+					<div class="first_carousel__info">
+						<h6>Иваныч</h6>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="item item_item">
+				<div class="wr_img">
+					<img src="img/first_carousel/item_3.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wr_img">
+				<img src="img/first_carousel/item_4.jpg" alt="">
+				<div class="first_carousel__info">
+					<a href="#" class="m-auto">
+						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
+						</svg>
+						<h3>Смотреть <br> видео</h3>
+					</a>
+					<p>Индивидуальное восхождение</p>
+					<h4>Виталий Лазо</h4>
+					<span>гора Ельбрус, 24.01.2020 г.</span>
+				</div>
+			</div>
+		</div>
+		<div class="item item_wrap">
+			<div class="item item_item">
+				<div class="wr_img">
+					<img src="img/first_carousel/item_5.jpg" alt="">
+					<div class="first_carousel__info">
+						<h6>Заголовок</h6>
+						<span>описание</span>
+					</div>
+				</div>
+			</div>
+			<div class="item item_item">
+				<div class="wr_img">
+					<img src="img/first_carousel/item_6.jpg" alt="">
+					<div class="first_carousel__info">
+						<h6>Заголовок</h6>
+						<span>описание</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<!-- 	<section class="first_carousel owl-carousel first_carousel_mobile">
+
+		<div class="item">
+			<div class="wr_img">
+				<img src="img/first_carousel/item_1.jpg" alt="" >
+				<div class="first_carousel__info">
+					<h6>Заголовок</h6>
+					<span>описание</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="item item_item">
+			<div class="wr_img">
 				<img src="img/first_carousel/item_2.jpg">
 				<div class="first_carousel__info">
 					<h6>Иваныч</h6>
 					<span></span>
 				</div>
 			</div>
-			<div class="item">
+		</div>
+		<div class="item item_item">
+			<div class="wr_img">
 				<img src="img/first_carousel/item_3.jpg">
 			</div>
 		</div>
+
 		<div class="item">
-			<img src="img/first_carousel/item_4.jpg" alt="">
-			<div class="first_carousel__info">
-				<a href="#" class="m-auto">
-					<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
-						<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
-					</svg>
-					<h3>Смотреть <br> видео</h3>
-				</a>
-				<p>Индивидуальное восхождение</p>
-				<h4>Виталий Лазо</h4>
-				<span>гора Ельбрус, 24.01.2020 г.</span>
+			<div class="wr_img">
+				<img src="img/first_carousel/item_4.jpg" alt="">
+				<div class="first_carousel__info">
+					<a href="#" class="m-auto">
+						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
+						</svg>
+						<h3>Смотреть <br> видео</h3>
+					</a>
+					<p>Индивидуальное восхождение</p>
+					<h4>Виталий Лазо</h4>
+					<span>гора Ельбрус, 24.01.2020 г.</span>
+				</div>
 			</div>
 		</div>
-		<div class="item item_wrap">
-			<div class="item">
+
+		<div class="item item_item">
+			<div class="wr_img">
 				<img src="img/first_carousel/item_5.jpg" alt="">
 				<div class="first_carousel__info">
 					<h6>Заголовок</h6>
 					<span>описание</span>
 				</div>
 			</div>
-			<div class="item">
+		</div>
+		<div class="item item_item">
+			<div class="wr_img">
 				<img src="img/first_carousel/item_6.jpg" alt="">
 				<div class="first_carousel__info">
 					<h6>Заголовок</h6>
@@ -354,7 +431,7 @@
 			</div>
 		</div>
 
-	</section>
+	</section> -->
 
 	<section class="reviews">
 		<div class="my_container">
@@ -473,9 +550,11 @@
 			<?php for ($i=0; $i < 4; $i++) {  ?>
 
 				<div class="item">
-					<img src="img/prize/prize_1.jpg">
-					<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-						<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+					<div>
+						<img src="img/prize/prize_1.jpg">
+						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+							<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+						</div>
 					</div>
 				</div>
 
