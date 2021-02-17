@@ -7,8 +7,8 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
+	<link rel="stylesheet" href="css/main.css?v11">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -670,8 +670,8 @@
 
 
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js?v11"></script>
+<script src="js/owl.carousel.min.js?v11"></script>
+<script src="js/main.js?v11"></script>
 </body>
 </html>

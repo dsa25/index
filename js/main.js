@@ -68,9 +68,11 @@ if($('body').width() <= 767){
   $('.first_carousel > .item').each(function() {
     if($(this).hasClass('item_wrap')){
       $(this).after($(this).html());
-      $(this).hide();
+      $(this).remove();
+      // $(this).hide();
     }
   });
+}
 
 
 $(document).ready(function(){
