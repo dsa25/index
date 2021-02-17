@@ -1,10 +1,12 @@
 
 $('body').on('click', 'a.burger_menu', function() {
+  $('body').addClass('modal-open');
 	$('.menu_move').addClass('active');
 });
 
 $('body').on('click', '.menu_move a.btn_close', function() {
 	$('.menu_move').removeClass('active');
+  $('body').removeClass('modal-open');
 });
 
 
@@ -17,12 +19,19 @@ $('body').on('click', '.btn_details .item', function() {
 	$('.details_hero').slideDown('slow');
 });
 
+$('body').on('click', '.btn_scrollTop', function() {
+  $('html, body').animate({scrollTop:0}, '500');
+});
 
-function modalMsg(list = {title:'Modal title', text: 'Сообщение', type: ''}){
+$('body').on('click', '.menu a, .foot__menu a', function() {
+  var id = $(this).attr('href');
+  var top = $(id).position().top;
+  $('html, body').animate({scrollTop: top}, '500');
+});
+
+
+function modalMsg(){
 	var modal = $('#form_msg');
-	modal.removeClass('success danger warning').addClass(list.type);
-	modal.find('.modal-title').text(list.title);
-	modal.find('.form_msg__item').text(list.text);
 	modal.modal('show');
 }
 
@@ -44,6 +53,14 @@ if($('body').width() <= 540){
 
 $(document).ready(function(){
 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $(".btn_scrollTop").addClass("active");
+    } else {
+      $(".btn_scrollTop").removeClass("active");
+    };
+  });
+
   $('.first_carousel').owlCarousel({
       nav: true,
       navText:
@@ -52,31 +69,21 @@ $(document).ready(function(){
       items: 4,
       loop: true,
       margin:10,
-      autoWidth:true,
+      autoWidth:false,
       responsive:{
       	0:{
           autoWidth:false,
       		autoHeight:true,
       		margin:10,
       		items: 1,
-      		merge:false,
-      		mergeFit:false,
       	},
-        540:{
-          autoWidth:false,
-          autoHeight:true,
-          margin:10,
-          items: 1,
-          merge:false,
-          mergeFit:false,
-        },
-        767:{
+        768:{
           autoWidth:true,
-          items: 2,
+          autoHeight:false,
           margin:10,
-          merge:true,
-          mergeFit:true,
+          items: 2,
         },
+
       }
 
 
@@ -87,6 +94,7 @@ $(document).ready(function(){
       navText:
         ['<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>',
          '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>'],
+      margin: 15,
       responsive:{
         0:{
           margin: 15,

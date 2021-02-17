@@ -16,11 +16,11 @@
 	<header>
 		<div class="my_container d-flex align-items-center">
 			<div class="menu d-none d-md-block">
-				<a href="#">Спикерство</a>
-				<a href="#">Кинематография</a>
-				<a href="#">Индивидуальные туры</a>
+				<a href="#speaker">Спикерство</a>
+				<a href="#cinema">Кинематография</a>
+				<a href="#tours">Индивидуальные туры</a>
 			</div>
-			<a href="#" class="email_top d-none d-md-block">vlazo@yandex.ru</a>
+			<a href="mailto:vlazo@yandex.ru" class="email_top d-none d-md-block">vlazo@yandex.ru</a>
 			<a href="javascript:void(0);" class="burger_menu"><span></span></a>
 		</div>
 
@@ -107,7 +107,7 @@
 	</header>
 
 	<div class="menu_move">
-		<div class="container">
+		<div class="my_container">
 			<div class="menu_move__top row justify-content-between align-items-start flex-nowrap">
 				<div class="col-9 col-md-5">
 					<h4 class="menu_move__title ">Мотивационый спикер и организатор индивидуальных актив туров</h4>
@@ -127,7 +127,7 @@
 					<a href="javascript:void(0);" class="menu_move__item">Награды и фильмы</a>
 					<a href="javascript:void(0);" class="menu_move__item">Партнеры</a>
 					<a href="javascript:void(0);" class="menu_move__item">Контакты</a>
-					<a href="javascript:void(0);" class="btn"><span>Заказать съемку проекта</span></a>
+					<a href="javascript:void(0);" class="btn" onclick="modalMsg();return false;"><span>Заказать съемку проекта</span></a>
 				</div>
 			</div>
 			<div class="row">
@@ -200,7 +200,7 @@
 		</div>
 	</section>
 
-	<section class="speaker">
+	<section class="speaker" id="speaker">
 		<div class="my_container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-12 col-md-7">
@@ -293,7 +293,7 @@
 				</div>
 				<div class="w-100">
 					<div class="col-12 col-sm-5 col-md-4 ml-auto mr-auto pb-5 pt-3">
-						<a href="javascript:void(0);" class="btn w-100 d-block"><span>Связаться</span></a>
+						<a href="javascript:void(0);" class="btn w-100 d-block" onclick="modalMsg();return false;"><span>Связаться</span></a>
 					</div>
 				</div>
 				<img src="/img/people_2.png" class="format_work__img img2 d-none d-xl-block">
@@ -390,7 +390,7 @@
 
 	</section>
 
-	<section class="tours">
+	<section class="tours" id="tours">
 		<div class="my_container">
 			<div class="col-12">
 				<h2 class="head">Индивидуальные туры</h2>
@@ -407,7 +407,7 @@
 				</div>
 			</div>
 			<div class="col-12 d-flex align-items-start justify-content-start">
-				<a href="javascript:void(0);" class="btn"><span>Заказать тур</span></a>
+				<a href="javascript:void(0);" class="btn" onclick="modalMsg();return false;"><span>Заказать тур</span></a>
 				<div class="tours__autor">
 					<p>Виталий Лазо</p>
 					<span>Лично сопровождает каждый тур от начала и до конца.</span>
@@ -419,7 +419,7 @@
 		<img src="img/tours_bg_m.jpg" class="tours__bg d-block d-sm-none">
 	</section>
 
-	<section class="cinema">
+	<section class="cinema" id="cinema">
 		<div class="my_container">
 			<div class="col-12 col-sm-12 col-md-7 col-lg-5 ml-auto">
 				<h2 class="head">Кинематография</h2>
@@ -428,7 +428,7 @@
 					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p>
 					<p>Наша съемочная группа специализируется на натурных съемках в самых тяжелых и экстремальных условиях, добывая редкие по красоте кадры, способные украсить любой фильм или видеоролик. Имеется опыт как постановочной, так и репортажной съемки любой сложности.</p>
 				</div>
-				<a href="javascript:void(0);" class="btn w-100"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
+				<a href="javascript:void(0);" class="btn w-100" onclick="modalMsg();return false;"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
 			</div>
 		</div>
 		<img src="img/cinema_bg.jpg" class="cinema__bg">
@@ -436,26 +436,26 @@
 		<div class="cinema__review owl-carousel">
 
 			<?php for ($i=0; $i < 8; $i++) {  ?>
-			<div class="item">
-				<img src="img/users/avatar_1.jpg">
-				<div class="cinema__review__info">
-					<p>
-						<span class="cinema__review__name">Users User</span>
-						<span class="cinema__review__time">Неделю надаз</span>
-					</p>
-					<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore distinctio quidem natus velit suscipit harum repellendus quos reiciendis! Numquam nulla vel commodi voluptas</p>
+				<div class="item">
+					<img src="img/users/avatar_1.jpg">
+					<div class="cinema__review__info">
+						<p>
+							<span class="cinema__review__name">Users User</span>
+							<span class="cinema__review__time">Неделю надаз</span>
+						</p>
+						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore distinctio quidem natus velit suscipit harum repellendus quos reiciendis! Numquam nulla vel commodi voluptas</p>
+					</div>
 				</div>
-			</div>
-			<div class="item">
-				<img src="img/users/avatar_1.jpg">
-				<div class="cinema__review__info">
-					<p>
-						<span class="cinema__review__name">Users User</span>
-						<span class="cinema__review__time">Неделю надаз</span>
-					</p>
-					<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam, dignissimos, ducimus. Deserunt quasi nemo sed et quos ad eligendi, tempore corporis ratione sapiente vero voluptates vel voluptas commodi, modi sunt sequi, est porro fuga ipsa nisi expedita delectus itaque optio, voluptatibus. Excepturi, tempora optio placeat pariatur, illum voluptatem voluptate facere?</p>
+				<div class="item">
+					<img src="img/users/avatar_1.jpg">
+					<div class="cinema__review__info">
+						<p>
+							<span class="cinema__review__name">Users User</span>
+							<span class="cinema__review__time">Неделю надаз</span>
+						</p>
+						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam, dignissimos, ducimus. Deserunt quasi nemo sed et quos ad eligendi, tempore corporis ratione sapiente vero voluptates vel voluptas commodi, modi sunt sequi, est porro fuga ipsa nisi expedita delectus itaque optio, voluptatibus. Excepturi, tempora optio placeat pariatur, illum voluptatem voluptate facere?</p>
+					</div>
 				</div>
-			</div>
 			<?php } ?>
 
 		</div>
@@ -472,24 +472,24 @@
 
 			<?php for ($i=0; $i < 4; $i++) {  ?>
 
-			<div class="item">
-				<img src="img/prize/prize_1.jpg">
-				<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-					<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+				<div class="item">
+					<img src="img/prize/prize_1.jpg">
+					<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+						<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+					</div>
 				</div>
-			</div>
 
-			<div class="item">
-				<img src="img/prize/prize_2.jpg">
-			</div>
+				<div class="item">
+					<img src="img/prize/prize_2.jpg">
+				</div>
 
-			<div class="item">
-				<img src="img/prize/prize_3.jpg">
-			</div>
+				<div class="item">
+					<img src="img/prize/prize_3.jpg">
+				</div>
 
-			<div class="item">
-				<img src="img/prize/prize_4.jpg">
-			</div>
+				<div class="item">
+					<img src="img/prize/prize_4.jpg">
+				</div>
 
 			<?php } ?>
 
@@ -543,9 +543,9 @@
 			<div class="foot d-flex align-items-center justify-content-between">
 				<h4 class="foot__title">Мотивационный спикер <br> и организатор индивидуальных туров</h4>
 				<div class="foot__menu d-none d-md-block">
-					<a href="#">Спикерство</a>
-					<a href="#">Кинематография</a>
-					<a href="#">Индивидуальные туры</a>
+					<a href="#speaker">Спикерство</a>
+					<a href="#cinema">Кинематография</a>
+					<a href="#tours">Индивидуальные туры</a>
 				</div>
 			</div>
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
@@ -558,29 +558,41 @@
 		</div>
 	</footer>
 
+	<a href="javascript:void(0);" class="btn_scrollTop">
+		<span>
+			<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>
+		</span>
+	</a>
 
-
-	<div class="modal fade form_msg form_msg-danger danger show" id="form_msg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
+	<!-- Modal -->
+	<div class="modal fade form_msg form_msg-danger" id="form_msg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content bg_block">
-				<div class="modal-header">
-					<h5 class="modal-title">Ох...</h5>
-					<a href="javascript:void(0);" class="close link link-danger-h" data-dismiss="modal" aria-label="Close">
-						<i class="fas fa-times"></i>
-					</a>
-				</div>
-				<h1 class="form_msg__ico link-success"><i class="far fa-check-circle"></i></h1>
-				<h1 class="form_msg__ico link-danger"><i class="fas fa-exclamation-triangle"></i></h1>
-				<h1 class="form_msg__ico link-warning"><i class="fas fa-exclamation-circle"></i></h1>
-				<p class="form_msg__item">Кажется, вы забыли обозвать беседу...</p>
+			<div class="modal-content">
+				<a href="javascript:void(0);" class="close link link-danger-h" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
+					<defs>
+						<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#00C6FB"/>
+							<stop offset="1" stop-color="#005BEA"/>
+						</linearGradient>
+					</defs>
+				</svg>
+			</a>
+			<h5 class="modal-head">Связаться по телефону</h5>
+			<h6 class="modal-title">Заполните форму и мы свяжемся с вами <br> в тение 15 минут</h6>
+			<input type="text" placeholder="Как к Вам обращаться?">
+			<input type="text" placeholder="Ваш номер телефона">
+			<a href="javascript:void(0);" class="btn"><span>Связаться</span></a>
+			<div class="agrements">Нажимаю кнопку связаться Я соглашаюсь с <a href="#">политикой конфиденциальности</a> и <a href="#">обработкой персональных данных</a>
 			</div>
 		</div>
 	</div>
+</div>
 
 
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/main.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
