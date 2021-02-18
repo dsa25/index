@@ -302,7 +302,7 @@
 		</div>
 	</section>
 
-	<section class="first_carousel owl-carousel first_carousel_desctop">
+	<section class="first_carousel owl-carousel" data-device="d">
 
 		<div class="item">
 			<div class="wr_img">

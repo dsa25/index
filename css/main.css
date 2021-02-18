@@ -32,10 +32,16 @@ body{
 	color: #010111;
 	position: relative;
 	min-width: 320px;
-	background: #fff url(../img/body_bg.png) 0 80vh repeat-y;
+	/*background: #fff url(../img/body_bg.png) 0 160vh no-repeat;*/
+	background: url(../img/body_bg_1.png) 0 1400px no-repeat,
+  url(../img/body_bg_2.png) 0 3750px no-repeat,
+  url(../img/body_bg_3.png) 0 7250px no-repeat;
 	background-size: 100% auto;
+	transition: background 0.5s;
 }
 body.modal-open{padding-right: 17px;}
+body.bg_pos{background-position: 0 calc(160vh + 635px), 0 calc(395vh + 635px), 0 calc(777vh + 635px);}
+body.bg_pos{background-position: 0 calc(1560px + 635px), 0 calc(3900px + 635px), 0 calc(7250px + 635px);}
 .my_container{
 	padding: 0 15px;
 	margin: 0 auto;
@@ -1325,6 +1331,10 @@ footer .rules__link{margin-left: 30px;}
 		background: rgb(255 255 255 / 75%);
 	}
 }
+@media (max-width: 1360px){
+	body{background-position: 0 1560px, 0 3900px, 0 7250px;}
+	body.bg_pos{background-position: 0 calc(1560px + 635px), 0 calc(3900px + 635px), 0 calc(7250px + 635px);}
+}
 @media (max-width: 1199px){
 	.partners__item:nth-child(n+6){
 		margin: 45px 45px 45px 0;
@@ -1332,10 +1342,10 @@ footer .rules__link{margin-left: 30px;}
 	.format_work__block{
 		background: #fff;
 	}
+	body{background: #fff;}
 }
 @media (max-width: 991px){
 	.btn_scrollTop{display: none;}
-	body{background: #fff;}
 	body.modal-open{padding-right: 0;}
 	.contacts{padding: 30px 0 75%;}
 	.contacts__bg{

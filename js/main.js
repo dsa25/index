@@ -6,17 +6,22 @@ $('body').on('click', 'a.burger_menu', function() {
 
 $('body').on('click', '.menu_move a.btn_close', function() {
 	$('.menu_move').removeClass('active');
-  $('body').removeClass('modal-open');
 });
 
 
 
 $('body').on('click', '.details_hero .btn_close', function() {
 	$('.details_hero').slideUp('slow');
+  if($('body').width() >= 1200){
+    $('body').removeClass('bg_pos');
+  }
 });
 
 $('body').on('click', '.btn_details .item', function() {
 	$('.details_hero').slideDown('slow');
+  if($('body').width() >= 1200){
+    $('body').addClass('bg_pos');
+  }
 });
 
 $('body').on('click', '.btn_scrollTop', function() {
@@ -41,12 +46,10 @@ function modalMsg(){
 	modal.modal('show');
 }
 
-
+var arrowSvg = '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>';
 var carousel_Settings = {
       nav: true,
-      navText:
-        ['<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>',
-         '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>'],
+      navText: [arrowSvg, arrowSvg],
       items: 4,
       loop: true,
       margin:0,
@@ -68,66 +71,44 @@ var carousel_Settings = {
   };
 
 var owl = $('.first_carousel');
+var first_carouselHtml = owl.html();
 function initializeOwl(){
-  if($('body').width() <= 767) {
+  if($(document).width() <= 767 && owl.attr('data-device') == 'd') {
 
-    if(owl.hasClass('mobile'))
+    owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    owl.find('.owl-stage-outer').children().unwrap();
+
     $('.first_carousel > .item').each(function() {
       if($(this).hasClass('item_wrap')){
         $(this).after($(this).html());
-        $(this).hide();
+        $(this).remove();
       }
     });
-    owl.owlCarousel( carousel_Settings );
 
-  } else {
+    owl.addClass('owl-carousel');
+    owl.owlCarousel( carousel_Settings );
+    owl.attr('data-device', 'm');
+
+  } else if($(document).width() >= 768 && owl.attr('data-device') == 'm'){
+
     owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
     owl.find('.owl-stage-outer').children().unwrap();
+
+    owl.html(first_carouselHtml);
+    owl.addClass('owl-carousel');
+    owl.owlCarousel( carousel_Settings );
+    owl.attr('data-device', 'd');
+
   }
 }
 
-// initilize after window resize
+
 var id;
 $(window).resize( function() {
   clearTimeout(id);
   id = setTimeout(initializeOwl, 500);
 });
 
-// initilize onload
-initializeOwl();
-
-function sortItemsCarousel(){
-  if($('body').width() <= 767){
-
-  } else{
-    $('.first_carousel > .item').each(function() {
-      if($(this).hasClass('item_item')){
-        $(this).remove();
-      }
-      if($(this).hasClass('item_wrap')){
-        $(this).show();
-      }
-    });
-  }
-}
-
-
-// sortItemsCarousel();
-
-$(window).resize(function() {
-    sortItemsCarousel();
-});
-
-
-// if($('body').width() <= 767){
-//   $('.first_carousel > .item').each(function() {
-//     if($(this).hasClass('item_wrap')){
-//       $(this).after($(this).html());
-//       $(this).remove();
-//       // $(this).hide();
-//     }
-//   });
-// }
 
 
 $(document).ready(function(){
@@ -142,36 +123,9 @@ $(document).ready(function(){
 
   $('.first_carousel').owlCarousel(carousel_Settings);
 
-  // $('.first_carousel_mobile').owlCarousel({
-  //     nav: true,
-  //     navText:
-  //       ['<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>',
-  //        '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>'],
-  //     items: 4,
-  //     loop: true,
-  //     margin:0,
-  //     autoWidth:false,
-  //     responsive:{
-  //       0:{
-  //         autoWidth:false,
-  //         margin:0,
-  //         items: 1,
-  //       },
-  //       768:{
-  //         autoWidth:true,
-  //         margin:10,
-  //         items: 2,
-  //       },
-
-  //     }
-
-  // });
-
   $('.reviews_carousel').owlCarousel({
       nav: true,
-      navText:
-        ['<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>',
-         '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>'],
+      navText: [arrowSvg, arrowSvg],
       margin: 15,
       responsive:{
         0:{
@@ -190,8 +144,6 @@ $(document).ready(function(){
           center: true,
         },
       }
-      // merge:true,
-      // mergeFit:true,
 
   });
 
@@ -220,26 +172,18 @@ $(document).ready(function(){
 
   $('.prize_carousel').owlCarousel({
     nav: true,
-    navText:
-      ['<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>',
-       '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>'],
+    navText: [arrowSvg, arrowSvg],
     autoWidth:false,
     margin: 0,
     items: 1,
     loop: true,
     responsive:{
-      // 0:{
-      //   margin: 10,
-      //   items: 1,
-      // },
-      // 580:{
-      //   margin: 15,
-      // },
       767:{
         items: 3,
         center: true,
         autoWidth:true,
         margin: 20,
+        loop: false
 
       },
 
