@@ -6,9 +6,8 @@ $('body').on('click', 'a.burger_menu', function() {
 
 $('body').on('click', '.menu_move a.btn_close', function() {
 	$('.menu_move').removeClass('active');
+  $('body').removeClass('modal-open');
 });
-
-
 
 $('body').on('click', '.details_hero .btn_close', function() {
 	$('.details_hero').slideUp('slow');
@@ -28,10 +27,17 @@ $('body').on('click', '.btn_scrollTop', function() {
   $('html, body').animate({scrollTop:0}, '500');
 });
 
-$('body').on('click', '.menu a, .foot__menu a', function() {
+$('body').on('click', '.menu a, .foot__menu a, a.menu_move__item', function() {
   var id = $(this).attr('href');
   var top = $(id).position().top;
-  $('html, body').animate({scrollTop: top}, '500');
+  if($(this).hasClass('menu_move__item')){
+    $('.menu_move a.btn_close').click();
+    // $('html, body').animate({scrollTop: top}, '500');
+    setTimeout(()=>{$('html, body').animate({scrollTop: top}, '500');}, 500);
+    
+  }else{
+    $('html, body').animate({scrollTop: top}, '500');
+  }
 });
 
 $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', function() {
@@ -72,7 +78,7 @@ var carousel_Settings = {
 
 var owl = $('.first_carousel');
 var first_carouselHtml = owl.html();
-function initializeOwl(){
+function initializeOwl(start = false){
   if($(document).width() <= 767 && owl.attr('data-device') == 'd') {
 
     owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
@@ -100,13 +106,16 @@ function initializeOwl(){
     owl.attr('data-device', 'd');
 
   }
+  if(start){
+    $('.first_carousel').owlCarousel(carousel_Settings);
+  }
 }
 
 
 var id;
 $(window).resize( function() {
   clearTimeout(id);
-  id = setTimeout(initializeOwl, 500);
+  id = setTimeout(()=>{initializeOwl(false)}, 500);
 });
 
 
@@ -121,12 +130,14 @@ $(document).ready(function(){
     };
   });
 
-  $('.first_carousel').owlCarousel(carousel_Settings);
+  initializeOwl(true);
 
   $('.reviews_carousel').owlCarousel({
       nav: true,
       navText: [arrowSvg, arrowSvg],
       margin: 15,
+      onInitialized: counter, 
+      onTranslated: counter,
       responsive:{
         0:{
           margin: 15,
@@ -145,7 +156,7 @@ $(document).ready(function(){
         },
       }
 
-  });
+  }).append('<div class="counter_carousel">1/'+$('.reviews_carousel .owl-stage').children().length+'</div>');
 
   $('.cinema__review').owlCarousel({
     autoHeight:true,
@@ -176,18 +187,23 @@ $(document).ready(function(){
     autoWidth:false,
     margin: 0,
     items: 1,
-    loop: true,
+    onInitialized: counter, 
+    onTranslated: counter,
     responsive:{
       767:{
         items: 3,
-        center: true,
         autoWidth:true,
         margin: 20,
-        loop: false
-
       },
 
     }
-  });
+  }).append('<div class="counter_carousel">1/'+$('.prize_carousel .owl-stage').children().length+'</div>');
 
 });
+
+function counter(event) {
+  var element   = event.target;         // DOM element, in this example .owl-carousel
+  var items     = event.item.count;     // Number of items
+  var item      = event.page.index + 1;     // Position of the current item
+  $(element).closest('.owl-carousel').find('.counter_carousel').html(item + '/' + items);
+}

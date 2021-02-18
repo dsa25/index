@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
-	<link rel="stylesheet" href="css/main.css?v11">
+	<link rel="stylesheet" href="css/main.css?v12">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="my_container">
-			<div class="hero">
+			<div class="hero" id="hero">
 				<div class="hero_desc">
 					<h1 class="hero__head">Виталий Лазо</h1>
 					<div class="hero__text">
@@ -116,17 +116,22 @@
 					<a href="javascript:void(0);" class="btn_close"></a>
 				</div>
 			</div>
+			<div class="menu d-none d-md-block">
+			</div>
 			<div class="row justify-content-between align-items-start">
 				<div class="col-12 col-md-6 d-flex flex-column align-items-start">
-					<a href="javascript:void(0);" class="menu_move__item">Обо мне</a>
-					<a href="javascript:void(0);" class="menu_move__item">Портфолио</a>
-					<a href="javascript:void(0);" class="menu_move__item">Форматы работы</a>
-					<a href="javascript:void(0);" class="menu_move__item">Отзывы</a>
+					<a href="#hero" class="menu_move__item">Обо мне</a>
+					<a href="#speaker" class="d-md-none menu_move__item">Спикерство</a>
+					<a href="#first_carousel" class="menu_move__item">Портфолио</a>
+					<a href="#format_work" class="menu_move__item">Форматы работы</a>
+					<a href="#reviews" class="menu_move__item">Отзывы</a>
+					<a href="#tours" class="d-md-none menu_move__item">Индивидуальные туры</a>
 				</div>
 				<div class="col-12 col-md-6 d-flex flex-column align-items-start">
-					<a href="javascript:void(0);" class="menu_move__item">Награды и фильмы</a>
-					<a href="javascript:void(0);" class="menu_move__item">Партнеры</a>
-					<a href="javascript:void(0);" class="menu_move__item">Контакты</a>
+					<a href="#cinema" class="d-md-none menu_move__item">Кинематография</a>
+					<a href="#prize" class="menu_move__item">Награды и фильмы</a>
+					<a href="#partners" class="menu_move__item">Партнеры</a>
+					<a href="#contacts" class="menu_move__item">Контакты</a>
 					<a href="javascript:void(0);" class="btn" onclick="modalMsg();return false;"><span>Заказать съемку проекта</span></a>
 				</div>
 			</div>
@@ -258,7 +263,7 @@
 
 
 
-	<section class="format_work">
+	<section class="format_work" id="format_work">
 		<div class="my_container">
 			<div class="row justify-content-lg-between justify-content-center align-items-stretch">
 				<div class="col-12">
@@ -302,7 +307,7 @@
 		</div>
 	</section>
 
-	<section class="first_carousel owl-carousel" data-device="d">
+	<section class="first_carousel owl-carousel" data-device="d" id="first_carousel">
 
 		<div class="item">
 			<div class="wr_img">
@@ -368,72 +373,7 @@
 
 	</section>
 
-<!-- 	<section class="first_carousel owl-carousel first_carousel_mobile">
-
-		<div class="item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_1.jpg" alt="" >
-				<div class="first_carousel__info">
-					<h6>Заголовок</h6>
-					<span>описание</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="item item_item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_2.jpg">
-				<div class="first_carousel__info">
-					<h6>Иваныч</h6>
-					<span></span>
-				</div>
-			</div>
-		</div>
-		<div class="item item_item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_3.jpg">
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_4.jpg" alt="">
-				<div class="first_carousel__info">
-					<a href="#" class="m-auto">
-						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
-							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
-						</svg>
-						<h3>Смотреть <br> видео</h3>
-					</a>
-					<p>Индивидуальное восхождение</p>
-					<h4>Виталий Лазо</h4>
-					<span>гора Ельбрус, 24.01.2020 г.</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="item item_item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_5.jpg" alt="">
-				<div class="first_carousel__info">
-					<h6>Заголовок</h6>
-					<span>описание</span>
-				</div>
-			</div>
-		</div>
-		<div class="item item_item">
-			<div class="wr_img">
-				<img src="img/first_carousel/item_6.jpg" alt="">
-				<div class="first_carousel__info">
-					<h6>Заголовок</h6>
-					<span>описание</span>
-				</div>
-			</div>
-		</div>
-
-	</section> -->
-
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<div class="my_container">
 			<div class="row">
 				<div class="col-12"><h2 class="head">Отзывы</h2></div>
@@ -538,7 +478,7 @@
 		</div>
 	</section>
 
-	<section class="prize reviews">
+	<section class="prize reviews" id="prize">
 		<div class="my_container">
 			<div class="row">
 				<div class="col-12"><h2 class="head">НАГРАДЫ И ФИЛЬМЫ</h2></div>
@@ -576,7 +516,7 @@
 
 	</section>
 
-	<section class="partners">
+	<section class="partners" id="partners">
 		<div class="my_container">
 			<div class="row">
 				<div class="col-12"><h2 class="head">ПАРТНЕРЫ</h2></div>
@@ -597,7 +537,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="my_container">
 			<div class="d-flex flex-column">
 				<h2 class="head">Контакты</h2>
@@ -672,6 +612,6 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
-<script src="js/main.js?v11"></script>
+<script src="js/main.js?v12"></script>
 </body>
 </html>

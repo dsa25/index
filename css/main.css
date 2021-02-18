@@ -909,6 +909,18 @@ header .my_container:last-child{
 	transform: rotateY(180deg);
 }
 .owl-carousel .owl-nav button:hover{opacity: 1;}
+.counter_carousel{
+	position: absolute;
+	right: 190px;
+	top: -96px;
+	line-height: 58px;
+	font-weight: 600;
+	font-size: 36px;
+	color: #005BEA;
+	background: linear-gradient(#00C6FB, #005BEA);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .reviews_carousel.owl-carousel .owl-stage{
 	padding: 10px 0 34px;
 }
@@ -1330,10 +1342,21 @@ footer .rules__link{margin-left: 30px;}
 	.format_work__block{
 		background: rgb(255 255 255 / 75%);
 	}
+	.tours__bg {max-width: 90%;}
 }
 @media (max-width: 1360px){
 	body{background-position: 0 1560px, 0 3900px, 0 7250px;}
 	body.bg_pos{background-position: 0 calc(1560px + 635px), 0 calc(3900px + 635px), 0 calc(7250px + 635px);}
+	.menu_move__item{
+		margin-bottom: 30px;
+		font-size: 45px;
+	}
+	.btn_scrollTop{
+		bottom: 30px;
+		right: 30px;
+		width: 60px;
+		height: 60px;
+	}
 }
 @media (max-width: 1199px){
 	.partners__item:nth-child(n+6){
@@ -1345,6 +1368,8 @@ footer .rules__link{margin-left: 30px;}
 	body{background: #fff;}
 }
 @media (max-width: 991px){
+	.counter_carousel{display: none;}
+	.tours__bg {max-width: 100%;}
 	.btn_scrollTop{display: none;}
 	body.modal-open{padding-right: 0;}
 	.contacts{padding: 30px 0 75%;}
