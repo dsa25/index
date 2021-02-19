@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
-	<link rel="stylesheet" href="css/main.css?v12">
+	<link rel="stylesheet" href="css/main.css?v14">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -132,7 +132,7 @@
 					<a href="#prize" class="menu_move__item">Награды и фильмы</a>
 					<a href="#partners" class="menu_move__item">Партнеры</a>
 					<a href="#contacts" class="menu_move__item">Контакты</a>
-					<a href="javascript:void(0);" class="btn" onclick="modalMsg();return false;"><span>Заказать съемку проекта</span></a>
+					<a href="javascript:void(0);" class="btn" onclick="modalMsg('#form_msg');return false;"><span>Заказать съемку проекта</span></a>
 				</div>
 			</div>
 			<div class="row">
@@ -153,10 +153,10 @@
 	<section class="details_hero" style="display: none;">
 		<div class="my_container">
 			<div class="row justify-content-between align-items-start align-items-md-center flex-nowrap">
-				<div class="col-10">
+				<div class="col-9 col-md-10">
 					<h2 class="head">Подробнее о Виталие Лазо</h2>
 				</div>
-				<div class="col-2">
+				<div class="col-3 col-md-2">
 					<a href="javascript:void(0);" class="btn_close"></a>
 				</div>
 			</div>
@@ -298,7 +298,7 @@
 				</div>
 				<div class="w-100">
 					<div class="col-12 col-sm-5 col-md-4 ml-auto mr-auto pb-5 pt-3">
-						<a href="javascript:void(0);" class="btn w-100 d-block" onclick="modalMsg();return false;"><span>Связаться</span></a>
+						<a href="javascript:void(0);" class="btn w-100 d-block" onclick="modalMsg('#form_msg');return false;"><span>Связаться</span></a>
 					</div>
 				</div>
 				<img src="/img/people_2.png" class="format_work__img img2 d-none d-xl-block">
@@ -424,7 +424,7 @@
 				</div>
 			</div>
 			<div class="col-12 d-flex align-items-start justify-content-start">
-				<a href="javascript:void(0);" class="btn" onclick="modalMsg();return false;"><span>Заказать тур</span></a>
+				<a href="javascript:void(0);" class="btn" onclick="modalMsg('#form_msg');return false;"><span>Заказать тур</span></a>
 				<div class="tours__autor">
 					<p>Виталий Лазо</p>
 					<span>Лично сопровождает каждый тур от начала и до конца.</span>
@@ -445,7 +445,7 @@
 					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p>
 					<p>Наша съемочная группа специализируется на натурных съемках в самых тяжелых и экстремальных условиях, добывая редкие по красоте кадры, способные украсить любой фильм или видеоролик. Имеется опыт как постановочной, так и репортажной съемки любой сложности.</p>
 				</div>
-				<a href="javascript:void(0);" class="btn w-100" onclick="modalMsg();return false;"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
+				<a href="javascript:void(0);" class="btn w-100" onclick="modalMsg('#form_msg');return false;"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
 			</div>
 		</div>
 		<img src="img/cinema_bg.jpg" class="cinema__bg">
@@ -490,7 +490,7 @@
 			<?php for ($i=0; $i < 4; $i++) {  ?>
 
 				<div class="item">
-					<div>
+					<div class="wr_img_btn">
 						<img src="img/prize/prize_1.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
 							<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
@@ -570,8 +570,8 @@
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
 				<div class="copyright">©Виталий Лазо, 2020</div>
 				<div class="text-nowrap wr_link">
-					<a href="#" class="rules__link">Политика <br class="d-md-none"> конфиденциальности</a>
-					<a href="#" class="rules__link">Обработка <br class="d-md-none"> персональных данных</a>
+					<a href="javascript:void(0);" onclick="modalMsg('#politic');return false;" class="rules__link">Политика <br class="d-md-none"> конфиденциальности</a>
+					<a href="javascript:void(0);" onclick="modalMsg('#politic');return false;" class="rules__link">Обработка <br class="d-md-none"> персональных данных</a>
 				</div>
 			</div>
 		</div>
@@ -584,7 +584,7 @@
 	</a>
 
 	<!-- Modal -->
-	<div class="modal fade form_msg form_msg-danger" id="form_msg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal fade form_msg" id="form_msg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<a href="javascript:void(0);" class="close link link-danger-h" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -609,9 +609,53 @@
 </div>
 
 
+<!-- Scrollable modal -->
+<div class="modal fade form_rules" id="politic">
+<div class="modal-dialog modal-dialog-scrollable" >
+  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-head">Политика конфиденциальности</h5>
+          	<a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          		<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
+          		<defs>
+          			<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
+          				<stop stop-color="#00C6FB"/>
+          				<stop offset="1" stop-color="#005BEA"/>
+          			</linearGradient>
+          		</defs>
+          	</svg>
+          </a>
+        </div>
+        <div class="modal-body">
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0);" class="btn col-10 col-md-6 col-lg-4 ml-auto mr-auto" data-dismiss="modal"><span>Понятно</span></a>
+        </div>
+      </div>
+</div>
+</div>
+
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
-<script src="js/main.js?v12"></script>
+<script src="js/main.js?v13"></script>
 </body>
 </html>

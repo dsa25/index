@@ -47,8 +47,8 @@ $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', fun
 
 
 
-function modalMsg(){
-	var modal = $('#form_msg');
+function modalMsg(id){
+	var modal = $(id);
 	modal.modal('show');
 }
 
