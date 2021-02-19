@@ -8,7 +8,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
-	<link rel="stylesheet" href="css/main.css?v14">
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
+	<link rel="stylesheet" href="css/main.css?v15">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -42,7 +43,7 @@
 							<p class="kino-hero__text">«Зона смерти <br> Нанга Парбат. 8125 м»</p>
 						</div>
 						<a href="javascript:void(0);" class="kino-hero__btn">
-							<div class="item">
+							<div class="item video_show_btn" data-code="9U0_n3zvcPY">
 								<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 									<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 								</svg>
@@ -311,10 +312,15 @@
 
 		<div class="item">
 			<div class="wr_img">
-				<img src="img/first_carousel/item_1.jpg" alt="" >
+				<img src="img/first_carousel/item_1.jpg">
 				<div class="first_carousel__info">
-					<h6>Заголовок</h6>
-					<span>описание</span>
+					<a href="img/first_carousel/item_1.jpg" class="m-auto fancybox_msg">
+						<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+						</svg>
+						<h3>Увеличить</h3>
+					</a>
+					<span>гора Ельбрус, 24.01.2020 г.</span>
 				</div>
 			</div>
 		</div>
@@ -323,20 +329,34 @@
 				<div class="wr_img">
 					<img src="img/first_carousel/item_2.jpg">
 					<div class="first_carousel__info">
-						<h6>Иваныч</h6>
-						<span></span>
+						<a href="img/first_carousel/item_2.jpg" class="m-auto fancybox_msg">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+							<h3>Увеличить</h3>
+						</a>
+						<span>гора Ельбрус, 24.01.2020 г.</span>
 					</div>
 				</div>
 			</div>
 			<div class="item item_item">
 				<div class="wr_img">
 					<img src="img/first_carousel/item_3.jpg">
+					<div class="first_carousel__info">
+						<a href="img/first_carousel/item_3.jpg" class="m-auto fancybox_msg">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+							<h3>Увеличить</h3>
+						</a>
+						<span>гора Ельбрус, 24.01.2020 г.</span>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
 			<div class="wr_img">
-				<img src="img/first_carousel/item_4.jpg" alt="">
+				<img src="img/first_carousel/item_4.jpg">
 				<div class="first_carousel__info">
 					<a href="#" class="m-auto">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -353,19 +373,29 @@
 		<div class="item item_wrap">
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_5.jpg" alt="">
+					<img src="img/first_carousel/item_5.jpg">
 					<div class="first_carousel__info">
-						<h6>Заголовок</h6>
-						<span>описание</span>
+						<a href="img/first_carousel/item_5.jpg" class="m-auto fancybox_msg">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+							<h3>Увеличить</h3>
+						</a>
+						<span>гора Ельбрус, 24.01.2020 г.</span>
 					</div>
 				</div>
 			</div>
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_6.jpg" alt="">
+					<img src="img/first_carousel/item_6.jpg">
 					<div class="first_carousel__info">
-						<h6>Заголовок</h6>
-						<span>описание</span>
+						<a href="img/first_carousel/item_6.jpg" class="m-auto fancybox_msg">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+							<h3>Увеличить</h3>
+						</a>
+						<span>гора Ельбрус, 24.01.2020 г.</span>
 					</div>
 				</div>
 			</div>
@@ -385,15 +415,17 @@
 				<div class="item">
 					<div class="d-flex justify-content-start align-items-center">
 						<img src="img/users/avatar_1.jpg" alt="" class="reviews__avatar">
-						<div class="reviews__user">
+						<div class="reviews__user" >
 							<p>Марина Л.</p>
 							<span>Восхождения на Эверест в 2020 году</span>
 						</div>
 					</div>
 					<div class="reviews__desc">
-						<img src="img/reviews_carousel/reviews_1.jpg" alt="">
-						<div>
-							<span>
+						<a href="img/reviews_carousel/reviews_1.jpg" class="fancybox_msg" >
+							<img src="img/reviews_carousel/reviews_1.jpg">
+						</a>
+						<div class="d-none d-lg-flex">
+							<span onclick="$(this).closest('.reviews__desc').find('.fancybox_msg').click();">
 								<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 								</svg>
@@ -571,7 +603,7 @@
 				<div class="copyright">©Виталий Лазо, 2020</div>
 				<div class="text-nowrap wr_link">
 					<a href="javascript:void(0);" onclick="modalMsg('#politic');return false;" class="rules__link">Политика <br class="d-md-none"> конфиденциальности</a>
-					<a href="javascript:void(0);" onclick="modalMsg('#politic');return false;" class="rules__link">Обработка <br class="d-md-none"> персональных данных</a>
+					<a href="javascript:void(0);" onclick="modalMsg('#person_data');return false;" class="rules__link">Обработка <br class="d-md-none"> персональных данных</a>
 				</div>
 			</div>
 		</div>
@@ -602,12 +634,56 @@
 			<input type="text" placeholder="Как к Вам обращаться?">
 			<input type="text" placeholder="Ваш номер телефона">
 			<a href="javascript:void(0);" class="btn"><span>Связаться</span></a>
-			<div class="agrements">Нажимаю кнопку связаться Я соглашаюсь с <a href="#">политикой конфиденциальности</a> и <a href="#">обработкой персональных данных</a>
+			<div class="agrements">Нажимаю кнопку связаться Я соглашаюсь с <a  href="javascript:void(0);" onclick="modalMsg('#politic');return false;" >политикой конфиденциальности</a> и <a  href="javascript:void(0);" onclick="modalMsg('#person_data');return false;">обработкой персональных данных</a>
 			</div>
 		</div>
 	</div>
 </div>
 
+
+<!-- Scrollable modal -->
+<div class="modal fade form_rules" id="person_data">
+<div class="modal-dialog modal-dialog-scrollable" >
+  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-head">Обработка персональных данных</h5>
+          	<a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          		<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
+          		<defs>
+          			<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
+          				<stop stop-color="#00C6FB"/>
+          				<stop offset="1" stop-color="#005BEA"/>
+          			</linearGradient>
+          		</defs>
+          	</svg>
+          </a>
+        </div>
+        <div class="modal-body">
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0);" class="btn col-10 col-md-6 col-lg-4 ml-auto mr-auto" data-dismiss="modal"><span>Понятно</span></a>
+        </div>
+      </div>
+</div>
+</div>
 
 <!-- Scrollable modal -->
 <div class="modal fade form_rules" id="politic">
@@ -653,9 +729,30 @@
 </div>
 </div>
 
+<!-- Scrollable modal -->
+<div class="modal fade form_video " id="video"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable" >
+	  <div class="modal-content">
+      	<a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      		<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
+      		<defs>
+      			<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
+      				<stop stop-color="#00C6FB"/>
+      				<stop offset="1" stop-color="#005BEA"/>
+      			</linearGradient>
+      		</defs>
+      	</svg>
+      </a>
+      <div class="wr_video"></div>
+      </div>
+	</div>
+</div>
+
+
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
-<script src="js/main.js?v13"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
+<script src="js/main.js?v14"></script>
 </body>
 </html>

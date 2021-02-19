@@ -46,6 +46,17 @@ $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', fun
 });
 
 
+$('body').on('click', '.video_show_btn', function() {
+  var code = $(this).attr('data-code');
+  $('#video .wr_video').html('<iframe src="https://www.youtube.com/embed/' + code + '?autoplay=true&fs=1&rel=0&modestbranding="1" frameborder="0" allowfullscreen></iframe>');
+  modalMsg('#video');
+});
+
+$('body').on('click', '.form_video .close', function() {
+  $('#video .wr_video').empty('');
+});
+
+
 
 function modalMsg(id){
 	var modal = $(id);
@@ -198,6 +209,16 @@ $(document).ready(function(){
 
     }
   }).append('<div class="counter_carousel">1/'+$('.prize_carousel .owl-stage').children().length+'</div>');
+
+  $("body").on("focusin", function(){
+
+     $(".fancybox_msg").fancybox({
+      arrows: false,
+     }); 
+
+
+  }); 
+
 
 });
 
