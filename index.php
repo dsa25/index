@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
-	<link rel="stylesheet" href="css/main.css?v15">
+	<link rel="stylesheet" href="css/main.css?v16">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -358,7 +358,7 @@
 			<div class="wr_img">
 				<img src="img/first_carousel/item_4.jpg">
 				<div class="first_carousel__info">
-					<a href="#" class="m-auto">
+					<a href="#" class="m-auto video_show_btn" data-code="9U0_n3zvcPY">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 						</svg>
@@ -525,7 +525,7 @@
 					<div class="wr_img_btn">
 						<img src="img/prize/prize_1.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100"><span>Смотреть фильм</span></a>
+							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -731,19 +731,21 @@
 
 <!-- Scrollable modal -->
 <div class="modal fade form_video " id="video"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-scrollable" >
+	<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" >
 	  <div class="modal-content">
-      	<a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      		<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
-      		<defs>
-      			<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
-      				<stop stop-color="#00C6FB"/>
-      				<stop offset="1" stop-color="#005BEA"/>
-      			</linearGradient>
-      		</defs>
-      	</svg>
-      </a>
-      <div class="wr_video"></div>
+	      	<a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	      		<path d="M10.7031 8L15.7656 2.98438C16.0469 2.70312 16.0469 2.1875 15.7656 1.90625L14.5938 0.734375C14.3125 0.453125 13.7969 0.453125 13.5156 0.734375L8.5 5.79688L3.4375 0.734375C3.15625 0.453125 2.64062 0.453125 2.35938 0.734375L1.1875 1.90625C0.90625 2.1875 0.90625 2.70312 1.1875 2.98438L6.25 8L1.1875 13.0625C0.90625 13.3438 0.90625 13.8594 1.1875 14.1406L2.35938 15.3125C2.64062 15.5938 3.15625 15.5938 3.4375 15.3125L8.5 10.25L13.5156 15.3125C13.7969 15.5938 14.3125 15.5938 14.5938 15.3125L15.7656 14.1406C16.0469 13.8594 16.0469 13.3438 15.7656 13.0625L10.7031 8Z" fill="url(#paint0_linear)"/>
+	      		<defs>
+	      			<linearGradient id="paint0_linear" x1="17.125" y1="-3.99997" x2="1" y2="-3.99997" gradientUnits="userSpaceOnUse">
+	      				<stop stop-color="#00C6FB"/>
+	      				<stop offset="1" stop-color="#005BEA"/>
+	      			</linearGradient>
+	      		</defs>
+	      	</svg>
+	      </a>
+	      <div class="modal-body">
+	      	<div class="wr_video"></div>
+	      </div>
       </div>
 	</div>
 </div>
@@ -753,6 +755,6 @@
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
-<script src="js/main.js?v14"></script>
+<script src="js/main.js?v15"></script>
 </body>
 </html>

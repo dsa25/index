@@ -1262,6 +1262,9 @@ footer .rules__link{margin-left: 30px;}
 .form_video .modal-content{
 	padding: 35px 15px 15px 15px;
 }
+.form_video .modal-body{
+	padding: 5px 10px 5px 0;
+}
 
 .form_video .modal-content .close{
 	right: 7px;
