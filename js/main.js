@@ -151,8 +151,8 @@ $('body').on('click', '#send_btn', function(event)
   $.ajax({
     url: '/send_rc.php',
     data : ({
-      'name': user_name,
-      'number': field_number
+      'rcname': user_name,
+      'rcphone': field_number
     }),
     type: 'post',
     success: function(res) {
