@@ -130,6 +130,50 @@ $(window).resize( function() {
 });
 
 
+function triggerMessageField(message) {
+  $('#form_msg .form-notification').html('<div class="alert alert-danger"></div>');
+  $('.alert-danger').append(message);
+}
+
+$('body').on('click', '#success_close', function(event)
+{
+  $('#form_msg .form_msg__succes').slideUp('fast');
+  $('#form_msg .form_msg__item').slideDown('fast');
+  $('#form_msg .form-notification').empty();
+});
+
+$('body').on('click', '#send_btn', function(event)
+{
+  event.preventDefault();
+  var user_name = $('#user_name').val();
+  var field_number = $('#field_number').val();
+
+  $.ajax({
+    url: '/send_rc.php',
+    data : ({
+      'name': user_name,
+      'number': field_number
+    }),
+    type: 'post',
+    success: function(res) {
+      var res = JSON.parse(res);
+      if(res.status == 1){
+        $('#form_msg .form_msg__item').slideUp('fast');
+        $('#form_msg .form_msg__succes').slideDown('fast');
+        document.querySelector("#user_name").value = "";
+        document.querySelector("#field_number").value = "";
+        $('#form_msg .form-notification').empty();
+      }else{
+        triggerMessageField(res.data);
+      }
+
+    }
+  });
+
+
+});
+
+
 
 $(document).ready(function(){
 

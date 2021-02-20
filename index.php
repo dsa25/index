@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
-	<link rel="stylesheet" href="css/main.css?v16">
+	<link rel="stylesheet" href="css/main.css?v17">
 
 	<title>Виталий Лазо</title>
 </head>
@@ -358,7 +358,7 @@
 			<div class="wr_img">
 				<img src="img/first_carousel/item_4.jpg">
 				<div class="first_carousel__info">
-					<a href="#" class="m-auto video_show_btn" data-code="9U0_n3zvcPY">
+					<a href="javascript:void(0);" class="m-auto video_show_btn" data-code="9U0_n3zvcPY">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 						</svg>
@@ -421,15 +421,13 @@
 						</div>
 					</div>
 					<div class="reviews__desc">
-						<a href="img/reviews_carousel/reviews_1.jpg" class="fancybox_msg" >
-							<img src="img/reviews_carousel/reviews_1.jpg">
-						</a>
+						<img src="img/reviews_carousel/reviews_1.jpg">
 						<div class="d-none d-lg-flex">
-							<span onclick="$(this).closest('.reviews__desc').find('.fancybox_msg').click();">
+							<a href="img/reviews_carousel/reviews_1.jpg" class="fancybox_msg">
 								<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 								</svg>
-							</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -629,13 +627,23 @@
 					</defs>
 				</svg>
 			</a>
-			<h5 class="modal-head">Связаться по телефону</h5>
-			<h6 class="modal-title">Заполните форму и мы свяжемся с вами <br> в тение 15 минут</h6>
-			<input type="text" placeholder="Как к Вам обращаться?">
-			<input type="text" placeholder="Ваш номер телефона">
-			<a href="javascript:void(0);" class="btn"><span>Связаться</span></a>
-			<div class="agrements">Нажимаю кнопку связаться Я соглашаюсь с <a  href="javascript:void(0);" onclick="modalMsg('#politic');return false;" >политикой конфиденциальности</a> и <a  href="javascript:void(0);" onclick="modalMsg('#person_data');return false;">обработкой персональных данных</a>
+
+			<div class="form_msg__item">
+				<h5 class="modal-head">Связаться по телефону</h5>
+				<h6 class="modal-title">Заполните форму и мы свяжемся с вами <br> в тение 15 минут</h6>
+				<div class="form-notification"></div>
+				<input type="text" placeholder="Как к Вам обращаться?" id="user_name">
+				<input type="text" placeholder="Ваш номер телефона" id="field_number">
+				<a href="javascript:void(0);" class="btn" id="send_btn"><span>Связаться</span></a>
+				<div class="agrements">Нажимаю кнопку связаться Я соглашаюсь с <a  href="javascript:void(0);" onclick="modalMsg('#politic');return false;" >политикой конфиденциальности</a> и <a  href="javascript:void(0);" onclick="modalMsg('#person_data');return false;">обработкой персональных данных</a>
+				</div>
 			</div>
+			<div class="form_msg__succes" style="display: none;">
+				<h5 class="modal-head">Успешно!</h5>
+				<h6 class="modal-title">Ваши контактные данные успешно отправлены. <br> Мы свяжемся с вами в тение 15 минут</h6>
+				<a href="javascript:void(0);" class="btn" data-dismiss="modal" id="success_close"><span>Отлично!</span></a>
+			</div>
+
 		</div>
 	</div>
 </div>
