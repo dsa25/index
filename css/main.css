@@ -805,7 +805,9 @@ header .my_container:last-child{
 .first_carousel .wr_img > img{
 	display: block;
 	margin: 10px auto;
+	width: auto;
 }
+
 .first_carousel .wr_img{
 	position: relative;
 }
@@ -908,7 +910,10 @@ header .my_container:last-child{
 	right: 30px;
 	transform: rotateY(180deg);
 }
-.owl-carousel .owl-nav button:hover{opacity: 1;}
+.owl-carousel .owl-nav button:not(.disabled):hover{opacity: 1;}
+.owl-carousel .owl-nav button.disabled{
+	cursor: not-allowed;
+}
 .counter_carousel{
 	position: absolute;
 	right: 190px;
@@ -1520,6 +1525,7 @@ footer .rules__link{margin-left: 30px;}
 	.first_carousel__info svg{
 		max-width: 40px;
 		/*height: 96px;*/
+		height: auto;
 	}
 	.first_carousel__info h3{
 		font-size: 24px;
@@ -1578,8 +1584,6 @@ footer .rules__link{margin-left: 30px;}
 }
 
 @media (max-width: 767px){
-/*	.first_carousel_mobile{display: block!important;}
-	.first_carousel_desctop{display: none!important;}*/
 
 	.first_carousel .item{
 		padding: 10px 0;
@@ -1848,6 +1852,15 @@ footer .rules__link{margin-left: 30px;}
 		white-space: normal;
 	}
 	footer .rules__link:first-child{margin-right: 30px;}
+		.first_carousel__info svg{
+		max-width: 30px;
+	}
+	.first_carousel__info h3{
+		font-size: 18px;
+	}
+	.first_carousel__info span{
+		font-size: 12px;
+	}
 }
 @media (max-height: 460px){
 	.wr_img_btn img{

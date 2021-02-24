@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
-	<link rel="stylesheet" href="css/main.css?v18">
+	<link rel="stylesheet" href="css/main.css?v25">
+
 
 	<title>Виталий Лазо</title>
 </head>
@@ -488,7 +489,7 @@
 					<div class="cinema__review__info">
 						<p>
 							<span class="cinema__review__name">Users User</span>
-							<span class="cinema__review__time">Неделю надаз</span>
+							<span class="cinema__review__time">Неделю назад</span>
 						</p>
 						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore distinctio quidem natus velit suscipit harum repellendus quos reiciendis! Numquam nulla vel commodi voluptas</p>
 					</div>
@@ -498,7 +499,7 @@
 					<div class="cinema__review__info">
 						<p>
 							<span class="cinema__review__name">Users User</span>
-							<span class="cinema__review__time">Неделю надаз</span>
+							<span class="cinema__review__time">Неделю назад</span>
 						</p>
 						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam, dignissimos, ducimus. Deserunt quasi nemo sed et quos ad eligendi, tempore corporis ratione sapiente vero voluptates vel voluptas commodi, modi sunt sequi, est porro fuga ipsa nisi expedita delectus itaque optio, voluptatibus. Excepturi, tempora optio placeat pariatur, illum voluptatem voluptate facere?</p>
 					</div>
@@ -539,6 +540,16 @@
 				<div class="item">
 					<img src="img/prize/prize_4.jpg">
 				</div>
+
+				<div class="item">
+					<div class="wr_img_btn">
+						<img src="img/prize/prize_1.jpg">
+						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
+						</div>
+					</div>
+				</div>
+
 
 			<?php } ?>
 
@@ -759,10 +770,13 @@
 </div>
 
 
+
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
-<script src="js/main.js?v16"></script>
+
+<script src="js/main.js?v35"></script>
+
 </body>
 </html>
