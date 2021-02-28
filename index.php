@@ -140,11 +140,11 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="social_ico">
-						<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#facebook"></use></svg></a>
-						<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#instagram"></use></svg></a>
+						<a href="https://www.facebook.com/vitaly.lazo" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#facebook"></use></svg></a>
+						<a href="https://instagram.com/vitaly_lazo?igshid=pn46zwf1up5o" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#instagram"></use></svg></a>
 						<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#telegram"></use></svg></a>
-						<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
-						<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
+						<a href="https://vk.com/vitalylazo" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
+						<a href="https://www.youtube.com/channel/UCvYbHblDukSYwGQrz_8dH5g" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
 					</div>
 				</div>
 			</div>
@@ -585,11 +585,11 @@
 				<a href="tel:+7 (928) 259-11-18" class="contacts__number email_top">+7 (928) 259-11-18</a>
 				<a href="mailto:vlazo@yandex.ru" class="contacts__email email_top">vlazo@yandex.ru</a>
 				<div class="social_ico">
-					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#facebook"></use></svg></a>
-					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#instagram"></use></svg></a>
+					<a href="https://www.facebook.com/vitaly.lazo" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#facebook"></use></svg></a>
+					<a href="https://instagram.com/vitaly_lazo?igshid=pn46zwf1up5o" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#instagram"></use></svg></a>
 					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#telegram"></use></svg></a>
-					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
-					<a href="javascript:void(0);"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
+					<a href="https://vk.com/vitalylazo" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#vk"></use></svg></a>
+					<a href="https://www.youtube.com/channel/UCvYbHblDukSYwGQrz_8dH5g" target="_blank"><svg class="social_ico__sprite"><use xlink:href="/img/social_ico__sprite.svg#youtube"></use></svg></a>
 				</div>
 				<h2 class="contacts__title">Горы зовут тех, чья <br> душа им по росту!</h2>
 			</div>
@@ -769,7 +769,21 @@
 	</div>
 </div>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(72890332, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/72890332" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
