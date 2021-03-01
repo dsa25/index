@@ -73,23 +73,23 @@ $(window).resize( function() {
 
 $('body').on('click', 'a.burger_menu', function() {
   $('body').addClass('modal-open');
-  $('.menu_move').addClass('active');
+	$('.menu_move').addClass('active');
 });
 
 $('body').on('click', '.menu_move a.btn_close', function() {
-  $('.menu_move').removeClass('active');
+	$('.menu_move').removeClass('active');
   $('body').removeClass('modal-open');
 });
 
 $('body').on('click', '.details_hero .btn_close', function() {
-  $('.details_hero').slideUp('slow');
+	$('.details_hero').slideUp('slow');
   if($('body').width() >= 1200){
     $('body').removeClass('bg_pos');
   }
 });
 
 $('body').on('click', '.btn_details .item', function() {
-  $('.details_hero').slideDown('slow');
+	$('.details_hero').slideDown('slow');
   if($('body').width() >= 1200){
     $('body').addClass('bg_pos');
   }
@@ -113,8 +113,8 @@ $('body').on('click', '.menu a, .foot__menu a, a.menu_move__item', function() {
 });
 
 $('body').on('click', '.my_accordion__item:not(.active) .my_accordion__btn', function() {
-  $('.my_accordion__item').removeClass('active').find('.my_accordion__info').slideUp('slow');
-  $(this).closest('.my_accordion__item').addClass('active').find('.my_accordion__info').slideDown('slow');
+	$('.my_accordion__item').removeClass('active').find('.my_accordion__info').slideUp('slow');
+	$(this).closest('.my_accordion__item').addClass('active').find('.my_accordion__info').slideDown('slow');
 });
 
 
@@ -131,8 +131,8 @@ $('body').on('click', '.form_video .close', function() {
 
 
 function modalMsg(id){
-  var modal = $(id);
-  modal.modal('show');
+	var modal = $(id);
+	modal.modal('show');
 }
 
 

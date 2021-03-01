@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
-	<link rel="stylesheet" href="css/main.css?v25">
+	<link rel="stylesheet" href="css/main.css?v28">
 
 
 	<title>Виталий Лазо</title>
@@ -44,7 +44,7 @@
 							<p class="kino-hero__text">«Зона смерти <br> Нанга Парбат. 8125 м»</p>
 						</div>
 						<a href="javascript:void(0);" class="kino-hero__btn">
-							<div class="item video_show_btn" data-code="9U0_n3zvcPY">
+							<div class="item video_show_btn" data-code="8XL5M0aDt7g">
 								<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 									<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 								</svg>
@@ -321,7 +321,7 @@
 						</svg>
 						<h3>Увеличить</h3>
 					</a>
-					<span>гора Ельбрус, 24.01.2020 г.</span>
+					<!-- <span>гора Ельбрус, 24.01.2020 г.</span> -->
 				</div>
 			</div>
 		</div>
@@ -336,7 +336,7 @@
 							</svg>
 							<h3>Увеличить</h3>
 						</a>
-						<span>гора Ельбрус, 24.01.2020 г.</span>
+						<!-- <span>гора Ельбрус, 24.01.2020 г.</span> -->
 					</div>
 				</div>
 			</div>
@@ -350,7 +350,7 @@
 							</svg>
 							<h3>Увеличить</h3>
 						</a>
-						<span>гора Ельбрус, 24.01.2020 г.</span>
+						<!-- <span>гора Ельбрус, 24.01.2020 г.</span> -->
 					</div>
 				</div>
 			</div>
@@ -359,7 +359,7 @@
 			<div class="wr_img">
 				<img src="img/first_carousel/item_4.jpg">
 				<div class="first_carousel__info">
-					<a href="javascript:void(0);" class="m-auto video_show_btn" data-code="9U0_n3zvcPY">
+					<a href="javascript:void(0);" class="m-auto video_show_btn" data-code="n5dqtbG3Nb4">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 						</svg>
@@ -382,7 +382,7 @@
 							</svg>
 							<h3>Увеличить</h3>
 						</a>
-						<span>гора Ельбрус, 24.01.2020 г.</span>
+						<!-- <span>гора Ельбрус, 24.01.2020 г.</span> -->
 					</div>
 				</div>
 			</div>
@@ -396,7 +396,7 @@
 							</svg>
 							<h3>Увеличить</h3>
 						</a>
-						<span>гора Ельбрус, 24.01.2020 г.</span>
+						<!-- <span>гора Ельбрус, 24.01.2020 г.</span> -->
 					</div>
 				</div>
 			</div>
@@ -412,19 +412,19 @@
 		</div>
 
 		<div class="reviews_carousel owl-carousel">
-			<?php for ($i=0; $i < 8; $i++) {  ?>
+			
 				<div class="item">
 					<div class="d-flex justify-content-start align-items-center">
-						<img src="img/users/avatar_1.jpg" alt="" class="reviews__avatar">
+						<img src="img/users/karmanov.jpg" alt="" class="reviews__avatar">
 						<div class="reviews__user" >
-							<p>Марина Л.</p>
-							<span>Восхождения на Эверест в 2020 году</span>
+							<p>Карманов Д.В.</p>
+							<span>Проект "STAR TALK"</span>
 						</div>
 					</div>
 					<div class="reviews__desc">
-						<img src="img/reviews_carousel/reviews_1.jpg">
+						<img src="img/reviews_carousel/letter1.jpg">
 						<div class="d-none d-lg-flex">
-							<a href="img/reviews_carousel/reviews_1.jpg" class="fancybox_msg">
+							<a href="img/reviews_carousel/letter1.jpg" class="fancybox_msg">
 								<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 								</svg>
@@ -432,7 +432,9 @@
 						</div>
 					</div>
 				</div>
-			<?php } ?>
+			
+
+			
 
 		</div>
 
@@ -482,30 +484,108 @@
 		<img src="img/cinema_bg.jpg" class="cinema__bg">
 
 		<div class="cinema__review owl-carousel">
-
-			<?php for ($i=0; $i < 8; $i++) {  ?>
-				<div class="item">
-					<img src="img/users/avatar_1.jpg">
-					<div class="cinema__review__info">
-						<p>
-							<span class="cinema__review__name">Users User</span>
-							<span class="cinema__review__time">Неделю назад</span>
-						</p>
-						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore distinctio quidem natus velit suscipit harum repellendus quos reiciendis! Numquam nulla vel commodi voluptas</p>
-					</div>
+			
+			<div class="item">
+				<img src="img/users/avatar_1.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Наталья Шульга</span>
+						<span class="cinema__review__time">16.12.2020</span>
+					</p>
+					<p class="cinema__review__text">Спасибо за чудесный фильм. Спасибо что остались живы. Фильм уникальный на одном дыхании. Сама с вами испытала всю гамму чувств от жуткой усталости до восторга покорения вершины. "Ты на вершине, ты счастлив и нем и только немного завидуешь тем, тем у которых вершина еще впереди." Берегите себя ребята.</p>
 				</div>
-				<div class="item">
-					<img src="img/users/avatar_1.jpg">
-					<div class="cinema__review__info">
-						<p>
-							<span class="cinema__review__name">Users User</span>
-							<span class="cinema__review__time">Неделю назад</span>
-						</p>
-						<p class="cinema__review__text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ipsam, dignissimos, ducimus. Deserunt quasi nemo sed et quos ad eligendi, tempore corporis ratione sapiente vero voluptates vel voluptas commodi, modi sunt sequi, est porro fuga ipsa nisi expedita delectus itaque optio, voluptatibus. Excepturi, tempora optio placeat pariatur, illum voluptatem voluptate facere?</p>
-					</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us1.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Якоб</span>
+						<span class="cinema__review__time">04.02.2019</span>
+					</p>
+					<p class="cinema__review__text">Посмотрел этот фильм, потом через неделю захотел посмотреть еще раз. Ребят, вы сумасшедшие и настоящие! Вы делаете человека сильнее.</p>
 				</div>
-			<?php } ?>
-
+			</div>			
+			<div class="item">
+				<img src="img/users/us3.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Илья Сидоров</span>
+						<span class="cinema__review__time">06.01.2021</span>
+					</p>
+					<p class="cinema__review__text">Один из лучших фильмов который я посмотрел в этом, 2021 году. Спасибо ребята, Вы настоящие Профессионалы!</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us4.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Go Going</span>
+						<span class="cinema__review__time">19.11.2018</span>
+					</p>
+					<p class="cinema__review__text">Пилотаж!!! И то чем вы занимаетесь и то как это подаете!!! Это полноценный остросюжетный фильм, не оторваться прям - сковороду горелой картошки выкинул и подписался на Вас!!!</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us5.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Alexander Vladimirovich</span>
+						<span class="cinema__review__time">12.03.2020</span>
+					</p>
+					<p class="cinema__review__text">Видеоряд, повествование, музыка! Это талант снимать документальные фильмы! Как вы умудряетесь находить такую прекрасную музыку и так правильно её вставлять в видео! Пытался слушать музыку отдельно, но она не слушается! Создаётся впечатление, что музыка написана специально для этого фильма! Удачи вам во всём!</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us2.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Ioana</span>
+						<span class="cinema__review__time">23.01.2020</span>
+					</p>
+					<p class="cinema__review__text">Спасибо огромное за потрясающее кино, за этот сногсшибательный фильм!!! Никогда не увлекалась ничем подобным, но ....просто нет слов!!! В восторге! Как здорово, что есть такие мужчины на Земле! Здорово, что вы так сплотились в этой интернациональной команде) Фильм сделано очень профессионально - не могла сдвинуться с места во время просмотра! Надо на большой экран! Надеюсь, вы получили уже свои награды от нашего государства за огромный вклад в развитие культуры нации</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us6.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Виталий</span>
+						<span class="cinema__review__time">13.08.2019</span>
+					</p>
+					<p class="cinema__review__text">Вообще молодцы. Снято профессионально и очень качественно, а если учесть реальные условия и сложность самого восхождения, усталость, опасности, то я вообще офигеваю, как это можно было снять. Смотришь, как интересный приключенческий фильм. Удачи вам!</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us9.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Ольга Денисова</span>
+						<span class="cinema__review__time">09.06.2020</span>
+					</p>
+					<p class="cinema__review__text">Очень круто, ребята! На одном дыхании посмотрела сразу два фильма, снято великолепно, не видела такого контента нигде</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us7.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Max Mirkin</span>
+						<span class="cinema__review__time">08.05.2020</span>
+					</p>
+					<p class="cinema__review__text">Виталий, очень интересные видео делаете, сподвигло моего друга пойти в горы на 4000 метров для начала. Спасибо вам!</p>
+				</div>
+			</div>			
+			<div class="item">
+				<img src="img/users/us8.jpg">
+				<div class="cinema__review__info">
+					<p>
+						<span class="cinema__review__name">Vlad Kushniruk</span>
+						<span class="cinema__review__time">27.09.2019</span>
+					</p>
+					<p class="cinema__review__text">Виталий, огромное спасибо вам за этот прекрасный фильм! Понимаешь что проделана просто невероятная работа.. Большое уважение вашей команде и вашей силе воли!!) С нетерпением жду новых проектов! Вдохновляете на новые свершения)</p>
+				</div>
+			</div>
+			
 		</div>
 	</section>
 
@@ -518,13 +598,12 @@
 
 		<div class="prize_carousel owl-carousel">
 
-			<?php for ($i=0; $i < 4; $i++) {  ?>
 
 				<div class="item">
 					<div class="wr_img_btn">
-						<img src="img/prize/prize_1.jpg">
+						<img src="img/prize/zone.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
+							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -538,20 +617,32 @@
 				</div>
 
 				<div class="item">
-					<img src="img/prize/prize_4.jpg">
+					<div class="wr_img_btn">
+						<img src="img/prize/annapurna.jpg">
+						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="0gnyUh6KHbg"><span>Смотреть фильм</span></a>
+						</div>
+					</div>
 				</div>
 
 				<div class="item">
 					<div class="wr_img_btn">
-						<img src="img/prize/prize_1.jpg">
+						<img src="img/prize/freeride.jpg">
+						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
+							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="lUdBPbHTF-A"><span>Смотреть фильм</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="wr_img_btn">
+						<img src="img/prize/jivoy.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
 							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
 
-
-			<?php } ?>
 
 		</div>
 
@@ -790,7 +881,7 @@
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
 
-<script src="js/main.js?v35"></script>
+<script src="js/main.js?v36"></script>
 
 </body>
 </html>

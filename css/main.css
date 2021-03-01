@@ -1166,6 +1166,11 @@ header .my_container:last-child{
 .prize_carousel.owl-carousel .owl-stage-outer{
 	padding: 50px 0 50px;
 }
+.prize_carousel.owl-carousel .wr_img_btn img{
+	max-width: 630px;
+	width: calc(100vw - 60px);
+	height: auto;
+}
 .partners{
 	position: relative;
 	z-index: 3;
@@ -1461,6 +1466,7 @@ footer .rules__link{margin-left: 30px;}
 		max-width: 100%;
 		max-height: 100%;
 	}
+
 	.cinema__review::before,
 	.cinema__review::after{
 		display: none;
@@ -1584,6 +1590,10 @@ footer .rules__link{margin-left: 30px;}
 }
 
 @media (max-width: 767px){
+
+	.wr_img_btn img{
+		min-width: 360px;
+	}
 
 	.first_carousel .item{
 		padding: 10px 0;
@@ -1869,6 +1879,9 @@ footer .rules__link{margin-left: 30px;}
 	}
 }
 @media (max-width: 375px){
+	.wr_img_btn img{
+		min-width: auto;
+	}
 	.contacts__title{
 		font-size: 27px;
 	}
