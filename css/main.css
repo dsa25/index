@@ -18,6 +18,13 @@
 }
 @font-face {
     font-family: 'Montserrat';
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
     src: local('Montserrat Semi Bold'), local('Montserrat-Semi-Bold'),
         url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
         url('../fonts/Montserrat-SemiBold.woff') format('woff'),
@@ -90,6 +97,7 @@ header .my_container:last-child{
 }
 .email_top{
 	color: #010111;
+	font-weight: 600;
 	display: inline-block;
 	margin: 0 30px 0 auto;
 	text-decoration: none!important;
@@ -104,7 +112,7 @@ header .my_container:last-child{
 	min-height: 40px;
 	border-radius: 50%;
 	position: relative;
-	color: #00C6FB;
+	color: #005BEA;
 	transition: all 0.3s;
 }
 .burger_menu:hover{
@@ -147,7 +155,7 @@ header .my_container:last-child{
 	flex-grow: 1;
 	height: 100%;
 	min-height: 100%;
-	padding: 0px 0 210px 0;
+	padding: 80px 0 120px 0;
 	position: relative;
 }
 .hero_desc{
@@ -179,13 +187,18 @@ header .my_container:last-child{
 }
 .kino-hero{
 	text-transform: uppercase;
-	max-width: 550px;
+	max-width: 565px;
 }
 .kino-hero__head,
 .kino-hero__text{
 	font-weight: 600;
 	max-width: 310px;
 }
+
+.kino-hero__text .d-block_m{
+	display: none;
+}
+
 .kino-hero__head{
 	margin-bottom: 10px;
 }
@@ -392,9 +405,12 @@ header .my_container:last-child{
 	}
 }
 .hero__quote{
-	top: 50px;
+	top: 65px;
 	padding: 30px;
-	max-width: 540px;
+	max-width: 537px;
+	font-size: 20px;
+	line-height: 1.42;
+	font-weight: 500;
 	position: relative;
 	z-index: 2;
 	border-radius: 6px;
@@ -1408,6 +1424,7 @@ footer .rules__link{margin-left: 30px;}
 @media (max-width: 1815px){
 	.format_work__block{
 		background: rgb(255 255 255 / 88%);
+		background: #fff;
 	}
 	.tours__bg {max-width: 90%;}
 }
@@ -1590,6 +1607,10 @@ footer .rules__link{margin-left: 30px;}
 }
 
 @media (max-width: 767px){
+
+	.kino-hero__text .d-block_m{
+		display: block;
+	}
 
 	.wr_img_btn img{
 		min-width: 360px;
