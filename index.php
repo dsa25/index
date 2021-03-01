@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
-	<link rel="stylesheet" href="css/main.css?v28">
+	<link rel="stylesheet" href="css/main.css?v29">
 
 
 	<title>Виталий Лазо</title>
@@ -164,43 +164,85 @@
 			</div>
 
 
-			<?php
-			$my_accordion = [
-				'Проект DZF',
-				'Альпинист',
-				'Лидер',
-				'Горный гид',
-				'Экстрим-оператор',
-				'Образование'
-			];
-
-			?>
 			<div class="my_accordion">
 
-				<?php for ($i=0; $i <= 5; $i++) { ?>
-					<div class="my_accordion__item <?= $i == 1 ? ' active ' : ''; ?>">
-						<a href="javascript:void(0);" class="my_accordion__btn"><?= $my_accordion[$i]; ?></a>
-						<div class="my_accordion__info" style="display: <?= $i == 1 ? 'block' : 'none'; ?>;">
-							<h3 class="my_accordion__head"><?= $my_accordion[$i]; ?></h3>
-							<div class="my_accordion__text">
-								<?php if($i == 1){ ?>
-									<p>Первое восхождение Виталий Лазо совершил в 12 лет. В 16 лет занялся спортивным альпинизмом. В настоящий момент является действующим спортсменом.</p>
-									<p>«Снежный барс» — одно из самых престижных званий в международном альпинизме. Чтобы его получить, необходимо покорить пять высочайших гор бывшего СССР: </p>
-									<p>•	Пик Победы (7439 м)</p>
-									<p>•	Пик Хан-Тенгри (7010 м)</p>
-									<p>•	Пик Исмоила Сомони (бывший Пик коммунизма, 7495 м)</p>
-									<p>•	Пик Ленина (7134 м)</p>
-									<p>•	Пик Корженевской (7105 м).</p>
-									<p>Виталий Лазо получил титул «Снежный барс» в 2014 году.</p>
-								<?php } else { ?>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veritatis, possimus.</p>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusantium, nesciunt ut expedita magnam rerum!</p>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur provident deleniti neque praesentium, molestiae veritatis vero dolore sequi nesciunt nulla? Enim voluptas ratione ea quaerat odio sunt dicta non neque sequi necessitatibus qui, autem!</p>
-								<?php } ?>
-							</div>
+				<div class="my_accordion__item ">
+					<a href="javascript:void(0);" class="my_accordion__btn">Проект DZF</a>
+					<div class="my_accordion__info" style="display: none;">
+						<h3 class="my_accordion__head">Проект DZF</h3>
+						<div class="my_accordion__text">
+							<p>«Фрирайд в зоне смерти» задумывался как спортивный проект, цель которого —бескислородное восхождение на высочайшие точки планеты, спуск с вершин на горных лыжах и съемки фильмов о каждой экспедиции.</p>
+							<p>Со временем, миссия стала шире. Читая отзывы и получая множество писем от зрителей со всего мира, авторы проекта пересмотрели свой взгляд на альпинизм: это не просто дело одиночек, бросающих вызов высоте. Это сильное социально-общественное высказывание, которое, как оказалось, помогает людям поверить в свои силы, мотивирует к занятиям спортом и активному образу жизни.</p>
+							<p>За совершение первого российского бескислородного спуска с вершины восьмитысячника на лыжах — Манаслу (8 163 м) проект «Фрирайд в зоне смерти» получил престижную российскую премию в области аутдор-спорта «Хрустальный пик» (2017).</p>
 						</div>
 					</div>
-				<?php } ?>
+				</div>
+
+				<div class="my_accordion__item active">
+					<a href="javascript:void(0);" class="my_accordion__btn">Альпинист</a>
+					<div class="my_accordion__info" style="display: block;">
+						<h3 class="my_accordion__head">Альпинист</h3>
+						<div class="my_accordion__text">
+							<p>Первое восхождение Виталий Лазо совершил в 12 лет. В 16 лет занялся спортивным альпинизмом. В настоящий момент является действующим спортсменом.</p>
+							<p>«Снежный барс» — одно из самых престижных званий в международном альпинизме. Чтобы его получить, необходимо покорить пять высочайших гор бывшего СССР: </p>
+							<p>•	Пик Победы (7439 м)</p>
+							<p>•	Пик Хан-Тенгри (7010 м)</p>
+							<p>•	Пик Исмоила Сомони (бывший Пик коммунизма, 7495 м)</p>
+							<p>•	Пик Ленина (7134 м)</p>
+							<p>•	Пик Корженевской (7105 м).</p>
+							<p>Виталий Лазо получил титул «Снежный барс» в 2014 году.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="my_accordion__item ">
+					<a href="javascript:void(0);" class="my_accordion__btn">Лидер</a>
+					<div class="my_accordion__info" style="display: none;">
+						<h3 class="my_accordion__head">Лидер</h3>
+						<div class="my_accordion__text">
+							<p>Виталий Лазо организовал более 20-ти международных экспедиций на высоты более 7000 метров и был их непосредственным руководителем. <br> Чтобы как можно больше людей получили мотивацию заниматься спортом, узнавать новое, бороться со своими страхами, Виталий Лазо создал проект «Фрирайд в зоне смерти» — и стал его безусловным лидером.</p>
+							<p>Чтобы каждый желающий мог почувствовать себя настоящим первопроходцем, взглянуть по-новому на себя и на окружающий мир, Виталий придумал и успешно воплотил идею туристического клуба «Горная территория».</p>
+							<p>Киностудия «KISLOROD», основанная Виталием Лазо, производит документальные фильмы о самых значимых событиях и личностях российского и международного аутдор-спорта.</p>	
+						</div>
+					</div>
+				</div>
+				
+				<div class="my_accordion__item ">
+					<a href="javascript:void(0);" class="my_accordion__btn">Горный гид</a>
+					<div class="my_accordion__info" style="display: none;">
+						<h3 class="my_accordion__head">Горный гид</h3>
+						<div class="my_accordion__text">
+							<p>Виталий Лазо — профессиональный горный лыжный гид.</p>
+							<p>Член Ассоциации горных гидов России (АГГР).</p> 
+							<p>Проходил обучение по образовательной системе Канадской школы гидов CAA (Canadian Avalanche Association)</p> 
+							<p>Организатор и гид активных программ по всему миру.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="my_accordion__item ">
+					<a href="javascript:void(0);" class="my_accordion__btn">Экстрим-оператор</a>
+					<div class="my_accordion__info" style="display: none;">
+						<h3 class="my_accordion__head">Экстрим-оператор</h3>
+						<div class="my_accordion__text">
+							<p>Виталий Лазо является высотным оператором всех фильмов проекта «Фрирайд в зоне смерти».</p>
+							<p>За фильм «Зона смерти — Нанга-Парбат» (2019) он получил награду в номинации «Лучшая работа оператора в экстремальных условиях» на XXIII международном кинофестивале VERTICAL-2020.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="my_accordion__item ">
+					<a href="javascript:void(0);" class="my_accordion__btn">Образование</a>
+					<div class="my_accordion__info" style="display: none;">
+						<h3 class="my_accordion__head">Образование</h3>
+						<div class="my_accordion__text">
+							<p>Высшее. Инженер-механик «Техника и физика низких температур», ПКВМУ Юрист, ДВГТУ</p>
+							<p>«Финансовый менеджмент», Международный университет LINK BFR, UAA, Alaska, USA</p>
+							<p>RMGA (Russian Mountaineering Guide Association)</p>
+							<p>Английский: свободно</p>
+						</div>
+					</div>
+				</div>
 
 			</div>
 
@@ -486,7 +528,7 @@
 		<div class="cinema__review owl-carousel">
 			
 			<div class="item">
-				<img src="img/users/avatar_1.jpg">
+				<img src="img/users/natalyaShulga.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Наталья Шульга</span>
@@ -496,7 +538,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us1.jpg">
+				<img src="img/users/yacob.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Якоб</span>
@@ -506,7 +548,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us3.jpg">
+				<img src="img/users/ilyaSidorov.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Илья Сидоров</span>
@@ -516,7 +558,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us4.jpg">
+				<img src="img/users/GoGoing.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Go Going</span>
@@ -526,7 +568,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us5.jpg">
+				<img src="img/users/AlexanderVladimirovich.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Alexander Vladimirovich</span>
@@ -536,7 +578,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us2.jpg">
+				<img src="img/users/ioana.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Ioana</span>
@@ -546,7 +588,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us6.jpg">
+				<img src="img/users/vitalyi.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Виталий</span>
@@ -556,7 +598,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us9.jpg">
+				<img src="img/users/olgaDenisova.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Ольга Денисова</span>
@@ -566,7 +608,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us7.jpg">
+				<img src="img/users/MaxMirkin.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Max Mirkin</span>
@@ -576,7 +618,7 @@
 				</div>
 			</div>			
 			<div class="item">
-				<img src="img/users/us8.jpg">
+				<img src="img/users/VladKushniruk.png">
 				<div class="cinema__review__info">
 					<p>
 						<span class="cinema__review__name">Vlad Kushniruk</span>
@@ -769,24 +811,58 @@
           </a>
         </div>
         <div class="modal-body">
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        	<p>Политика в отношении обработки персональных данных</p>
+        	<p>1. Общие положения
+        	        	Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Лазо Виталий Иванович (далее – Оператор).</p>
+        	<p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+        	<p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://vitalylazo.com.</p>
+        	 
+        	<p>2. Основные понятия, используемые в Политике</p>
+        	<p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</p>
+        	<p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</p>
+        	<p>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://vitalylazo.com;</p>
+        	<p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</p>
+        	<p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</p>
+        	<p>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
+        	<p>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</p>
+        	<p>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта https://vitalylazo.com;</p>
+        	<p>2.9. Пользователь – любой посетитель веб-сайта https://vitalylazo.com;</p>
+        	<p>2.10. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</p>
+        	<p>2.11. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</p>
+        	<p>2.12. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</p>
+        	<p>2.13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.</p>
+        	 
+        	<p>3. Оператор может обрабатывать следующие персональные данные Пользователя</p>
+        	<p>3.1. Фамилия, имя, отчество;</p>
+        	<p>3.2. Электронный адрес;</p>
+        	<p>3.3. Номера телефонов;</p>
+        	<p>3.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</p>
+        	<p>3.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+        	 
+        	<p>4. Цели обработки персональных данных</p>
+        	<p>4.1. Цель обработки персональных данных Пользователя — заключение, исполнение и прекращение гражданско-правовых договоров; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте httpsː//thismywebsite·com; уточнение деталей заказа.</p>
+        	<p>4.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты vlazo@yandex.ru с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</p>
+        	<p>4.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+        	 
+        	<p>5. Правовые основания обработки персональных данных</p>
+        	<p>5.1. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте https://vitalylazo.com. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</p>
+        	<p>5.2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+        	 
+        	<p>6. Порядок сбора, хранения, передачи и других видов обработки персональных данных
+        	        	Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+        	<p>6.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</p>
+        	<p>6.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</p>
+        	<p>6.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора vlazo@yandex.ru с пометкой «Актуализация персональных данных».</p>
+        	<p>6.4. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора vlazo@yandex.ru с пометкой «Отзыв согласия на обработку персональных данных».</p>
+        	 
+        	<p>7. Трансграничная передача персональных данных</p>
+        	<p>7.1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</p>
+        	<p>7.2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p>
+        	 
+        	<p>8. Заключительные положения</p>
+        	<p>8.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты vlazo@yandex.ru.</p>
+        	<p>8.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
+        	<p>8.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://vitalylazo.com.</p>
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0);" class="btn col-10 col-md-6 col-lg-4 ml-auto mr-auto" data-dismiss="modal"><span>Понятно</span></a>
@@ -813,24 +889,40 @@
           </a>
         </div>
         <div class="modal-body">
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        	<p>Политика конфиденциальности vitalylazo.com основана на законе «О защите персональных данных» РФ. Мы сохраняем конфиденциальность любой предоставляемой и получаемой от Вас информации и защиту персональных данных от всевозможных видов мошенничества. Все полученные данные используются в строгом соответствии с законом.</p>
+
+        	<p>Какую информацию мы собираем?</p>
+
+        	<p>Персональная информация, предоставляемая Вами при регистрации или во время совершения покупки: телефон, e-mail, имя, фамилия, отчество, серия и номер паспорта, адрес доставки.
+        	Данные, передающиеся автоматически при посещении сайта: IP-адрес, информация о браузере, продолжительности пребывания на сайте, адрес сайта, с которого был осуществлен переход и т.д.</p>
+
+        	<p>Как мы используем полученную информацию?</p>
+
+        	<p>Для предоставления услуг (регистрации, оформления заказа, осуществления доставки и т.д.).
+        	Для информирования о статусе заказа, новых акциях и предложениях, в том числе посредством e-mail.
+        	Для улучшения качества работы сайта, оценки его удобства и пользы, анализа эффективности продуктов и услуг.
+        	Для осуществления акций, конкурсов (при условии Вашего участия в них).</p>
+
+        	<p>Политика защиты персональных данных</p>
+
+        	<p>Мы принимаем все необходимые организационные и технические меры для защиты персональной информации от случайного и мошеннического доступа, уничтожения, изменения или других неправомерных действий.</p>
+
+        	<p>Мы гарантируем конфиденциальность и защиту персональных данных от третьих лиц. Доступ к персональным данным предоставляется только тем сервисам и партнерам, которым она необходима для осуществления операций (оформления заказа, доставки, e-mail подписки). Все эти лица выполняют обязательства по сохранению конфиденциальных данных и могут подвергаться взысканиям за нарушение обязательств, вплоть до увольнения и уголовного преследования.</p>
+
+        	<p>Передача персональных данных третьим лицам также может осуществляться в случаях, предусмотренных законодательством РФ, например, при передаче бизнеса. Новый владелец при этом берет на себя обязательства по защите полученной информации. Также передача данных возможна для пресечения мошенничества. При переходе из нашего интернет-магазина на другие источники компания не несет ответственности за конфиденциальность представленных на этих ресурсах данных.
+        	        	Безопасность платежей</p>
+
+        	<p>Защита информации на сайте</p>
+
+        	<p>Цель представленной на сайте информации – информирование покупателя о деятельности интернет-магазина, товарах и услугах, а также помощь в работе с сайтом.</p>
+
+        	<p>Все содержимое сайта является собственностью vitalylazo.com и защищено законодательно. Пользователи вправе использовать информацию, представленную на сайте, в личных и некоммерческих целях. Запрещено любое использование информации в коммерческих целях.</p>
+
+        	<p>Компания оставляет за собой право на изменение, удаление или другую работу с информацией, представленной на сайте, а также на ограничение доступа к сайту.</p>
+
+        	<p>Компания не несет ответственности за сведения, представленные покупателями на сайте в общедоступной форме.</p>
+
+        	<p>Компания оставляет за собой право на изменение Политики конфиденциальности для дальнейшего совершенствования системы безопасности в соответствии с действующим законодательством.</p>
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0);" class="btn col-10 col-md-6 col-lg-4 ml-auto mr-auto" data-dismiss="modal"><span>Понятно</span></a>
@@ -881,7 +973,7 @@
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
 
-<script src="js/main.js?v36"></script>
+<script src="js/main.js?v37"></script>
 
 </body>
 </html>
