@@ -340,10 +340,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="w-100">
-					<div class="col-12 col-sm-5 col-md-4 ml-auto mr-auto pb-5 pt-3">
-						<a href="javascript:void(0);" class="btn w-100 d-block" onclick="modalMsg('#form_msg');return false;"><span>Связаться</span></a>
-					</div>
+				<div class="w-100 col-12">
+					<a href="javascript:void(0);" class="btn w-100 d-block" onclick="modalMsg('#form_msg');return false;"><span>Связаться</span></a>
 				</div>
 				<img src="/img/people_2.png" class="format_work__img img2 d-none d-xl-block">
 				<img src="/img/people_2_m.png" class="format_work__img img3 d-block d-xl-none">

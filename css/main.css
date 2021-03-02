@@ -90,6 +90,10 @@ header .my_container:last-child{
 .menu a:hover,
 .email_top:hover{
 	color: #00C6FB;
+	color: #005BEA;
+    background: linear-gradient(#00C6FB, #005BEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .foot__menu a{
 	margin-right: 0;
@@ -113,15 +117,17 @@ header .my_container:last-child{
 	border-radius: 50%;
 	position: relative;
 	color: #005BEA;
+	box-shadow: 0px 5px 20px rgba(0, 91, 234, 0.15);
 	transition: all 0.3s;
 }
 .burger_menu:hover{
-/*	box-shadow: 0 0 7px 0px rgb(0 0 0 / 26%);
+	/*	box-shadow: 0 0 7px 0px rgb(0 0 0 / 26%);
 	opacity: 0.95;*/
-	background: #00C6FB;
+	/* 	background: #00C6FB; */
+	background: #005BEA;
 	color: #fff;
-	box-shadow: 0px 0px 15px 1px #00a9f6;
-}
+	box-shadow: 0px 0px 15px 1px #005BEA;
+	}
 .burger_menu span{
 	display: block;
 	width: 16px;
@@ -515,7 +521,7 @@ header .my_container:last-child{
 	transition: width ease-in-out 0.3s;
 }
 .menu_move .btn{
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 .btn:focus,
 .btn:active{
@@ -562,7 +568,7 @@ header .my_container:last-child{
 }
 .social_ico{
 	position: relative;
-	padding: 40px 0 0 0;
+	padding: 28px 0 0 0;
 	white-space: nowrap;
 	text-align: right;
 }
@@ -581,7 +587,7 @@ header .my_container:last-child{
 	width: 40px;
 	height: 40px;
 	background: #fff;
-	color: #00C6FB;
+	color:  #005BEA;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
@@ -589,9 +595,11 @@ header .my_container:last-child{
 	transition: all 0.3s;
 }
 .social_ico a:hover{
-	background: #00C6FB;
+	/* background: #00C6FB; */
+	/* box-shadow: 0px 0px 15px 1px #00a9f6; */
 	color: #fff;
-	box-shadow: 0px 0px 15px 1px #00a9f6;
+	background: #005BEA;
+	box-shadow: 0px 0px 15px 1px #005BEA;
 }
 .social_ico a:not(:first-child){
 	margin-left: 20px;
@@ -789,7 +797,7 @@ header .my_container:last-child{
 }
 
 .format_work .head{
-	margin-bottom: 45px;
+	margin-bottom: 18px;
 }
 .format_work__block{
 	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(180deg, #3D97FF 0%, #2A6DFD 108.33%);
@@ -815,6 +823,9 @@ header .my_container:last-child{
 .format_work .btn{
 	position: relative;
 	z-index: 2;
+	display: block;
+	margin: 0 auto 65px;
+	max-width: 350px;
 }
 
 /*.first_carousel_mobile{display: none!important;}*/
@@ -1319,6 +1330,7 @@ footer .rules__link{margin-left: 30px;}
 	line-height: 37px;
 	text-align: center;
 }
+.form_msg .modal-head{margin: 0px -10px;}
 .form_rules .modal-header{
 	padding: 0 30px 0 0;
 }
@@ -1428,9 +1440,12 @@ footer .rules__link{margin-left: 30px;}
 	}
 	.tours__bg {max-width: 90%;}
 }
-@media (max-width: 1360px){
+@media (max-width: 1370px){
 	body{background-position: 0 1560px, 0 3900px, 0 7250px;}
 	body.bg_pos{background-position: 0 calc(1560px + 635px), 0 calc(3900px + 635px), 0 calc(7250px + 635px);}
+	.menu_move__top {
+	    padding-bottom: 45px;
+	}
 	.menu_move__item{
 		margin-bottom: 30px;
 		font-size: 45px;
@@ -1450,6 +1465,12 @@ footer .rules__link{margin-left: 30px;}
 		background: #fff;
 	}
 	body{background: #fff;}
+	.hero {
+	    padding: 0px 0 200px 0;
+	}
+	.hero__quote {
+		top: 30px;
+	}
 }
 @media (max-width: 991px){
 	.form_rules .modal-dialog{max-width: calc(100% - 30px);}
@@ -1603,11 +1624,15 @@ footer .rules__link{margin-left: 30px;}
 		font-size: 14px;
 		line-height: 22px;
 	}
+	.format_work .btn{
+		margin: 0 auto;
+	}
 
 }
 
 @media (max-width: 767px){
 
+	.form_msg .modal-head{margin: 0;}
 	.kino-hero__text .d-block_m{
 		display: block;
 	}
@@ -1665,7 +1690,7 @@ footer .rules__link{margin-left: 30px;}
 	.hero__head{font-size: 40px;padding-left: 2px;margin-bottom: 25px;}
 	.hero__text{font-size: 14px;}
 	.hero__text p br{display: none;}
-	.kino-hero {max-width: 767px;width: 100%;}
+	.kino-hero {width: calc(100% + 30px);min-width: calc(100% + 30px);max-width: calc(100% + 30px);position: relative;overflow: hidden;padding: 20px 15px;margin: -15px 0;left: -15px;}
 	.kino-hero__head{font-size: 12px;}
 	.kino-hero__text{font-size: 16px;line-height: 1.5;}
 	.hero{padding: 0;}
@@ -1687,10 +1712,10 @@ footer .rules__link{margin-left: 30px;}
 	.hero__quote{
 		max-width: 100%;
 		padding: 20px 20px 20px 30px;
-		top: 30px;
+		font-size: 14px;
 	}
 	.kino-hero__btn{
-	    margin: 20px 12px 20px 20px;
+	    margin: 20px 0 20px 32px;
 	}
 	.kino-hero__btn .item{
 		width: 110px;
@@ -1925,8 +1950,11 @@ footer .rules__link{margin-left: 30px;}
 		font-size: 24px;
 	}
 }
-@media (max-width: 340px){
+@media (max-width: 359px){
 	.menu_move .btn{
 		font-size: 14px;
+	}
+	.hero__quote {
+		padding: 20px 10px 20px 20px;
 	}
 }
