@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v11">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/main.css?v29">
 
 
@@ -43,17 +43,17 @@
 							<p class="kino-hero__head">Автор фильма:</p>
 							<p class="kino-hero__text">«Зона смерти <br> Нанга Парбат. <br class="d-sm-none"> 8125 м»</p>
 						</div>
-						<a href="javascript:void(0);" class="kino-hero__btn">
-							<div class="item video_show_btn" data-code="8XL5M0aDt7g">
+						<div class="kino-hero__btn">
+							<a href="https://youtu.be/8XL5M0aDt7g" data-fancybox class="item fancybox_msg" data-code="8XL5M0aDt7g">
 								<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 									<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 								</svg>
 								<span>Смотреть<br>трейлер</span>
-							</div>
+							</a>
 							<span class="btn_circle"></span>
 							<span class="btn_circle"></span>
 							<!-- <span class="btn_circle"></span> -->
-						</a>
+						</div>
 					</div>
 					<div class="hero__quote">«Горы — не просто форма рельефа. Это лучшая среда для формирования личности, характера и, своего рода, фильтр»</div>
 				</div>
@@ -355,7 +355,7 @@
 			<div class="wr_img">
 				<img src="img/first_carousel/item_1.jpg">
 				<div class="first_carousel__info">
-					<a href="img/first_carousel/item_1.jpg" class="m-auto fancybox_msg">
+					<a href="img/first_carousel/item_1_big.jpeg" data-fancybox="first_carousel" class="m-auto fancybox_msg">
 						<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 						</svg>
@@ -370,7 +370,7 @@
 				<div class="wr_img">
 					<img src="img/first_carousel/item_2.jpg">
 					<div class="first_carousel__info">
-						<a href="img/first_carousel/item_2.jpg" class="m-auto fancybox_msg">
+						<a href="img/first_carousel/item_2_big.jpeg" data-fancybox="first_carousel" class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -384,7 +384,7 @@
 				<div class="wr_img">
 					<img src="img/first_carousel/item_3.jpg">
 					<div class="first_carousel__info">
-						<a href="img/first_carousel/item_3.jpg" class="m-auto fancybox_msg">
+						<a href="img/first_carousel/item_3_big.jpeg" data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -399,7 +399,7 @@
 			<div class="wr_img">
 				<img src="img/first_carousel/item_4.jpg">
 				<div class="first_carousel__info">
-					<a href="javascript:void(0);" class="m-auto video_show_btn" data-code="n5dqtbG3Nb4">
+					<a href="https://youtu.be/n5dqtbG3Nb4"  data-fancybox="first_carousel" class="m-auto fancybox_msg" data-code="n5dqtbG3Nb4">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19.875 10.0781L3.375 0.328125C2.01562 -0.46875 0 0.328125 0 2.25V21.75C0 23.5312 1.875 24.6094 3.375 23.7188L19.875 13.9688C21.3281 13.0781 21.3281 10.9688 19.875 10.0781ZM2.25 21.2812V2.76562C2.25 2.53125 2.48438 2.39062 2.67188 2.53125L18.3281 11.7656C18.5156 11.9062 18.5156 12.1406 18.3281 12.2812L2.67188 21.5156C2.48438 21.6094 2.25 21.5156 2.25 21.2812Z" fill="currentColor"/>
 						</svg>
@@ -416,7 +416,7 @@
 				<div class="wr_img">
 					<img src="img/first_carousel/item_5.jpg">
 					<div class="first_carousel__info">
-						<a href="img/first_carousel/item_5.jpg" class="m-auto fancybox_msg">
+						<a href="img/first_carousel/item_5_big.jpeg"  data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -430,7 +430,7 @@
 				<div class="wr_img">
 					<img src="img/first_carousel/item_6.jpg">
 					<div class="first_carousel__info">
-						<a href="img/first_carousel/item_6.jpg" class="m-auto fancybox_msg">
+						<a href="img/first_carousel/item_6_big.jpg" data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -638,12 +638,11 @@
 
 		<div class="prize_carousel owl-carousel">
 
-
 				<div class="item">
 					<div class="wr_img_btn">
 						<img src="img/prize/zone.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
+							<a href="https://youtu.be/n5dqtbG3Nb4" class="btn w-100 fancybox_msg" data-fancybox data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -660,7 +659,7 @@
 					<div class="wr_img_btn">
 						<img src="img/prize/annapurna.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="0gnyUh6KHbg"><span>Смотреть фильм</span></a>
+							<a href="https://youtu.be/0gnyUh6KHbg" class="btn w-100 fancybox_msg" data-fancybox data-code="0gnyUh6KHbg"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -669,7 +668,7 @@
 					<div class="wr_img_btn">
 						<img src="img/prize/freeride.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="lUdBPbHTF-A"><span>Смотреть фильм</span></a>
+							<a href="https://youtu.be/lUdBPbHTF-A" class="btn w-100 fancybox_msg" data-fancybox data-code="lUdBPbHTF-A"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -678,7 +677,7 @@
 					<div class="wr_img_btn">
 						<img src="img/prize/jivoy.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="javascript:void(0);" class="btn w-100 video_show_btn" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
+							<a href="https://youtu.be/9U0_n3zvcPY" class="btn w-100 fancybox_msg" data-fancybox data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
 						</div>
 					</div>
 				</div>
@@ -969,8 +968,7 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js?v11"></script>
-
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js?v37"></script>
 
 </body>

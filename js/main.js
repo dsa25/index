@@ -6,7 +6,7 @@ var carousel_Settings = {
       nav: true,
       navText: [arrowSvg, arrowSvg],
       items: 4,
-      loop: true,
+      loop: false,
       margin:0,
       autoWidth:false,
       responsive:{
@@ -236,7 +236,7 @@ $(document).ready(function(){
   }).append('<div class="counter_carousel">1/'+$('.reviews_carousel .owl-stage').children().length+'</div>');
 
   $('.cinema__review').owlCarousel({
-    autoHeight:true,
+    autoHeight:false,
     margin: 10,
     loop: true,
     autoplay: true,
@@ -286,7 +286,13 @@ $(document).ready(function(){
   $("body").on("focusin", function(){
 
      $(".fancybox_msg").fancybox({
-      arrows: false,
+        media : {
+          youtube : {
+            params : {
+              autoplay : 0
+            }
+          }
+        }
      }); 
 
 

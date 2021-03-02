@@ -216,12 +216,12 @@ header .my_container:last-child{
 	position: relative;
 	color: #fff;
 	text-align: center;
-	text-decoration: none!important;
 	margin: 34px 54px;
 	cursor: default;
 }
 
 .kino-hero__btn .item{
+	text-decoration: none!important;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -820,6 +820,8 @@ header .my_container:last-child{
 	line-height: 24px;
 	opacity: 0.85;
 }
+.format_work__text b{font-weight:600;}
+.format_work__text i{font-weight:500;}
 .format_work .btn{
 	position: relative;
 	z-index: 2;
@@ -940,6 +942,10 @@ header .my_container:last-child{
 .owl-carousel .owl-nav button:not(.disabled):hover{opacity: 1;}
 .owl-carousel .owl-nav button.disabled{
 	cursor: not-allowed;
+}
+.fancybox-button[disabled]{
+	cursor: not-allowed!important;
+	opacity: 0.5!important;
 }
 .counter_carousel{
 	position: absolute;
