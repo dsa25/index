@@ -1444,7 +1444,8 @@ footer .rules__link{margin-left: 30px;}
 		background: rgb(255 255 255 / 88%);
 		background: #fff;
 	}
-	.tours__bg {max-width: 90%;}
+	.tours__bg {max-width: 72%;}
+	.contacts__bg {max-width: 72%;}
 }
 @media (max-width: 1370px){
 	body{background-position: 0 1560px, 0 3900px, 0 7250px;}
@@ -1464,6 +1465,7 @@ footer .rules__link{margin-left: 30px;}
 	}
 }
 @media (max-width: 1199px){
+	.contacts__bg {max-width: 55%;}
 	.partners__item:nth-child(n+6){
 		margin: 45px 45px 45px 0;
 	}
@@ -1487,6 +1489,7 @@ footer .rules__link{margin-left: 30px;}
 }
 	.form_rules .modal-head {font-size: 20px;}
 	.counter_carousel{display: none;}
+	.contacts__bg,
 	.tours__bg {max-width: 100%;}
 	.btn_scrollTop{display: none;}
 	body.modal-open{padding-right: 0;}
@@ -1525,6 +1528,16 @@ footer .rules__link{margin-left: 30px;}
     left:0;
     max-width: 50%;
 }
+	.tours .my_container > .d-flex,
+	.tours .my_container{position: static;}
+
+	.tours__autor img{right: -50px;}
+	.tours__bg {
+		position: static;
+	    margin: 0 auto;
+	    width: 100%;
+	}
+	
 	.tours{padding: 40px 0 60px;}
 	.tours__text{
 		line-height: 22px;
@@ -1534,6 +1547,12 @@ footer .rules__link{margin-left: 30px;}
 		padding: 20px 60px 20px 20px;
 		margin-left: 100px;
 		width: 235px;
+		position: absolute;
+		top: auto;
+		bottom: 15px;
+		left: calc(50% - 140px);
+		margin: 0;
+		padding-right: 70px;
 	}
 	.tours__autor p{
 		font-size: 16px;
@@ -1549,7 +1568,6 @@ footer .rules__link{margin-left: 30px;}
 		height: auto;
 		width: 150px;
 	}
-	.tours__bg{position: static;}
 	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.prize_carousel.owl-carousel .owl-nav button.owl-prev,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next,
@@ -1819,22 +1837,6 @@ footer .rules__link{margin-left: 30px;}
 		font-size: 14px;
 		line-height: 22px;
 	}
-	.tours .my_container > .d-flex,
-	.tours .my_container{position: static;}
-	.tours__autor{
-		position: absolute;
-		top: auto;
-		bottom: 15px;
-		left: calc(50% - 140px);
-		margin: 0;
-		padding-right: 70px;
-	}
-	.tours__autor img{right: -50px;}
-	.tours__bg {
-	    position: static;
-	    margin: 0 auto;
-	    width: 100%;
-	}
 	.tours .btn{width: 100%;}
 	.cinema .head,
 	.tours .head{margin-bottom: 25px;font-size: 18px;}
@@ -1922,6 +1924,10 @@ footer .rules__link{margin-left: 30px;}
 	}
 	.first_carousel__info span{
 		font-size: 12px;
+	}
+	.reviews_carousel .item{
+		max-width: calc(100% - 30px);
+		margin: 0 auto;
 	}
 }
 @media (max-height: 460px){

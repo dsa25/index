@@ -217,13 +217,13 @@ $(document).ready(function(){
       onTranslated: counter,
       responsive:{
         0:{
-          margin: 15,
-          items: 1.4,
+          margin: 0,
+          items: 1,
           center: false,
-          loop: true,
+          loop: false,
         },
         767:{
-          loop: false,
+          margin: 15,
           items: 2
         },
         991:{
@@ -240,7 +240,7 @@ $(document).ready(function(){
     margin: 10,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive:{
       0:{
