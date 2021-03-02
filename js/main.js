@@ -106,7 +106,7 @@ $('body').on('click', '.menu a, .foot__menu a, a.menu_move__item', function() {
     $('.menu_move a.btn_close').click();
     // $('html, body').animate({scrollTop: top}, '500');
     setTimeout(()=>{$('html, body').animate({scrollTop: top}, '500');}, 500);
-    
+
   }else{
     $('html, body').animate({scrollTop: top}, '500');
   }
@@ -193,7 +193,7 @@ $('body').on('click', '#send_btn', function(event)
 });
 
 
-  
+
 
 
 $(document).ready(function(){
@@ -213,7 +213,7 @@ $(document).ready(function(){
       nav: true,
       navText: [arrowSvg, arrowSvg],
       margin: 15,
-      onInitialized: counter, 
+      onInitialized: counter,
       onTranslated: counter,
       responsive:{
         0:{
@@ -267,9 +267,9 @@ $(document).ready(function(){
     navText: [arrowSvg, arrowSvg],
     autoWidth:false,
     margin: 0,
-    loop: true,
+    loop: false,
     items: 1,
-    onInitialized: counter, 
+    onInitialized: counter,
     onTranslated: counter,
     responsive:{
       767:{
@@ -293,10 +293,10 @@ $(document).ready(function(){
             }
           }
         }
-     }); 
+     });
 
 
-  }); 
+  });
 
 
 });
