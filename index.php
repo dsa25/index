@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css?v10">
-	<link rel="stylesheet" href="css/main.css?v30">
+	<link rel="stylesheet" href="css/main.css?v31">
 	<title>Виталий Лазо</title>
 </head>
 <body>
@@ -651,9 +651,9 @@
 			</div>
 		</div>
 
-		<div class="prize_carousel owl-carousel">
+		<div class="prize_carousel owl-carousel" id="prize_carousel">
 
-				<div class="item">
+				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/zone.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
@@ -665,7 +665,7 @@
 				<div class="item">
 					<img src="img/prize/prize_2.jpg">
 					<div class="prize_carousel_info">
-						<a href="img/prize/prize_2.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
+						<a href="img/prize/prize_2_big.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -676,7 +676,7 @@
 				<div class="item">
 					<img src="img/prize/prize_3.jpg">
 					<div class="prize_carousel_info">
-						<a href="img/prize/prize_3.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
+						<a href="img/prize/prize_3_big.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -684,7 +684,7 @@
 					</div>
 				</div>
 
-				<div class="item">
+				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/annapurna.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
@@ -693,7 +693,7 @@
 					</div>
 				</div>
 
-				<div class="item">
+				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/freeride.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
@@ -702,7 +702,7 @@
 					</div>
 				</div>
 
-				<div class="item">
+				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/jivoy.jpg">
 						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
@@ -710,7 +710,6 @@
 						</div>
 					</div>
 				</div>
-
 
 		</div>
 
@@ -998,7 +997,7 @@
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/jquery.fancybox.min.js?v11"></script>
-<script src="js/main.js?v38"></script>
+<script src="js/main.js?v39"></script>
 
 </body>
 </html>

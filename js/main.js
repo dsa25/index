@@ -1,5 +1,5 @@
-var prize_carousel_count = $('.prize_carousel > .item').children().length;
-// var reviews_carousel_count = $('.reviews_carousel > .item').children().length;
+var prize_carousel_count = $('.prize_carousel').children('.item').length;
+// var reviews_carousel_count = $('.reviews_carousel').children('.item').length;
 
 var arrowSvg = '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>';
 var carousel_Settings = {
@@ -156,10 +156,6 @@ $('body').on('click', '#success_close, #form_msg .close', function(event)
   document.querySelector("#field_number").value = "";
 });
 
-$('body').on('click', '#send_btn', function(event)
-{
-
-});
 
 $('body').on('click', '#send_btn', function(event)
 {
@@ -265,20 +261,19 @@ $(document).ready(function(){
   $('.prize_carousel').owlCarousel({
     nav: true,
     navText: [arrowSvg, arrowSvg],
-    autoWidth:false,
-    margin: 0,
+    autoWidth:true,
+    margin: 10,
     loop: false,
     items: 1,
     onInitialized: counter,
     onTranslated: counter,
     responsive:{
       767:{
-        items: 4,
-        center: true,
-        autoWidth:true,
+        items: 1,
+        center: false,
+        autoWidth: true,
         margin: 20,
       },
-
     }
   }).append('<div class="counter_carousel">1/'+prize_carousel_count+'</div>');
 
@@ -305,5 +300,13 @@ function counter(event) {
   var element   = event.target;         // DOM element, in this example .owl-carousel
   var items     = event.item.count;     // Number of items
   var item      = event.page.index + 1;     // Position of the current item
-  $(element).closest('.owl-carousel').find('.counter_carousel').html(item + '/' + items);
+
+  if($(element).attr('id') == 'prize_carousel' && $(element).find('.owl-next').hasClass('disabled'))
+  {
+    $('.prize_carousel .counter_carousel').html(items+'/'+items);
+  }
+  else
+  {
+    $(element).closest('.owl-carousel').find('.counter_carousel').html(item + '/' + items);
+  }
 }

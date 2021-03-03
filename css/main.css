@@ -963,11 +963,14 @@ header .my_container:last-child{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.reviews .counter_carousel{
+	top: -55px;
+}
 .reviews_carousel.owl-carousel .owl-stage{
 	padding: 10px 0 34px;
 }
 .reviews{padding-top: 50px;}
-.reviews .head{margin-bottom: 50px;}
+.reviews .head{margin-bottom: 0; }
 .reviews__avatar{
 	max-width: 60px;
 	height: auto;
@@ -1047,6 +1050,10 @@ header .my_container:last-child{
 .reviews_carousel.owl-carousel .owl-nav button.owl-next{
 	right: 30px;
 }
+.prize_carousel.owl-carousel .owl-nav button.owl-next,
+.prize_carousel.owl-carousel .owl-nav button.owl-prev{
+	top: -55px;
+}
 .tours{
 	position: relative;
 	padding: 255px 0 145px;
@@ -1109,7 +1116,6 @@ header .my_container:last-child{
 .cinema{
 	padding: 220px 0 0 0;
 	position: relative;
-	background: #fff;
 	overflow: hidden;
 }
 .cinema .my_container{
@@ -1186,24 +1192,42 @@ header .my_container:last-child{
 	padding-top: 5px;
 	font-size: 13px;
 }
-
+.prize_carousel .owl-stage{
+	white-space: nowrap;
+	vertical-align: middle;
+	display: flex;
+	align-items: stretch;
+}
+.prize_carousel .owl-item{
+	width: auto!important;
+	float: none;
+}
 .prize_carousel .item{
 	background: #FFFFFF;
 	box-shadow: 0px 12px 40px rgba(0, 91, 234, 0.15);
 	border-radius: 6px;
 	padding: 10px;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	height: 470px;
+	height: 473px;
+	width: 300px;
+}
+.prize_carousel .item.wr_film{
+	width: 670px;
 }
 
 .prize_carousel .item:hover > .prize_carousel_info{
 	opacity: 1;
 	visibility: visible;
+}
+.prize_carousel .item > img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 .prize_carousel_info{
 	position: absolute;
@@ -1245,17 +1269,17 @@ header .my_container:last-child{
 	color: #fff;
 }
 .prize_carousel.owl-carousel .owl-stage-outer{
-	padding: 50px 0 50px;
+	padding: 50px 0 100px;
 }
 .prize_carousel.owl-carousel .wr_img_btn img{
 	max-width: 630px;
-	width: calc(100vw - 60px);
-	height: auto;
+	width: auto;
+	height: 354px;
 }
 .partners{
 	position: relative;
 	z-index: 3;
-	background: linear-gradient(to bottom, #fcfdfe, #fff);
+	background: #fff;
 }
 .partners__item{
 	display: inline-block;
@@ -1529,6 +1553,9 @@ footer .rules__link{margin-left: 30px;}
 	}
 }
 @media (max-width: 991px){
+	.prize_carousel.owl-carousel .owl-stage-outer{
+	padding: 30px 0 70px;
+}
 	.form_rules .modal-dialog{max-width: calc(100% - 30px);}
 	.form_rules .modal-content .btn {
     height: 35px;
@@ -1546,20 +1573,6 @@ footer .rules__link{margin-left: 30px;}
 		width: 100%;
 		left: 0;
 		right: 0;
-	}
-	.prize_carousel.owl-carousel .owl-stage-outer{
-		padding: 30px 0 50px;
-	}
-	.prize_carousel .item{
-		max-height: calc(100vh - 30px);
-		max-width: calc(100vw - 30px);
-		/* height: auto; */
-	}
-	.prize_carousel.owl-carousel .owl-item img {
-		width: auto;
-		height: auto;
-		max-width: 100%;
-		max-height: 100%;
 	}
 
 	.cinema__review::before,
@@ -1623,6 +1636,10 @@ footer .rules__link{margin-left: 30px;}
 		top: -85px;
 		left: auto;
 		right: 65px;
+	}
+	.prize_carousel.owl-carousel .owl-nav button.owl-next,
+	.prize_carousel.owl-carousel .owl-nav button.owl-prev{
+		top: -40px;
 	}
 	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next{
@@ -1699,6 +1716,7 @@ footer .rules__link{margin-left: 30px;}
 	.format_work .btn{
 		margin: 0 auto;
 	}
+	
 
 }
 
@@ -2000,7 +2018,7 @@ footer .rules__link{margin-left: 30px;}
 	}
 	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.prize_carousel.owl-carousel .owl-nav button.owl-prev{
-		top: -105px;
+		top: -55px;
 	}
 	.hero__head{
 		font-size: 38px;
