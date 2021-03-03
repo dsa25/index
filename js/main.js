@@ -5,20 +5,23 @@ var arrowSvg = '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmln
 var carousel_Settings = {
       nav: true,
       navText: [arrowSvg, arrowSvg],
-      items: 4,
-      loop: false,
+      items: 1,
+      center: false,
+      loop: true,
       margin:0,
-      autoWidth:false,
+      autoWidth:true,
       responsive:{
         0:{
           autoWidth:false,
+          loop: false,
           margin:0,
           items: 1,
         },
         768:{
           autoWidth:true,
+          loop: true,
           margin:10,
-          items: 2,
+          items: 3,
         },
 
       }
@@ -263,17 +266,26 @@ $(document).ready(function(){
     navText: [arrowSvg, arrowSvg],
     autoWidth:true,
     margin: 15,
-    loop: false,
+    loop: true,
     items: 1,
-    center: true,
+    center: false,
     onInitialized: counter,
     onTranslated: counter,
     responsive:{
+      0:{
+        loop: false,
+        autoWidth:false,
+      },
       579:{
+        loop: true,
         items: 1,
+        center: false,
+        autoWidth:true,
       },
       767:{
         center: false,
+        autoWidth:true,
+        loop: true,
         items: 1,
         margin: 20,
       },
