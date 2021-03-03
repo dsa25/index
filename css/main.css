@@ -526,6 +526,11 @@ header .my_container:last-child{
 }
 .menu_move .btn{
 	margin-bottom: 35px;
+	width: 100%;
+	max-width: 380px;
+	font-size: 18px;
+	height: 58px;
+	line-height: 58px;
 }
 .btn:focus,
 .btn:active{
@@ -535,10 +540,12 @@ header .my_container:last-child{
 }
 .btn{
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 24px;
 	position: relative;
-	padding: 18px 25px;
-	line-height: 1;
+	padding: 0 15px;
+	line-height: 66px;
+	height: 66px;
+	white-space: nowrap;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #FFFFFF!important;
@@ -964,10 +971,10 @@ header .my_container:last-child{
 	-webkit-text-fill-color: transparent;
 }
 .reviews .counter_carousel{
-	top: -55px;
+	top: -48px;
 }
 .reviews_carousel.owl-carousel .owl-stage{
-	padding: 10px 0 34px;
+	padding: 50px 0 34px;
 }
 .reviews{padding-top: 50px;}
 .reviews .head{margin-bottom: 0; }
@@ -1042,7 +1049,7 @@ header .my_container:last-child{
 .prize_carousel.owl-carousel .owl-nav button.owl-prev,
 .reviews_carousel.owl-carousel .owl-nav button.owl-next,
 .reviews_carousel.owl-carousel .owl-nav button.owl-prev{
-	top: -96px;
+	top: -48px;
 	left: auto;
 	right: 110px;
 }
@@ -1050,19 +1057,16 @@ header .my_container:last-child{
 .reviews_carousel.owl-carousel .owl-nav button.owl-next{
 	right: 30px;
 }
-.prize_carousel.owl-carousel .owl-nav button.owl-next,
-.prize_carousel.owl-carousel .owl-nav button.owl-prev{
-	top: -55px;
-}
 .tours{
 	position: relative;
 	padding: 255px 0 145px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	background: #fff;
 }
 .tours .my_container{
 	position: relative;
 	z-index: 2;
+	padding: 0;
 }
 .tours .head{margin-bottom: 50px;}
 .tours__bg{
@@ -1113,6 +1117,9 @@ header .my_container:last-child{
 	left: auto;
 	z-index: 1;
 }
+.tours .btn{
+    min-width: 300px;
+}
 .cinema{
 	padding: 220px 0 0 0;
 	position: relative;
@@ -1130,6 +1137,14 @@ header .my_container:last-child{
 	right: calc(50% - 250px);
 	z-index: 1;
 	max-width: 75%;
+}
+.cinema__desc{
+	margin-left: auto;
+	max-width: 500px;
+}
+.cinema .btn{
+	width: 100%;
+	max-width: 100%;
 }
 .cinema__review{
 	margin: 40px 0 0;
@@ -1275,6 +1290,14 @@ header .my_container:last-child{
 	max-width: 630px;
 	width: auto;
 	height: 354px;
+}
+.prize .btn{
+	font-size: 18px;
+	height: 58px;
+	line-height: 58px;
+	margin: 10px auto 0;
+	max-width: 300px;
+	display: block;
 }
 .partners{
 	position: relative;
@@ -1551,10 +1574,17 @@ footer .rules__link{margin-left: 30px;}
 	.hero__quote {
 		top: 30px;
 	}
+	.cinema__bg {
+        left: 0;
+        max-width: 62%;
+    }
 }
 @media (max-width: 991px){
 	.prize_carousel.owl-carousel .owl-stage-outer{
 	padding: 30px 0 70px;
+}
+.reviews_carousel.owl-carousel .owl-stage {
+    padding: 30px 0 34px;
 }
 	.form_rules .modal-dialog{max-width: calc(100% - 30px);}
 	.form_rules .modal-content .btn {
@@ -1568,7 +1598,7 @@ footer .rules__link{margin-left: 30px;}
 	.tours__bg {max-width: 100%;}
 	.btn_scrollTop{display: none;}
 	body.modal-open{padding-right: 0;}
-	.contacts{padding: 30px 0 75%;}
+	.contacts{padding: 60px 0 75%;}
 	.contacts__bg{
 		width: 100%;
 		left: 0;
@@ -1582,12 +1612,12 @@ footer .rules__link{margin-left: 30px;}
 	.cinema__review .item{
 		padding: 10px;
 	}
-	.cinema{padding: 30px 0 40px 0;}
+	.cinema{padding: 50px 0 40px 0;}
 	.cinema__bg {
     top: 155px;
     right: auto;
     left:0;
-    max-width: 50%;
+    max-width: 43%;
 }
 	.tours .my_container > .d-flex,
 	.tours .my_container{position: static;}
@@ -1633,13 +1663,9 @@ footer .rules__link{margin-left: 30px;}
 	.prize_carousel.owl-carousel .owl-nav button.owl-prev,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-prev{
-		top: -85px;
+		top: -40px;
 		left: auto;
 		right: 65px;
-	}
-	.prize_carousel.owl-carousel .owl-nav button.owl-next,
-	.prize_carousel.owl-carousel .owl-nav button.owl-prev{
-		top: -40px;
 	}
 	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.reviews_carousel.owl-carousel .owl-nav button.owl-next{
@@ -1691,8 +1717,9 @@ footer .rules__link{margin-left: 30px;}
 		margin-bottom: 35px;
 	}
 	.btn{
-		font-size: 16px;
-		padding: 14px 18px;
+		font-size: 20px;
+		height: 56px;
+		line-height: 56px;
 	}
 	.my_accordion__info{
 		position: static;
@@ -1721,14 +1748,30 @@ footer .rules__link{margin-left: 30px;}
 }
 
 @media (max-width: 767px){
+    .prize .btn{
+	    font-size: 12px;
+    	height: 34px;
+	    line-height: 34px;
+	    margin: 10px auto 0;
+	    max-width: 188px;
+	    display: block;
+    }
+	.prize_carousel .item{
+	height: 240px;
+	width: 328px;
+}
+.prize_carousel .item.wr_film{
+	width: 328px;
+}
+.prize_carousel.owl-carousel .wr_img_btn img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
 
 	.form_msg .modal-head{margin: 0;}
 	.kino-hero__text .d-block_m{
 		display: block;
-	}
-
-	.wr_img_btn img{
-		min-width: 360px;
 	}
 
 	.first_carousel .item{
@@ -1840,9 +1883,10 @@ footer .rules__link{margin-left: 30px;}
 	    padding-bottom: 40px;
 	}
 	.menu_move .btn{
-		display: block;
-		width: 100%;
 		margin-bottom: 30px;
+		line-height: 48px;
+		font-size: 16px;
+		height: 48px;
 	}
 	.btn_close{
 		width: 40px;
@@ -1856,10 +1900,6 @@ footer .rules__link{margin-left: 30px;}
 	}
 	.menu_move__item::before{
 		display: none;
-	}
-	.menu_move .btn{
-	    white-space: nowrap;
-	    padding: 14px 12px;
 	}
 	.social_ico{
 		text-align: center;
@@ -1903,9 +1943,9 @@ footer .rules__link{margin-left: 30px;}
 		font-size: 14px;
 		line-height: 22px;
 	}
-	.tours .btn{width: 100%;}
+	.tours .btn{width: 100%;min-width: 100%;}
 	.cinema .head,
-	.tours .head{margin-bottom: 25px;font-size: 18px;}
+	.tours .head{margin-bottom: 25px;font-size: 24px;}
 	.cinema .head::before,
 	.tours .head::before {top: 7px;}
 	.cinema__bg {
@@ -1929,14 +1969,16 @@ footer .rules__link{margin-left: 30px;}
 	.cinema__review__text{
 		font-size: 12px;
 	}
+	.cinema__desc {max-width: 100%;}
 	.prize .head{
 		padding-right: 100px;
 	}
-	.partners__item{
-		margin: 25px;
-	}
+	.partners__item{margin: 15px auto;}
+	.partners__item:nth-child(n+6){margin: 15px auto;}
 	.partners__item img{
-		max-width: 130px;
+		max-width: 100px;
+		margin: 0 9px;
+		display: inline-block;
 	}
 	.contacts .head{
 		margin-bottom: 20px;
@@ -1995,6 +2037,8 @@ footer .rules__link{margin-left: 30px;}
 		max-width: calc(100% - 30px);
 		margin: 0 auto;
 	}
+	.reviews{padding-top: 50px;}
+	.my_accordion{padding: 40px 0 0;}
 }
 @media (max-height: 460px){
 	.wr_img_btn img{
@@ -2003,19 +2047,27 @@ footer .rules__link{margin-left: 30px;}
 	}
 }
 @media (max-width: 375px){
+	.modal-title br{display: none;}
 	.wr_img_btn img{
 		min-width: auto;
 	}
 	.contacts__title{
 		font-size: 27px;
 	}
-	.partners__item{
-		margin: 20px;
-	}
-	.partners__item img{
-		max-width: 100px;
-		height: auto;
-	}
+	.partners__item{margin: 20px 6px;}
+	.partners__item img{max-width: 95px; margin: 0;}
+	.partners__item:nth-child(n+4){margin: 10px auto;}
+	.partners__item:nth-child(n+4) img{max-width: 115px;}
+	
+	.partners__item:nth-child(n+6) {margin: 20px 6px;}
+	.partners__item:nth-child(6) img{max-width: 93px;}
+	.partners__item:nth-child(7) img{max-width: 45px;}
+	.partners__item:nth-child(8) img{max-width: 50px;}
+	.partners__item:nth-child(9) img{max-width: 56px;}
+	.partners__item:nth-child(n+10){margin: 20px auto 0;}
+	.partners__item:nth-child(10) img{max-width: 101px;}
+	.partners__item:nth-child(11) img{max-width: 50px;}
+
 	.prize_carousel.owl-carousel .owl-nav button.owl-next,
 	.prize_carousel.owl-carousel .owl-nav button.owl-prev{
 		top: -55px;
@@ -2027,12 +2079,30 @@ footer .rules__link{margin-left: 30px;}
 	.menu_move__item{
 		font-size: 24px;
 	}
+    .cinema__review .owl-item{
+    	padding: 0 15px
+    }
 }
 @media (max-width: 359px){
+	.modal-title {font-size: 14px;}
 	.menu_move .btn{
 		font-size: 14px;
 	}
 	.hero__quote {
 		padding: 20px 10px 20px 20px;
 	}
+
+	.partners__item img{max-width: 82px;}
+	.partners__item:nth-child(n+4) img{max-width: 105px;}
+	.partners__item:nth-child(6) img{max-width: 83px;}
+	.partners__item:nth-child(7) img{max-width: 45px;}
+	.partners__item:nth-child(8) img{max-width: 50px;}
+	.partners__item:nth-child(9) img{max-width: 56px;}
+	.partners__item:nth-child(10) img{max-width: 90px;}
+	.partners__item:nth-child(11) img{max-width: 48px;}
+
+	footer .rules__link{font-size: 11px;}
+	footer .rules__link:first-child{margin-right: 25px;}
+	.tours .head{font-size: 21px;}
+	.cinema .head{font-size: 22px;}
 }

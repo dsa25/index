@@ -262,16 +262,19 @@ $(document).ready(function(){
     nav: true,
     navText: [arrowSvg, arrowSvg],
     autoWidth:true,
-    margin: 10,
+    margin: 15,
     loop: false,
     items: 1,
+    center: true,
     onInitialized: counter,
     onTranslated: counter,
     responsive:{
-      767:{
+      579:{
         items: 1,
+      },
+      767:{
         center: false,
-        autoWidth: true,
+        items: 1,
         margin: 20,
       },
     }

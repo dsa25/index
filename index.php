@@ -491,6 +491,8 @@
 				</div>
 			</div>
 
+			
+
 		</div>
 
 	</section>
@@ -526,14 +528,14 @@
 
 	<section class="cinema" id="cinema">
 		<div class="my_container">
-			<div class="col-12 col-sm-12 col-md-7 col-lg-5 ml-auto">
+			<div class="cinema__desc">
 				<h2 class="head">Кинематография</h2>
 				<div class="cinema__text tours__text">
 					<p>Студия «KISLOROD» — это организация видеосъемок от логистики до конечного продукта: идея, сценарий, режиссура, полный спектр услуг видеопроизводства, от видеороликов до полнометражных документальных фильмов, и от идеи до постпродакшна.</p>
 					<p>Мы — команда профессионалов с многолетним опытом работы на федеральных телеканалах России и производства документальных фильмов, лауреаты премий международных фестивалей в России и за рубежом.</p>
 					<p>Наша съемочная группа специализируется на натурных съемках в самых тяжелых и экстремальных условиях, добывая редкие по красоте кадры, способные украсить любой фильм или видеоролик. Имеется опыт как постановочной, так и репортажной съемки любой сложности.</p>
 				</div>
-				<a href="javascript:void(0);" class="btn w-100" onclick="modalMsg('#form_msg');return false;"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
+				<a href="javascript:void(0);" class="btn" onclick="modalMsg('#form_msg');return false;"><span>Заказать съемку <span class="d-none d-md-inline">проекта</span></span></a>
 			</div>
 		</div>
 		<img src="img/cinema_bg.jpg" class="cinema__bg">
@@ -656,9 +658,7 @@
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/zone.jpg">
-						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="https://youtu.be/n5dqtbG3Nb4" class="btn w-100 fancybox_msg" data-fancybox="prize_carousel" data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
-						</div>
+						<a href="https://youtu.be/n5dqtbG3Nb4" class="btn w-100 fancybox_msg" data-fancybox="prize_carousel" data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
 					</div>
 				</div>
 
@@ -687,27 +687,21 @@
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/annapurna.jpg">
-						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="https://youtu.be/0gnyUh6KHbg" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="0gnyUh6KHbg"><span>Смотреть фильм</span></a>
-						</div>
+						<a href="https://youtu.be/0gnyUh6KHbg" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="0gnyUh6KHbg"><span>Смотреть фильм</span></a>
 					</div>
 				</div>
 
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/freeride.jpg">
-						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="https://youtu.be/lUdBPbHTF-A" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="lUdBPbHTF-A"><span>Смотреть фильм</span></a>
-						</div>
+						<a href="https://youtu.be/lUdBPbHTF-A" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="lUdBPbHTF-A"><span>Смотреть фильм</span></a>
 					</div>
 				</div>
 
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/jivoy.jpg">
-						<div class="col-12 col-sm-10 col-lg-8 ml-auto mr-auto mt-2">
-							<a href="https://youtu.be/9U0_n3zvcPY" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
-						</div>
+						<a href="https://youtu.be/9U0_n3zvcPY" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
 					</div>
 				</div>
 
@@ -719,18 +713,18 @@
 		<div class="my_container">
 			<div class="row">
 				<div class="col-12"><h2 class="head">ПАРТНЕРЫ</h2></div>
-				<div class="d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap col-12 col-lg-12">
+				<div class="d-flex justify-content-between justify-content-sm-center align-items-center flex-wrap col-12 col-lg-12">
 					<a href="#" class="partners__item"><img src="img/partners/partners2.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners3.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners4.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners5.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners6.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners7.svg"></a>
-					<a href="#" class="partners__item"><img src="img/partners/partners8.svg"></a>
-					<a href="#" class="partners__item"><img src="img/partners/partners9.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners10.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners11.svg"></a>
 					<a href="#" class="partners__item"><img src="img/partners/partners1.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners8.svg"></a>
+					<a href="#" class="partners__item"><img src="img/partners/partners9.svg"></a>
 				</div>
 			</div>
 		</div>
