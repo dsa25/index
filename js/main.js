@@ -235,7 +235,7 @@ $(document).ready(function(){
   }).append('<div class="counter_carousel">1/'+$('.reviews_carousel .owl-stage').children().length+'</div>');
 
   $('.cinema__review').owlCarousel({
-    autoHeight:false,
+    autoHeight: false,
     margin: 10,
     loop: true,
     autoplay: true,
@@ -243,14 +243,17 @@ $(document).ready(function(){
     autoplayHoverPause: true,
     responsive:{
       0:{
+        autoHeight: true,
         margin: 10,
         items: 1,
         loop: true,
       },
       580:{
+        autoHeight: true,
         items: 2
       },
       991:{
+        autoHeight: false,
         margin: 20,
         items: 3
       },

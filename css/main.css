@@ -1586,6 +1586,7 @@ footer .rules__link{margin-left: 30px;}
 .reviews_carousel.owl-carousel .owl-stage {
     padding: 30px 0 34px;
 }
+.reviews{padding-top: 0;}
 	.form_rules .modal-dialog{max-width: calc(100% - 30px);}
 	.form_rules .modal-content .btn {
     height: 35px;
@@ -1612,7 +1613,7 @@ footer .rules__link{margin-left: 30px;}
 	.cinema__review .item{
 		padding: 10px;
 	}
-	.cinema{padding: 50px 0 40px 0;}
+	.cinema{padding: 50px 0 0 0;}
 	.cinema__bg {
     top: 155px;
     right: auto;
@@ -2037,7 +2038,6 @@ footer .rules__link{margin-left: 30px;}
 		max-width: calc(100% - 30px);
 		margin: 0 auto;
 	}
-	.reviews{padding-top: 50px;}
 	.my_accordion{padding: 40px 0 0;}
 }
 @media (max-height: 460px){

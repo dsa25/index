@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css?v10">
-	<link rel="stylesheet" href="css/main.css?v32">
+	<link rel="stylesheet" href="css/main.css?v33">
 	<title>Виталий Лазо</title>
 </head>
 <body>
@@ -991,7 +991,7 @@
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/jquery.fancybox.min.js?v11"></script>
-<script src="js/main.js?v42"></script>
+<script src="js/main.js?v43"></script>
 
 </body>
 </html>
