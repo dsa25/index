@@ -270,21 +270,15 @@ $(document).ready(function(){
     navText: [arrowSvg, arrowSvg],
     autoWidth:true,
     margin: 15,
-    loop: true,
+    loop: false,
     items: 1,
-    center: false,
+    center: true,
     onInitialized: counter,
     onTranslated: counter,
     responsive:{
-      0:{
-        loop: false,
-        autoWidth:false,
-      },
       579:{
-        loop: true,
         items: 1,
         center: false,
-        autoWidth:true,
       },
       767:{
         center: false,
