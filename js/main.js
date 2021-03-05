@@ -214,6 +214,7 @@ $(document).ready(function(){
       margin: 15,
       onInitialized: counter,
       onTranslated: counter,
+      center: false,
       responsive:{
         0:{
           margin: 0,

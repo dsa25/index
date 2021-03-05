@@ -476,7 +476,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<div class="item">
 				<div class="d-flex justify-content-start align-items-center">
 					<img src="img/users/us3.jpg" alt="" class="reviews__avatar">

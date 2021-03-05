@@ -2105,4 +2105,7 @@ footer .rules__link{margin-left: 30px;}
 	footer .rules__link:first-child{margin-right: 25px;}
 	.tours .head{font-size: 21px;}
 	.cinema .head{font-size: 22px;}
+	
+	.prize_carousel .item,
+	.prize_carousel .item.wr_film{max-width: 295px;}
 }
