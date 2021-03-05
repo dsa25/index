@@ -351,7 +351,8 @@
 
 		<div class="item">
 			<div class="wr_img">
-				<img src="img/first_carousel/item_1.jpg">
+				<img src="img/first_carousel/item_1.jpg" class="d-none d-md-block">
+				<img src="img/first_carousel/item_1_big.jpeg" class="d-block d-md-none">
 				<div class="first_carousel__info">
 					<a href="img/first_carousel/item_1_big.jpeg" data-fancybox="first_carousel" class="m-auto fancybox_msg">
 						<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,7 +367,8 @@
 		<div class="item item_wrap">
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_2.jpg">
+					<img src="img/first_carousel/item_2.jpg" class="d-none d-md-block">
+					<img src="img/first_carousel/item_2_big.jpeg" class="d-block d-md-none">
 					<div class="first_carousel__info">
 						<a href="img/first_carousel/item_2_big.jpeg" data-fancybox="first_carousel" class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,7 +382,8 @@
 			</div>
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_3.jpg">
+				<img src="img/first_carousel/item_3.jpg" class="d-none d-md-block">
+				<img src="img/first_carousel/item_3_big.jpeg" class="d-block d-md-none">
 					<div class="first_carousel__info">
 						<a href="img/first_carousel/item_3_big.jpeg" data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -395,7 +398,8 @@
 		</div>
 		<div class="item">
 			<div class="wr_img">
-				<img src="img/first_carousel/item_4.jpg">
+				<img src="img/first_carousel/item_4.jpg" class="d-none d-md-block">
+				<img src="img/first_carousel/item_4_big.jpeg" class="d-block d-md-none">
 				<div class="first_carousel__info">
 					<a href="https://youtu.be/n5dqtbG3Nb4"  data-fancybox="first_carousel" class="m-auto fancybox_msg" data-code="n5dqtbG3Nb4">
 						<svg width="21" height="25" viewBox="0 0 21 25" fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -412,7 +416,8 @@
 		<div class="item item_wrap">
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_5.jpg">
+					<img src="img/first_carousel/item_5.jpg" class="d-none d-md-block">
+					<img src="img/first_carousel/item_5_big.jpeg" class="d-block d-md-none">
 					<div class="first_carousel__info">
 						<a href="img/first_carousel/item_5_big.jpeg"  data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,7 +431,8 @@
 			</div>
 			<div class="item item_item">
 				<div class="wr_img">
-					<img src="img/first_carousel/item_6.jpg">
+					<img src="img/first_carousel/item_6.jpg" class="d-none d-md-block">
+					<img src="img/first_carousel/item_6_big.jpg" class="d-block d-md-none">
 					<div class="first_carousel__info">
 						<a href="img/first_carousel/item_6_big.jpg" data-fancybox="first_carousel"  class="m-auto fancybox_msg">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
