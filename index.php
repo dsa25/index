@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css?v10">
-	<link rel="stylesheet" href="css/main.css?v36">
+	<link rel="stylesheet" href="css/main.css?v37">
 	<title>Виталий Лазо</title>
 </head>
 <body>

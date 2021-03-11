@@ -1878,6 +1878,9 @@ footer .rules__link{margin-left: 30px;}
 		background: #fff url(../img/menu_move_bg_m.jpg) 0 0 no-repeat;
 		background-size: cover;
 		padding-bottom: 25px;
+		height: 100%;
+		min-height: 100%;
+		max-height: 100%;
 	}
 	.menu_move__top {
 	    padding-top: 15px;
