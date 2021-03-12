@@ -46,7 +46,7 @@ body{
 	/*background: #fff url(../img/body_bg.png) 0 160vh no-repeat;*/
 	background: url(../img/body_bg_1.png) 0 1400px no-repeat,
   url(../img/body_bg_2.png) 0 3750px no-repeat,
-  url(../img/body_bg_3.png) 0 7250px no-repeat;
+  url(../img/body_bg_3.png) 0 7070px no-repeat;
 	background-size: 100% auto;
 	transition: background 0.5s;
 }
@@ -1028,7 +1028,8 @@ header > .my_container{
 	border-radius: 6px;
 	box-shadow: 0px 6px 30px 5px rgba(0, 91, 234, 0.15);
 	overflow: hidden;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
+	margin-top: 0;
 }
 .reviews__desc > div a{
 	color: #ffffffc4;
@@ -1112,7 +1113,8 @@ header > .my_container{
 }
 .tours__autor{
 	position: relative;
-	padding: 30px 110px 30px 30px;
+	/*padding: 30px 110px 30px 30px;*/
+	padding: 30px;
 	background: #fff;
 	margin-left: 100px;
 	width: 326px;
@@ -1327,7 +1329,7 @@ header > .my_container{
 .partners{
 	position: relative;
 	z-index: 3;
-	background: #fff;
+	/*background: #fff;*/
 }
 .partners__item{
 	display: inline-block;
@@ -1568,7 +1570,7 @@ footer .rules__link{margin-left: 30px;}
 	.contacts__bg {max-width: 72%;}
 }
 @media (max-width: 1370px){
-	body{background-position: 0 1560px, 0 3900px, 0 7250px;}
+	body{background-position: 0 1560px, 0 3900px, 0 7017px;}
 	body.bg_pos{background-position: 0 calc(1560px + 635px), 0 calc(3900px + 635px), 0 calc(7250px + 635px);}
 	.menu_move__top {
 	    padding-bottom: 45px;
@@ -1661,15 +1663,15 @@ footer .rules__link{margin-left: 30px;}
 		font-size: 14px;
 	}
 	.tours__autor{
-		padding: 20px 60px 20px 20px;
-		margin-left: 100px;
+		/*padding: 20px 70px 20px 20px;*/
+		padding: 20px;
 		width: 235px;
 		position: absolute;
 		top: auto;
 		bottom: 15px;
-		left: calc(50% - 140px);
+		/*left: calc(50% - 140px);*/
+		left: calc(50% - 118px);
 		margin: 0;
-		padding-right: 70px;
 	}
 	.tours__autor p{
 		font-size: 16px;
@@ -1705,7 +1707,8 @@ footer .rules__link{margin-left: 30px;}
 		margin-left: 10px;
 	}
 	.reviews__desc{
-		margin-top: 10px;
+		/*margin-top: 10px;*/
+		margin-top: 0;
 	}
 	.first_carousel__info svg{
 		max-width: 40px;

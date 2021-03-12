@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css?v10">
-	<link rel="stylesheet" href="css/main.css?v40">
+	<link rel="stylesheet" href="css/main.css?v41">
 	<title>Виталий Лазо</title>
 </head>
 <body>
@@ -31,7 +31,7 @@
 				<div class="hero_desc">
 					<h1 class="hero__head">Виталий Лазо</h1>
 					<div class="hero__text">
-						<p>«Снежный барс», побывавший на вершинах высочайших гор <br> планеты, и спустившийся с них на лыжах. Основатель проекта <br> «Death zone freeride» фрирайд в зоне смерти и горный гид. Мотивационный спикер, кинематографист и  <br> предприниматель — всё это об одном человеке.</p>
+						<p>«Снежный барс», побывавший на вершинах высочайших гор <br> планеты, и спустившийся с них на лыжах. Основатель проекта <br> «Death zone freeride» («Фрирайд в зоне смерти») и горный гид. Мотивационный спикер, кинематографист и  <br> предприниматель — всё это об одном человеке.</p>
 						<p>Виталий Лазо на собственном примере доказывает, что <br> у человеческих возможностей не существует границ.<br>Главное — не останавливаться на пути к мечте!</p>
 					</div>
 				</div>
@@ -299,7 +299,7 @@
 						<div class="achieve__img"><img src="/img/achieve4.svg"></div>
 						<span>Киностудия <br> “KISLOROD”</span>
 					</div>
-					<div class="achieve__text">Более 50-ти эксклюзивных приключенческих туров клуба «Горная территория», участие в которых приняли более 5000 человек</div>
+					<div class="achieve__text">Основание киностудии «KISLOROD», производящей документальные фильмы о самых значимых событиях и личностях российского и международного аутдор-спорта.</div>
 				</div>
 			</div>
 		</div>
@@ -460,13 +460,13 @@
 		<div class="reviews_carousel owl-carousel">
 
 			<div class="item">
-				<div class="d-flex justify-content-start align-items-center">
+<!-- 				<div class="d-flex justify-content-start align-items-center">
 					<img src="img/users/karmanov.jpg" alt="" class="reviews__avatar">
 					<div class="reviews__user" >
 						<p>Карманов Д.В.</p>
 						<span>Проект "STAR TALK"</span>
 					</div>
-				</div>
+				</div> -->
 				<div class="reviews__desc">
 					<img src="img/reviews_carousel/letter1.jpg">
 					<div class="">
@@ -480,13 +480,13 @@
 			</div>
 
 			<div class="item">
-				<div class="d-flex justify-content-start align-items-center">
+<!-- 				<div class="d-flex justify-content-start align-items-center">
 					<img src="img/users/us3.jpg" alt="" class="reviews__avatar">
 					<div class="reviews__user" >
 						<p>Ариевич Григорий</p>
 						<span>Компания "Кант"</span>
 					</div>
-				</div>
+				</div> -->
 				<div class="reviews__desc">
 					<img src="img/reviews_carousel/reviews_2.jpg">
 					<div class="">
@@ -526,7 +526,7 @@
 				<div class="tours__autor">
 					<p>Виталий Лазо</p>
 					<span>Лично сопровождает каждый тур от начала и до конца.</span>
-					<img src="img/tours__autor.png">
+					<img src="img/tours__autor.png" style="display: none;">
 				</div>
 			</div>
 		</div>
@@ -665,15 +665,15 @@
 
 				<div class="item wr_film">
 					<div class="wr_img_btn">
-						<img src="img/prize/zone.jpg">
+						<img src="img/prize/zona_risk1.jpg">
 						<a href="https://youtu.be/n5dqtbG3Nb4" class="btn w-100 fancybox_msg" data-fancybox="prize_carousel" data-code="n5dqtbG3Nb4"><span>Смотреть фильм</span></a>
 					</div>
 				</div>
 
 				<div class="item">
-					<img src="img/prize/prize_2.jpg">
+					<img src="img/prize/prize_1.jpg?v10">
 					<div class="prize_carousel_info">
-						<a href="img/prize/prize_2_big.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
+						<a href="img/prize/prize_1_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -682,9 +682,9 @@
 				</div>
 
 				<div class="item">
-					<img src="img/prize/prize_3.jpg">
+					<img src="img/prize/prize_2.jpg?v10">
 					<div class="prize_carousel_info">
-						<a href="img/prize/prize_3_big.jpg" class="fancybox_msg" data-fancybox="prize_carousel">
+						<a href="img/prize/prize_2_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
 							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
 							</svg>
@@ -699,6 +699,28 @@
 					</div>
 				</div>
 
+				<div class="item">
+					<img src="img/prize/prize_3.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_3_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/prize/prize_4.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_4_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/freeride.jpg">
@@ -706,10 +728,54 @@
 					</div>
 				</div>
 
+				<div class="item">
+					<img src="img/prize/prize_5.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_5_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/prize/prize_6.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_6_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
 				<div class="item wr_film">
 					<div class="wr_img_btn">
 						<img src="img/prize/jivoy.jpg">
 						<a href="https://youtu.be/9U0_n3zvcPY" class="btn w-100 fancybox_msg"  data-fancybox="prize_carousel" data-code="9U0_n3zvcPY"><span>Смотреть фильм</span></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/prize/prize_7.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_7_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/prize/prize_8.jpg?v10">
+					<div class="prize_carousel_info">
+						<a href="img/prize/prize_8_big.jpg?v10" class="fancybox_msg" data-fancybox="prize_carousel">
+							<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.875 25.5C40.875 24.75 40.25 24 39.375 24H28.875V13.5C28.875 12.75 28.25 12 27.375 12H26.375C25.625 12 24.875 12.75 24.875 13.5V24H14.375C13.625 24 12.875 24.75 12.875 25.5V26.5C12.875 27.375 13.625 28 14.375 28H24.875V38.5C24.875 39.375 25.625 40 26.375 40H27.375C28.25 40 28.875 39.375 28.875 38.5V28H39.375C40.25 28 40.875 27.375 40.875 26.5V25.5ZM64.5 62.125C65.125 61.625 65.125 60.625 64.5 60L48.375 43.875C48.125 43.625 47.75 43.5 47.25 43.5H46.25C50.375 38.875 53 32.75 53 26C53 11.75 41.5 0.25 27.25 0C12.625 -0.125 0.75 11.75 1 26.375C1.125 40.625 12.625 52 27 52C33.625 52 39.75 49.5 44.375 45.375V46.375C44.375 46.75 44.5 47.125 44.875 47.5L61 63.625C61.5 64.125 62.5 64.125 63.125 63.625L64.5 62.125ZM49 26C49 38.25 39.125 48 27 48C14.75 48 5 38.25 5 26C5 13.875 14.75 4 27 4C39.125 4 49 13.875 49 26Z" fill="currentColor"/>
+							</svg>
+						</a>
 					</div>
 				</div>
 
@@ -999,7 +1065,7 @@
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/jquery.fancybox.min.js?v11"></script>
-<script src="js/main.js?v53"></script>
+<script src="js/main.js?v54"></script>
 
 </body>
 </html>
