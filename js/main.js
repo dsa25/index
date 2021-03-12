@@ -1,6 +1,36 @@
 var prize_carousel_count = $('.prize_carousel').children('.item').length;
 // var reviews_carousel_count = $('.reviews_carousel').children('.item').length;
 
+var header_top = $('.header_top'),
+    scrollPrev = 0,
+    scrolled = $(window).scrollTop();
+
+var scrollVal = $(window).width() < 768 ? 50 : 100; 
+
+headerBg(scrolled);
+
+$(window).scroll(function() {
+  var scrolled = $(window).scrollTop();
+
+  headerBg(scrolled);
+ 
+  if ( scrolled > scrollVal && scrolled > scrollPrev ) {
+    header_top.addClass('out');
+  } else {
+    header_top.removeClass('out');
+  }
+  scrollPrev = scrolled;
+});
+
+function headerBg(scrolled){
+  if(scrolled > scrollVal){
+    header_top.addClass('scrolled');
+  }
+  else{
+    header_top.removeClass('scrolled');
+  }
+}
+
 var arrowSvg = '<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0.199999" y1="12" x2="26" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#00C6FB"/><stop offset="1" stop-color="#005BEA"/></linearGradient></defs></svg>';
 var carousel_Settings = {
       nav: true,

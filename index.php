@@ -9,19 +9,21 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css?v11">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css?v10">
-	<link rel="stylesheet" href="css/main.css?v37">
+	<link rel="stylesheet" href="css/main.css?v40">
 	<title>Виталий Лазо</title>
 </head>
 <body>
 	<header>
-		<div class="my_container d-flex align-items-center">
-			<div class="menu d-none d-md-block">
-				<a href="#speaker">Спикерство</a>
-				<a href="#cinema">Кинематография</a>
-				<a href="#tours">Индивидуальные туры</a>
+		<div class="header_top">
+			<div class="my_container d-flex align-items-center">
+				<div class="menu d-none d-md-block">
+					<a href="#speaker">Спикерство</a>
+					<a href="#cinema">Кинематография</a>
+					<a href="#tours">Индивидуальные туры</a>
+				</div>
+				<a href="mailto:vlazo@yandex.ru" class="email_top d-none d-md-block">vlazo@yandex.ru</a>
+				<a href="javascript:void(0);" class="burger_menu"><span></span></a>
 			</div>
-			<a href="mailto:vlazo@yandex.ru" class="email_top d-none d-md-block">vlazo@yandex.ru</a>
-			<a href="javascript:void(0);" class="burger_menu"><span></span></a>
 		</div>
 
 		<div class="my_container">
@@ -997,7 +999,7 @@
 <script src="js/bootstrap.bundle.min.js?v11"></script>
 <script src="js/owl.carousel.min.js?v11"></script>
 <script src="js/jquery.fancybox.min.js?v11"></script>
-<script src="js/main.js?v46"></script>
+<script src="js/main.js?v53"></script>
 
 </body>
 </html>
